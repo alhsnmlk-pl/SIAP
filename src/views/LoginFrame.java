@@ -11,6 +11,7 @@ import java.awt.Insets;
 import javax.swing.JToggleButton;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import models.modelUser;
 import views.component.UiStyles;
 
 /**
@@ -390,17 +391,26 @@ public class LoginFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-        // cek role yang dipilih sebelum buka halaman utama
-        
-        String selectedRole; //deklarasi role yg dipilih
-        if (tglKeps.isSelected()) { //jika btn kepsek sedang di pilih
-            selectedRole = "Kepala Madrasah"; //maka role yg di pilih Kepala Sekolah
-        } else { //jika tidak
-            selectedRole = "Operator"; //role operator
+        String selectedRole;
+        if (tglKeps.isSelected()) {
+            selectedRole = "Kepala Madrasah";
+        } else {
+            selectedRole = "Operator";
         }
-        MainFrame mainFrame = new MainFrame(); //embuat object mainFrame
-        mainFrame.setUserRole(selectedRole); //mengirim role yg dipilih ke setter user role
-        
+        modelUser currentUser = new modelUser(
+                null,
+                null,
+                txtUsername.getText().trim(),
+                null,
+                selectedRole,
+                null,
+                null,
+                null,
+                null,
+                null);
+
+        MainFrame mainFrame = new MainFrame();
+        mainFrame.setUser(currentUser);
         mainFrame.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnLoginActionPerformed

@@ -6,6 +6,8 @@ package views.absensi;
 
 import java.awt.Color;
 import java.awt.Insets;
+import java.util.List;
+import views.component.RecentComponent;
 import views.component.UiStyles;
 
 /**
@@ -18,12 +20,18 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
      * Creates new form DashboarAbsensiPanel
      */
     public DashboarAbsensiPanel() {
-        // siapin dashboard absensi dan atur tampilannya
         initComponents();
         stylebBar();
         refreshBar(50, 43, 199, 200);
-        stylePanelDA();
+        stylePanel();
         UiStyles.setButton(btnMulaiScan);
+        List<RecentComponent.Item> scans = List.of(
+                new RecentComponent.Item("AH", "Atho'il Hakim",
+                        "Kelas 8B · scan 13:06 WIB", views.component.RecentComponent.Status.PULANG),
+                new RecentComponent.Item("HA", "Hamdan Abi Abbas",
+                        "Kelas 7B · scan 13:05 WIB", views.component.RecentComponent.Status.HADIR)
+        );
+        views.component.RecentComponent.populate(jPanel40, scans);
     }
 
     private void stylebBar() {
@@ -58,19 +66,22 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel31.revalidate();
     }
 
-    private void stylePanelDA() {
-        // kasih border ke panel-panel dashboard
+    private void stylePanel() {
         javax.swing.JPanel[] jPanels = {jPanel3, jPanel4, jPanel5, jPanel6, jPanel7};
         for (javax.swing.JPanel pnl : jPanels) {
             UiStyles.seRoundPanel(pnl, new Insets(16, 16, 16, 16), 48, Color.decode("#ECEDEB"), 1f);
         }
         javax.swing.JPanel[] jPanels2 = {jPanel13, jPanel14, jPanel15, jPanel16};
         for (javax.swing.JPanel pnl : jPanels2) {
-            UiStyles.seRoundPanel(pnl, new Insets(0, 0, 0, 0), 48, Color.decode("#ECEDEB"), 1f); //[]
+            UiStyles.seRoundPanel(pnl, new Insets(0, 0, 0, 0), 48, Color.decode("#ECEDEB"), 1f);
+        }
+        javax.swing.JPanel[] jPanels3 = {jPanel29, jPanel41, jPanel42, jPanel43, jPanel44, jPanel45}; 
+        for (javax.swing.JPanel pnl : jPanels3) {
+            UiStyles.seRoundPanel(pnl, new Insets(8, 16, 8, 16), 32, Color.decode("#ECEDEB"), 0f); 
         }
 
     }
-    
+
 
 
     /**
@@ -154,14 +165,72 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         izinBar = new javax.swing.JProgressBar();
         sakitBar = new javax.swing.JProgressBar();
         alphaBar = new javax.swing.JProgressBar();
-        jPanel29 = new javax.swing.JPanel();
-        jPanel37 = new javax.swing.JPanel();
+        pnlPresKehadiran = new javax.swing.JPanel();
+        jPanel32 = new javax.swing.JPanel();
+        jPanel38 = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jPanel46 = new javax.swing.JPanel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jPanel47 = new javax.swing.JPanel();
+        jPanel48 = new javax.swing.JPanel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jPanel49 = new javax.swing.JPanel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jPanel50 = new javax.swing.JPanel();
+        jPanel51 = new javax.swing.JPanel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jPanel52 = new javax.swing.JPanel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jPanel53 = new javax.swing.JPanel();
+        jPanel54 = new javax.swing.JPanel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jPanel55 = new javax.swing.JPanel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
         jPanel35 = new javax.swing.JPanel();
         pnlBarisBawah = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
+        jPanel37 = new javax.swing.JPanel();
+        jLabel61 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jPanel39 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jPanel40 = new javax.swing.JPanel();
+        RecentComponent = new views.component.RecentComponent();
         jPanel16 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jPanel34 = new javax.swing.JPanel();
+        jPanel29 = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jPanel41 = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jPanel42 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jPanel43 = new javax.swing.JPanel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jPanel44 = new javax.swing.JPanel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jPanel45 = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(958, 582));
         setOpaque(false);
@@ -199,6 +268,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         btnMulaiScan.setBackground(new java.awt.Color(20, 77, 50));
         btnMulaiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnMulaiScan.setForeground(new java.awt.Color(255, 255, 255));
+        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconScan.png"))); // NOI18N
         btnMulaiScan.setText("Mulai Scan");
         btnMulaiScan.setIconTextGap(8);
         btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
@@ -247,6 +317,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconStudents.png"))); // NOI18N
         jLabel1.setText("Siswa");
         jLabel1.setIconTextGap(8);
         jLabel1.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -273,6 +344,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconCheck.png"))); // NOI18N
         jLabel4.setText("Hadir");
         jLabel4.setIconTextGap(8);
         jLabel4.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -299,7 +371,8 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel7.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel7.setText("Hadir");
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconClock.png"))); // NOI18N
+        jLabel7.setText("Terlambat");
         jLabel7.setIconTextGap(8);
         jLabel7.setMinimumSize(new java.awt.Dimension(37, 24));
         jLabel7.setPreferredSize(new java.awt.Dimension(37, 24));
@@ -307,13 +380,13 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel8.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 28)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel8.setText("158");
+        jLabel8.setText("7");
         jLabel8.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 0, 0, 0));
         jPanel5.add(jLabel8, java.awt.BorderLayout.CENTER);
 
         jLabel9.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(34, 118, 75));
-        jLabel9.setText("87.8% kehadiran");
+        jLabel9.setText("Lewat 07:00");
         jLabel9.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 0, 0, 0));
         jPanel5.add(jLabel9, java.awt.BorderLayout.PAGE_END);
 
@@ -325,7 +398,8 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel10.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel10.setText("Hadir");
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconCheckBlue.png"))); // NOI18N
+        jLabel10.setText("Sudah Pulang");
         jLabel10.setIconTextGap(8);
         jLabel10.setMinimumSize(new java.awt.Dimension(37, 24));
         jLabel10.setPreferredSize(new java.awt.Dimension(37, 24));
@@ -333,13 +407,13 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel11.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 28)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel11.setText("158");
+        jLabel11.setText("121");
         jLabel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 0, 0, 0));
         jPanel6.add(jLabel11, java.awt.BorderLayout.CENTER);
 
         jLabel12.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(34, 118, 75));
-        jLabel12.setText("87.8% kehadiran");
+        jLabel12.setText("37 belum scan pulang");
         jLabel12.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 0, 0, 0));
         jPanel6.add(jLabel12, java.awt.BorderLayout.PAGE_END);
 
@@ -351,7 +425,8 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel13.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel13.setText("Hadir");
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconX.png"))); // NOI18N
+        jLabel13.setText("Tidak Hadir");
         jLabel13.setIconTextGap(8);
         jLabel13.setMinimumSize(new java.awt.Dimension(37, 24));
         jLabel13.setPreferredSize(new java.awt.Dimension(37, 24));
@@ -365,7 +440,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel15.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(34, 118, 75));
-        jLabel15.setText("87.8% kehadiran");
+        jLabel15.setText("5 sakit · 3 izin · 2 alpa");
         jLabel15.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 0, 0, 0));
         jPanel7.add(jLabel15, java.awt.BorderLayout.PAGE_END);
 
@@ -642,7 +717,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jLabel23.setPreferredSize(new java.awt.Dimension(91, 40));
         jPanel14.add(jLabel23, java.awt.BorderLayout.PAGE_START);
 
-        jPanel27.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 16, 24));
+        jPanel27.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 12, 24));
         jPanel27.setOpaque(false);
         jPanel27.setLayout(new java.awt.BorderLayout());
 
@@ -695,7 +770,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 5.0;
         gridBagConstraints.weighty = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 4, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 2, 0, 0);
         jPanel31.add(izinBar, gridBagConstraints);
 
         sakitBar.setBackground(new java.awt.Color(255, 255, 255));
@@ -709,7 +784,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 3.0;
         gridBagConstraints.weighty = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 4, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 2, 0, 0);
         jPanel31.add(sakitBar, gridBagConstraints);
 
         alphaBar.setBackground(new java.awt.Color(255, 255, 255));
@@ -723,7 +798,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 2.0;
         gridBagConstraints.weighty = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 4, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 2, 0, 0);
         jPanel31.add(alphaBar, gridBagConstraints);
 
         javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
@@ -751,27 +826,178 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jPanel27.add(jPanel28, java.awt.BorderLayout.PAGE_START);
 
-        jPanel29.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
-        jPanel29.setOpaque(false);
-        jPanel29.setLayout(new java.awt.BorderLayout());
+        pnlPresKehadiran.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
+        pnlPresKehadiran.setOpaque(false);
+        pnlPresKehadiran.setLayout(new java.awt.GridLayout(2, 2, 8, 0));
 
-        jPanel37.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
-        jPanel37.setOpaque(false);
+        jPanel32.setOpaque(false);
+        jPanel32.setLayout(new java.awt.BorderLayout());
 
-        javax.swing.GroupLayout jPanel37Layout = new javax.swing.GroupLayout(jPanel37);
-        jPanel37.setLayout(jPanel37Layout);
-        jPanel37Layout.setHorizontalGroup(
-            jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 260, Short.MAX_VALUE)
-        );
-        jPanel37Layout.setVerticalGroup(
-            jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        jPanel38.setOpaque(false);
+        jPanel38.setPreferredSize(new java.awt.Dimension(55, 26));
+        jPanel38.setLayout(new java.awt.BorderLayout(4, 0));
 
-        jPanel29.add(jPanel37, java.awt.BorderLayout.SOUTH);
+        jLabel45.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
+        jLabel45.setText("•");
+        jLabel45.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jPanel38.add(jLabel45, java.awt.BorderLayout.LINE_START);
 
-        jPanel27.add(jPanel29, java.awt.BorderLayout.CENTER);
+        jLabel46.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel46.setText("Hadir");
+        jPanel38.add(jLabel46, java.awt.BorderLayout.CENTER);
+
+        jPanel32.add(jPanel38, java.awt.BorderLayout.LINE_START);
+
+        jPanel46.setOpaque(false);
+        jPanel46.setPreferredSize(new java.awt.Dimension(70, 26));
+        jPanel46.setLayout(new java.awt.BorderLayout());
+
+        jLabel47.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel47.setText("100%");
+        jLabel47.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel47.setPreferredSize(new java.awt.Dimension(48, 19));
+        jPanel46.add(jLabel47, java.awt.BorderLayout.LINE_END);
+
+        jLabel48.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
+        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel48.setText("47");
+        jPanel46.add(jLabel48, java.awt.BorderLayout.CENTER);
+
+        jPanel32.add(jPanel46, java.awt.BorderLayout.LINE_END);
+
+        pnlPresKehadiran.add(jPanel32);
+
+        jPanel47.setOpaque(false);
+        jPanel47.setLayout(new java.awt.BorderLayout());
+
+        jPanel48.setOpaque(false);
+        jPanel48.setPreferredSize(new java.awt.Dimension(55, 26));
+        jPanel48.setLayout(new java.awt.BorderLayout(4, 0));
+
+        jLabel49.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(34, 118, 75));
+        jLabel49.setText("•");
+        jLabel49.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jPanel48.add(jLabel49, java.awt.BorderLayout.LINE_START);
+
+        jLabel50.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel50.setText("Sakit");
+        jPanel48.add(jLabel50, java.awt.BorderLayout.CENTER);
+
+        jPanel47.add(jPanel48, java.awt.BorderLayout.LINE_START);
+
+        jPanel49.setOpaque(false);
+        jPanel49.setPreferredSize(new java.awt.Dimension(70, 26));
+        jPanel49.setLayout(new java.awt.BorderLayout());
+
+        jLabel51.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel51.setText("100%");
+        jLabel51.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel51.setPreferredSize(new java.awt.Dimension(48, 19));
+        jPanel49.add(jLabel51, java.awt.BorderLayout.LINE_END);
+
+        jLabel52.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
+        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel52.setText("156");
+        jPanel49.add(jLabel52, java.awt.BorderLayout.CENTER);
+
+        jPanel47.add(jPanel49, java.awt.BorderLayout.LINE_END);
+
+        pnlPresKehadiran.add(jPanel47);
+
+        jPanel50.setOpaque(false);
+        jPanel50.setLayout(new java.awt.BorderLayout());
+
+        jPanel51.setOpaque(false);
+        jPanel51.setPreferredSize(new java.awt.Dimension(55, 26));
+        jPanel51.setLayout(new java.awt.BorderLayout(4, 0));
+
+        jLabel53.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
+        jLabel53.setForeground(new java.awt.Color(58, 155, 104));
+        jLabel53.setText("•");
+        jLabel53.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jPanel51.add(jLabel53, java.awt.BorderLayout.LINE_START);
+
+        jLabel54.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel54.setText("Izin");
+        jPanel51.add(jLabel54, java.awt.BorderLayout.CENTER);
+
+        jPanel50.add(jPanel51, java.awt.BorderLayout.LINE_START);
+
+        jPanel52.setOpaque(false);
+        jPanel52.setPreferredSize(new java.awt.Dimension(70, 26));
+        jPanel52.setLayout(new java.awt.BorderLayout());
+
+        jLabel55.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel55.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel55.setText("100%");
+        jLabel55.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel55.setPreferredSize(new java.awt.Dimension(48, 19));
+        jPanel52.add(jLabel55, java.awt.BorderLayout.LINE_END);
+
+        jLabel56.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
+        jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel56.setText("156");
+        jPanel52.add(jLabel56, java.awt.BorderLayout.CENTER);
+
+        jPanel50.add(jPanel52, java.awt.BorderLayout.LINE_END);
+
+        pnlPresKehadiran.add(jPanel50);
+
+        jPanel53.setOpaque(false);
+        jPanel53.setLayout(new java.awt.BorderLayout());
+
+        jPanel54.setOpaque(false);
+        jPanel54.setPreferredSize(new java.awt.Dimension(55, 26));
+        jPanel54.setLayout(new java.awt.BorderLayout(4, 0));
+
+        jLabel57.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
+        jLabel57.setForeground(new java.awt.Color(159, 211, 180));
+        jLabel57.setText("•");
+        jLabel57.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jPanel54.add(jLabel57, java.awt.BorderLayout.LINE_START);
+
+        jLabel58.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel58.setText("Alpha");
+        jPanel54.add(jLabel58, java.awt.BorderLayout.CENTER);
+
+        jPanel53.add(jPanel54, java.awt.BorderLayout.LINE_START);
+
+        jPanel55.setOpaque(false);
+        jPanel55.setPreferredSize(new java.awt.Dimension(70, 26));
+        jPanel55.setLayout(new java.awt.BorderLayout());
+
+        jLabel59.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel59.setText("100%");
+        jLabel59.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel59.setPreferredSize(new java.awt.Dimension(48, 19));
+        jPanel55.add(jLabel59, java.awt.BorderLayout.LINE_END);
+
+        jLabel60.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
+        jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel60.setText("156");
+        jPanel55.add(jLabel60, java.awt.BorderLayout.CENTER);
+
+        jPanel53.add(jPanel55, java.awt.BorderLayout.LINE_END);
+
+        pnlPresKehadiran.add(jPanel53);
+
+        jPanel27.add(pnlPresKehadiran, java.awt.BorderLayout.CENTER);
 
         jPanel14.add(jPanel27, java.awt.BorderLayout.CENTER);
 
@@ -796,17 +1022,55 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel15.setBackground(new java.awt.Color(255, 255, 255));
         jPanel15.setMinimumSize(new java.awt.Dimension(390, 0));
         jPanel15.setPreferredSize(new java.awt.Dimension(390, 162));
+        jPanel15.setLayout(new java.awt.BorderLayout());
 
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
+        jPanel37.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 0, 24));
+        jPanel37.setOpaque(false);
+        jPanel37.setPreferredSize(new java.awt.Dimension(91, 40));
+        jPanel37.setLayout(new java.awt.BorderLayout());
+
+        jLabel61.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel61.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel61.setText("Kehadiran Per Kelas");
+        jLabel61.setPreferredSize(new java.awt.Dimension(159, 40));
+        jPanel37.add(jLabel61, java.awt.BorderLayout.LINE_START);
+
+        jButton1.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(13, 59, 38));
+        jButton1.setText("Lihat Semua");
+        jButton1.setMargin(new java.awt.Insets(0, 16, 0, 16));
+        jButton1.setPreferredSize(new java.awt.Dimension(114, 23));
+        jPanel37.add(jButton1, java.awt.BorderLayout.LINE_END);
+
+        jPanel15.add(jPanel37, java.awt.BorderLayout.PAGE_START);
+
+        jPanel39.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 24, 16, 24));
+        jPanel39.setOpaque(false);
+        jPanel39.setLayout(new java.awt.CardLayout());
+
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        jPanel40.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
+        jPanel40.setLayout(jPanel40Layout);
+        jPanel40Layout.setHorizontalGroup(
+            jPanel40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(RecentComponent, javax.swing.GroupLayout.DEFAULT_SIZE, 342, Short.MAX_VALUE)
         );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        jPanel40Layout.setVerticalGroup(
+            jPanel40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel40Layout.createSequentialGroup()
+                .addComponent(RecentComponent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 49, Short.MAX_VALUE))
         );
+
+        jScrollPane1.setViewportView(jPanel40);
+
+        jPanel39.add(jScrollPane1, "card2");
+
+        jPanel15.add(jPanel39, java.awt.BorderLayout.CENTER);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -829,18 +1093,161 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jLabel26.setPreferredSize(new java.awt.Dimension(91, 40));
         jPanel16.add(jLabel26, java.awt.BorderLayout.PAGE_START);
 
-        jPanel34.setBorder(javax.swing.BorderFactory.createEmptyBorder(12, 20, 16, 24));
+        jPanel34.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 16, 24));
         jPanel34.setOpaque(false);
+
+        jPanel29.setBackground(new java.awt.Color(246, 247, 245));
+        jPanel29.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 8, 16));
+        jPanel29.setPreferredSize(new java.awt.Dimension(141, 41));
+        jPanel29.setLayout(new java.awt.BorderLayout(8, 0));
+
+        jLabel27.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel27.setText("7A");
+        jPanel29.add(jLabel27, java.awt.BorderLayout.LINE_START);
+
+        jLabel28.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel28.setText("100%");
+        jPanel29.add(jLabel28, java.awt.BorderLayout.LINE_END);
+
+        jLabel29.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel29.setText("23/24");
+        jPanel29.add(jLabel29, java.awt.BorderLayout.CENTER);
+
+        jPanel41.setBackground(new java.awt.Color(246, 247, 245));
+        jPanel41.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 8, 16));
+        jPanel41.setPreferredSize(new java.awt.Dimension(141, 41));
+        jPanel41.setLayout(new java.awt.BorderLayout(8, 0));
+
+        jLabel30.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel30.setText("7A");
+        jPanel41.add(jLabel30, java.awt.BorderLayout.LINE_START);
+
+        jLabel31.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel31.setText("100%");
+        jPanel41.add(jLabel31, java.awt.BorderLayout.LINE_END);
+
+        jLabel32.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel32.setText("23/24");
+        jPanel41.add(jLabel32, java.awt.BorderLayout.CENTER);
+
+        jPanel42.setBackground(new java.awt.Color(246, 247, 245));
+        jPanel42.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 8, 16));
+        jPanel42.setPreferredSize(new java.awt.Dimension(141, 41));
+        jPanel42.setLayout(new java.awt.BorderLayout(8, 0));
+
+        jLabel33.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel33.setText("7A");
+        jPanel42.add(jLabel33, java.awt.BorderLayout.LINE_START);
+
+        jLabel34.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel34.setText("100%");
+        jPanel42.add(jLabel34, java.awt.BorderLayout.LINE_END);
+
+        jLabel35.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel35.setText("23/24");
+        jPanel42.add(jLabel35, java.awt.BorderLayout.CENTER);
+
+        jPanel43.setBackground(new java.awt.Color(246, 247, 245));
+        jPanel43.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 8, 16));
+        jPanel43.setPreferredSize(new java.awt.Dimension(141, 41));
+        jPanel43.setLayout(new java.awt.BorderLayout(8, 0));
+
+        jLabel36.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel36.setText("7A");
+        jPanel43.add(jLabel36, java.awt.BorderLayout.LINE_START);
+
+        jLabel37.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel37.setText("100%");
+        jPanel43.add(jLabel37, java.awt.BorderLayout.LINE_END);
+
+        jLabel38.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel38.setText("23/24");
+        jPanel43.add(jLabel38, java.awt.BorderLayout.CENTER);
+
+        jPanel44.setBackground(new java.awt.Color(246, 247, 245));
+        jPanel44.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 8, 16));
+        jPanel44.setPreferredSize(new java.awt.Dimension(141, 41));
+        jPanel44.setLayout(new java.awt.BorderLayout(8, 0));
+
+        jLabel39.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel39.setText("7A");
+        jPanel44.add(jLabel39, java.awt.BorderLayout.LINE_START);
+
+        jLabel40.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel40.setText("100%");
+        jPanel44.add(jLabel40, java.awt.BorderLayout.LINE_END);
+
+        jLabel41.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel41.setText("23/24");
+        jPanel44.add(jLabel41, java.awt.BorderLayout.CENTER);
+
+        jPanel45.setBackground(new java.awt.Color(246, 247, 245));
+        jPanel45.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 8, 16));
+        jPanel45.setPreferredSize(new java.awt.Dimension(141, 41));
+        jPanel45.setLayout(new java.awt.BorderLayout(8, 0));
+
+        jLabel42.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel42.setText("7A");
+        jPanel45.add(jLabel42, java.awt.BorderLayout.LINE_START);
+
+        jLabel43.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel43.setText("100%");
+        jPanel45.add(jLabel43, java.awt.BorderLayout.LINE_END);
+
+        jLabel44.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel44.setText("23/24");
+        jPanel45.add(jLabel44, java.awt.BorderLayout.CENTER);
 
         javax.swing.GroupLayout jPanel34Layout = new javax.swing.GroupLayout(jPanel34);
         jPanel34.setLayout(jPanel34Layout);
         jPanel34Layout.setHorizontalGroup(
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 508, Short.MAX_VALUE)
+            .addGroup(jPanel34Layout.createSequentialGroup()
+                .addGap(1, 1, 1)
+                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel34Layout.createSequentialGroup()
+                        .addComponent(jPanel29, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                        .addGap(8, 8, 8)
+                        .addComponent(jPanel41, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                        .addGap(8, 8, 8)
+                        .addComponent(jPanel42, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE))
+                    .addGroup(jPanel34Layout.createSequentialGroup()
+                        .addComponent(jPanel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(8, 8, 8)
+                        .addComponent(jPanel44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(8, 8, 8)
+                        .addComponent(jPanel45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel34Layout.setVerticalGroup(
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 95, Short.MAX_VALUE)
+            .addGroup(jPanel34Layout.createSequentialGroup()
+                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8, 8, 8)
+                .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel45, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         jPanel16.add(jPanel34, java.awt.BorderLayout.CENTER);
@@ -854,7 +1261,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(0, 8, 0, 0);
         pnlBarisBawah.add(jPanel16, gridBagConstraints);
 
-        jPanel35.add(pnlBarisBawah, java.awt.BorderLayout.PAGE_START);
+        jPanel35.add(pnlBarisBawah, java.awt.BorderLayout.CENTER);
 
         jPanel8.add(jPanel35, java.awt.BorderLayout.CENTER);
 
@@ -868,15 +1275,16 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMulaiScanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMulaiScanActionPerformed
-        // aksi tombol mulai scan
     }//GEN-LAST:event_btnMulaiScanActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private views.component.RecentComponent RecentComponent;
     private javax.swing.JProgressBar alphaBar;
     private javax.swing.JButton btnMulaiScan;
     private javax.swing.JProgressBar hadirBar;
     private javax.swing.JProgressBar izinBar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -896,10 +1304,45 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -928,13 +1371,32 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel30;
     private javax.swing.JPanel jPanel31;
+    private javax.swing.JPanel jPanel32;
     private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel34;
     private javax.swing.JPanel jPanel35;
     private javax.swing.JPanel jPanel36;
     private javax.swing.JPanel jPanel37;
+    private javax.swing.JPanel jPanel38;
+    private javax.swing.JPanel jPanel39;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel40;
+    private javax.swing.JPanel jPanel41;
+    private javax.swing.JPanel jPanel42;
+    private javax.swing.JPanel jPanel43;
+    private javax.swing.JPanel jPanel44;
+    private javax.swing.JPanel jPanel45;
+    private javax.swing.JPanel jPanel46;
+    private javax.swing.JPanel jPanel47;
+    private javax.swing.JPanel jPanel48;
+    private javax.swing.JPanel jPanel49;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel50;
+    private javax.swing.JPanel jPanel51;
+    private javax.swing.JPanel jPanel52;
+    private javax.swing.JPanel jPanel53;
+    private javax.swing.JPanel jPanel54;
+    private javax.swing.JPanel jPanel55;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
@@ -945,11 +1407,13 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
     private javax.swing.JProgressBar jProgressBar4;
     private javax.swing.JProgressBar jProgressBar5;
     private javax.swing.JProgressBar jProgressBar6;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblHeader;
     private javax.swing.JLabel lblHeader1;
     private javax.swing.JPanel pnlBarisAtas;
     private javax.swing.JPanel pnlBarisBawah;
     private javax.swing.JPanel pnlHeader;
+    private javax.swing.JPanel pnlPresKehadiran;
     private javax.swing.JProgressBar sakitBar;
     private javax.swing.JScrollPane scrolldashab;
     // End of variables declaration//GEN-END:variables

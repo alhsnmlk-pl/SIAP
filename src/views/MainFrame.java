@@ -18,6 +18,7 @@ import javax.swing.JToggleButton;
 import javax.swing.Timer;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import models.modelUser;
 import views.component.UiStyles;
 
 /**
@@ -26,27 +27,30 @@ import views.component.UiStyles;
  */
 public class MainFrame extends javax.swing.JFrame {
 
-    private String userRole = "Operator";
-    private CardLayout cardLayout; // buat nyimpen card layout dari panelContent
+    private modelUser currentUser = new modelUser();
+    private CardLayout cardLayout; //menyipan card layout dari panelContent
 
     /**
      * Creates new form FrameMain
      */
     public MainFrame() {
-        // siapin tampilan utama dan semua menunya
         initComponents();
         setSidebarSvgIcons();
         updateSearchBorder();
         startClock();
-        styleSidebarHeader();
-        styleSidebarFooter();
+        styleSidebar();
+        updateRoleLabel();
         styleBtnSidebar();
         styleScrollBar();
         styleMainHeader();
         inisiasiPanel();
     }
 
-    // ganti icon png ke svg biar tidak blur
+    public void setUser(modelUser currentUser) {
+        this.currentUser = currentUser;
+    }
+
+    // mnggganti icon png ke svg agar hd ketika zoom
     private void setSidebarSvgIcons() {
 
         lblNamaSekolah.setIcon(new FlatSVGIcon("iconMf/siapV2Sidebar.svg"));
@@ -93,33 +97,23 @@ public class MainFrame extends javax.swing.JFrame {
 
     }
 
-    // atur tampilan bagian header sidebar
-    private void styleSidebarHeader() {
+    //tampilan sidebar
+    private void styleSidebar() {
         UiStyles.seRoundPanel(panelSidebar, new Insets(0, 0, 0, 0), 48, Color.decode("#ECEDEB"), 0f);
-    }
-
-    // atur tampilan footer sidebar dan teks role
-    private void styleSidebarFooter() {
         UiStyles.seRoundPanel(panelIsisfooter, new Insets(16, 16, 16, 16), 24, Color.decode("#ECEDEB"), 0f);
         UiStyles.setButtonv2(btnLogout);
-        updateRoleLabel();
     }
 
-    // role dari login dipakai utk isi teks footer
-    public void setUserRole(String userRole) {
-        this.userRole = userRole;
-        updateRoleLabel();
-    }
-
+    //role sesuai login
     private void updateRoleLabel() {
-        // sesuaikan tulisan role sama role yang login
-        if ("Kepala Madrasah".equalsIgnoreCase(userRole)) {
-            // nama role dibuat dua baris biar muat di footer
+        String userRole = currentUser.getRole();
+        // sesuaikan tulisan role dengan user yang diterima dari login
+        if (userRole != null && "Kepala Madrasah".equalsIgnoreCase(userRole.trim())) {
+            // nama role dibuat dua baris agar muat di footer
             lblRole.setText("<html>Kepala<br>Madrasah</html>");
             panelFooterSidebar.setPreferredSize(new java.awt.Dimension(240, 114));
             panelIsisfooter.setPreferredSize(new java.awt.Dimension(208, 88));
         } else {
-            // kalau bukan kepala, teks role jadi operator
             lblRole.setText("Operator");
         }
     }
@@ -236,10 +230,10 @@ public class MainFrame extends javax.swing.JFrame {
     private void inisiasiPanel() {
         // ambil card layout dari panelContent
         cardLayout = (CardLayout) panelContent.getLayout();
-        // kosongin panel bawaan NetBeans biar dashboard-nya gak dobel
+        // kosongin panel bawaan nwteans agar dashboard tdk dobel
         panelContent.removeAll();
 
-        // grup tombol menu biar yang kepilih cuma satu
+        // grup tombol menu agar yang kepilih satu
         ButtonGroup menuPages = new ButtonGroup();
 
         addMenuPage(menuPages, btndashAbs, "dashboard-absensi", new views.absensi.DashboarAbsensiPanel());
@@ -1381,7 +1375,7 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     private void updateSearchBorder() {
-        // kasih warna border sesuai kolom pencarian lagi fokus atau enggak
+        
         boolean fokus = tField.hasFocus();
         java.awt.Color c;
         if (fokus) {

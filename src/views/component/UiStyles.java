@@ -56,4 +56,15 @@ public final class UiStyles {
                 + "hoverBackground:#E5E5E5; pressedBackground:#CCCCCC");
         btnv2.setFocusPainted(false);
     }
+    
+    public static void setButtonv3(JButton btnv3) {
+        // atur style tombol kedua
+        btnv3.putClientProperty("FlatLaf.style",
+                "arc:100;"
+                + "borderWidth:1; borderColor:#144D32; hoverBorderColor:#144D32; pressedBorderColor:#144D32;"
+                + "focusWidth:0; innerFocusWidth:0;"
+                + "background:#FFFFFF; foreground:#0D3B26;"
+                + "hoverBackground:#E5E5E5; pressedBackground:#CCCCCC");
+        btnv3.setFocusPainted(false);
+    }
 }
