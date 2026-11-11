@@ -4,6 +4,8 @@
  */
 package views.absensi;
 
+import views.component.UiStyles;
+
 /**
  *
  * @author Al
@@ -14,8 +16,20 @@ public class ScanQRPanel extends javax.swing.JPanel {
      * Creates new form ScanQRPanel
      */
     public ScanQRPanel() {
-        // siapin tampilan panel scan QR
         initComponents();
+        tglScanQR.setSelected(true);
+        UiStyles.seRoundPanel(jPanel13, 4, 4, 4, 4, 100, "#ECEDEB", 1f);
+        UiStyles.setTogleBtn(tglScanQR, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#144D32", "#FFFFFF");
+        UiStyles.setTogleBtn(tglManual, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#144D32", "#FFFFFF");
+        tflberangkat.setSelected(true);
+        UiStyles.seRoundPanel(jPanel14, 4, 4, 4, 4, 100, "#ECEDEB", 1f);
+        UiStyles.setTogleBtn(tflberangkat, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#FFFFFF", "#144D32");
+        UiStyles.setTogleBtn(tglPulang, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#FFFFFF", "#144D32");
+        UiStyles.seRoundPanel(jPanel2, 0, 0, 0, 0, 32, "#ECEDEB", 1f);
+        UiStyles.seRoundPanel(jPanel3, 0, 0, 0, 0, 32, "#ECEDEB", 1f);
+        UiStyles.setButton(btnSimulasiScan, "#144D32", "#FFFFFF", "#0D3C26", "#0A2F1D", null, 0);
+        UiStyles.setCBox(cPerangkatCam);
+        UiStyles.setCBox(cAbsenQR);
     }
 
     /**
@@ -26,11 +40,10 @@ public class ScanQRPanel extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
-        pnlHeader = new javax.swing.JPanel();
-        lblHeader = new javax.swing.JLabel();
-        lblHeader1 = new javax.swing.JLabel();
-        btnMulaiScan = new javax.swing.JButton();
+        groupTglScanManual = new javax.swing.ButtonGroup();
+        groupTglberangkatPulang = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -38,24 +51,180 @@ public class ScanQRPanel extends javax.swing.JPanel {
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jPanel7 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        cPerangkatCam = new javax.swing.JComboBox<>();
         jPanel8 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        jPanel12 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        btnSimulasiScan = new javax.swing.JButton();
+        cAbsenQR = new javax.swing.JComboBox<>();
         jPanel3 = new javax.swing.JPanel();
+        jPanel16 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        pnlAbsenKosong = new javax.swing.JPanel();
+        jPanel17 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        pnlHeader = new javax.swing.JPanel();
+        lblHeader = new javax.swing.JLabel();
+        lblHeader1 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
+        tflberangkat = new javax.swing.JToggleButton();
+        tglPulang = new javax.swing.JToggleButton();
+        jPanel13 = new javax.swing.JPanel();
+        tglScanQR = new javax.swing.JToggleButton();
+        tglManual = new javax.swing.JToggleButton();
 
+        setOpaque(false);
         setLayout(new java.awt.BorderLayout());
+
+        jPanel1.setLayout(new java.awt.GridLayout(1, 2, 16, 16));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new java.awt.BorderLayout());
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 0, 24));
+        jPanel4.setOpaque(false);
+        jPanel4.setPreferredSize(new java.awt.Dimension(554, 40));
+        jPanel4.setLayout(new java.awt.CardLayout());
+
+        jLabel1.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel1.setText("Kamera");
+        jPanel4.add(jLabel1, "card2");
+
+        jPanel2.add(jPanel4, java.awt.BorderLayout.PAGE_START);
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 24, 24));
+        jPanel5.setOpaque(false);
+        jPanel5.setLayout(new java.awt.BorderLayout());
+
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.setOpaque(false);
+        jPanel6.setPreferredSize(new java.awt.Dimension(506, 72));
+        jPanel6.setLayout(new java.awt.BorderLayout());
+
+        jLabel2.setFont(new java.awt.Font("Plus Jakarta Sans Medium", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel2.setText("Perangkat Kamera");
+        jLabel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 8, 0));
+        jLabel2.setPreferredSize(new java.awt.Dimension(96, 32));
+        jPanel6.add(jLabel2, java.awt.BorderLayout.PAGE_START);
+
+        cPerangkatCam.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        cPerangkatCam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kamera Depan (Integrated Webcam)", "Item 2", "Item 3", "Item 4" }));
+        jPanel6.add(cPerangkatCam, java.awt.BorderLayout.CENTER);
+
+        jPanel5.add(jPanel6, java.awt.BorderLayout.PAGE_START);
+
+        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel8.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
+        jPanel8.setOpaque(false);
+        jPanel8.setLayout(new java.awt.CardLayout());
+
+        jPanel10.setBackground(new java.awt.Color(20, 77, 50));
+        jPanel10.setOpaque(false);
+        jPanel10.setLayout(new java.awt.CardLayout());
+
+        jPanel12.setBackground(new java.awt.Color(20, 77, 50));
+        jPanel12.setLayout(new java.awt.CardLayout());
+
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconCamera.png"))); // NOI18N
+        jPanel12.add(jLabel7, "card2");
+
+        jPanel10.add(jPanel12, "card2");
+
+        jPanel8.add(jPanel10, "card2");
+
+        jPanel5.add(jPanel8, java.awt.BorderLayout.CENTER);
+
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel7.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
+        jPanel7.setOpaque(false);
+        jPanel7.setPreferredSize(new java.awt.Dimension(506, 56));
+        jPanel7.setLayout(new java.awt.BorderLayout(8, 8));
+
+        btnSimulasiScan.setBackground(new java.awt.Color(20, 77, 50));
+        btnSimulasiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        btnSimulasiScan.setForeground(new java.awt.Color(255, 255, 255));
+        btnSimulasiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconQr.png"))); // NOI18N
+        btnSimulasiScan.setText("Simulasikan Scan");
+        btnSimulasiScan.setIconTextGap(8);
+        btnSimulasiScan.addActionListener(this::btnSimulasiScanActionPerformed);
+        jPanel7.add(btnSimulasiScan, java.awt.BorderLayout.CENTER);
+
+        cAbsenQR.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        cAbsenQR.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hadir", "Item 2", "Item 3", "Item 4" }));
+        cAbsenQR.setPreferredSize(new java.awt.Dimension(144, 22));
+        cAbsenQR.addActionListener(this::cAbsenQRActionPerformed);
+        jPanel7.add(cAbsenQR, java.awt.BorderLayout.LINE_END);
+
+        jPanel5.add(jPanel7, java.awt.BorderLayout.PAGE_END);
+
+        jPanel2.add(jPanel5, java.awt.BorderLayout.CENTER);
+
+        jPanel1.add(jPanel2);
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setLayout(new java.awt.BorderLayout());
+
+        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel16.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 0, 24));
+        jPanel16.setOpaque(false);
+        jPanel16.setPreferredSize(new java.awt.Dimension(554, 40));
+        jPanel16.setLayout(new java.awt.CardLayout());
+
+        jLabel3.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel3.setText("Identitas & Konfirmasi");
+        jPanel16.add(jLabel3, "card2");
+
+        jPanel3.add(jPanel16, java.awt.BorderLayout.PAGE_START);
+
+        jPanel11.setOpaque(false);
+        jPanel11.setLayout(new java.awt.CardLayout());
+
+        pnlAbsenKosong.setOpaque(false);
+        pnlAbsenKosong.setLayout(new java.awt.GridBagLayout());
+
+        jPanel17.setOpaque(false);
+        jPanel17.setPreferredSize(new java.awt.Dimension(200, 78));
+        jPanel17.setLayout(new java.awt.BorderLayout());
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconResult.png"))); // NOI18N
+        jPanel17.add(jLabel5, java.awt.BorderLayout.PAGE_START);
+
+        jLabel6.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Belum ada QR terdeteksi.");
+        jLabel6.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 0, 0, 0));
+        jPanel17.add(jLabel6, java.awt.BorderLayout.CENTER);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        pnlAbsenKosong.add(jPanel17, gridBagConstraints);
+
+        jPanel11.add(pnlAbsenKosong, "card2");
+
+        jPanel3.add(jPanel11, java.awt.BorderLayout.CENTER);
+
+        jPanel1.add(jPanel3);
+
+        add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pnlHeader.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 16, 0));
         pnlHeader.setMinimumSize(new java.awt.Dimension(958, 69));
         pnlHeader.setOpaque(false);
+        pnlHeader.setPreferredSize(new java.awt.Dimension(1124, 69));
 
         lblHeader.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 20)); // NOI18N
         lblHeader.setForeground(new java.awt.Color(22, 32, 27));
@@ -74,264 +243,111 @@ public class ScanQRPanel extends javax.swing.JPanel {
         lblHeader1.setMinimumSize(new java.awt.Dimension(627, 28));
         lblHeader1.setPreferredSize(new java.awt.Dimension(627, 28));
 
-        btnMulaiScan.setBackground(new java.awt.Color(20, 77, 50));
-        btnMulaiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        btnMulaiScan.setForeground(new java.awt.Color(255, 255, 255));
-        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconQr.png"))); // NOI18N
-        btnMulaiScan.setText("Scan QR");
-        btnMulaiScan.setIconTextGap(8);
-        btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
-        btnMulaiScan.setMaximumSize(new java.awt.Dimension(130, 40));
-        btnMulaiScan.setMinimumSize(new java.awt.Dimension(130, 40));
-        btnMulaiScan.setPreferredSize(new java.awt.Dimension(130, 40));
-        btnMulaiScan.addActionListener(this::btnMulaiScanActionPerformed);
+        jPanel9.setOpaque(false);
+        jPanel9.setPreferredSize(new java.awt.Dimension(439, 53));
+        jPanel9.setLayout(new java.awt.GridLayout(1, 2, 8, 8));
+
+        jPanel14.setBackground(new java.awt.Color(241, 245, 249));
+        jPanel14.setBorder(javax.swing.BorderFactory.createEmptyBorder(4, 4, 4, 4));
+        jPanel14.setPreferredSize(new java.awt.Dimension(394, 71));
+        jPanel14.setLayout(new java.awt.GridLayout(1, 2, 4, 4));
+
+        tflberangkat.setBackground(new java.awt.Color(241, 245, 249));
+        groupTglberangkatPulang.add(tflberangkat);
+        tflberangkat.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        tflberangkat.setText("Berangkat");
+        tflberangkat.setFocusPainted(false);
+        tflberangkat.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jPanel14.add(tflberangkat);
+
+        tglPulang.setBackground(new java.awt.Color(241, 245, 249));
+        groupTglberangkatPulang.add(tglPulang);
+        tglPulang.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        tglPulang.setText("Pulang");
+        tglPulang.setFocusPainted(false);
+        tglPulang.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jPanel14.add(tglPulang);
+
+        jPanel9.add(jPanel14);
+
+        jPanel13.setBackground(new java.awt.Color(241, 245, 249));
+        jPanel13.setBorder(javax.swing.BorderFactory.createEmptyBorder(4, 4, 4, 4));
+        jPanel13.setPreferredSize(new java.awt.Dimension(394, 71));
+        jPanel13.setLayout(new java.awt.GridLayout(1, 2, 4, 4));
+
+        tglScanQR.setBackground(new java.awt.Color(241, 245, 249));
+        groupTglScanManual.add(tglScanQR);
+        tglScanQR.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        tglScanQR.setText("Scan QR");
+        tglScanQR.setFocusPainted(false);
+        tglScanQR.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jPanel13.add(tglScanQR);
+
+        tglManual.setBackground(new java.awt.Color(241, 245, 249));
+        groupTglScanManual.add(tglManual);
+        tglManual.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        tglManual.setText("Manual");
+        tglManual.setFocusPainted(false);
+        tglManual.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jPanel13.add(tglManual);
+
+        jPanel9.add(jPanel13);
 
         javax.swing.GroupLayout pnlHeaderLayout = new javax.swing.GroupLayout(pnlHeader);
         pnlHeader.setLayout(pnlHeaderLayout);
         pnlHeaderLayout.setHorizontalGroup(
             pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlHeaderLayout.createSequentialGroup()
-                .addGroup(pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblHeader1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 552, Short.MAX_VALUE)
-                .addComponent(btnMulaiScan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(112, 112, 112))
+                .addGroup(pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblHeader1, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 323, Short.MAX_VALUE)
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnlHeaderLayout.setVerticalGroup(
             pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlHeaderLayout.createSequentialGroup()
-                .addGroup(pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnMulaiScan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(pnlHeaderLayout.createSequentialGroup()
-                        .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(4, 4, 4)
-                        .addComponent(lblHeader1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(lblHeader1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        add(pnlHeader, java.awt.BorderLayout.PAGE_START);
-
-        jPanel1.setLayout(new java.awt.GridLayout(1, 2, 16, 16));
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setLayout(new java.awt.BorderLayout());
-
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel1.setText("Kamera");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(jLabel1)
-                .addContainerGap(475, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-        );
-
-        jPanel2.add(jPanel4, java.awt.BorderLayout.PAGE_START);
-
-        jPanel5.setLayout(new java.awt.BorderLayout());
-
-        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel2.setText("Perangkat Kamera");
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kamera Depan (Integrated Webcam)", "Item 2", "Item 3", "Item 4" }));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jComboBox1, 0, 548, Short.MAX_VALUE)))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        jPanel5.add(jPanel6, java.awt.BorderLayout.PAGE_START);
-
-        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
-
-        jButton1.setBackground(new java.awt.Color(20, 77, 50));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconQr.png"))); // NOI18N
-        jButton1.setText("Simulasikan Scan");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hadir", "Item 2", "Item 3", "Item 4" }));
-        jComboBox2.addActionListener(this::jComboBox2ActionPerformed);
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 112, Short.MAX_VALUE)
-                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28))
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(34, Short.MAX_VALUE)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27))
-        );
-
-        jPanel5.add(jPanel7, java.awt.BorderLayout.PAGE_END);
-
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-
-        jPanel10.setBackground(new java.awt.Color(20, 77, 50));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconCamera.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(73, 73, 73)
-                .addComponent(jLabel3)
-                .addContainerGap(73, Short.MAX_VALUE))
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(61, 61, 61)
-                .addComponent(jLabel3)
-                .addContainerGap(74, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(123, 123, 123)
-                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(221, Short.MAX_VALUE))
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlHeaderLayout.createSequentialGroup()
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel5.add(jPanel8, java.awt.BorderLayout.CENTER);
-
-        jPanel2.add(jPanel5, java.awt.BorderLayout.CENTER);
-
-        jPanel1.add(jPanel2);
-
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-
-        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel4.setText("Identitas & Konfirmasi");
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(jLabel4)
-                .addContainerGap(392, Short.MAX_VALUE))
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-        );
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconResult.png"))); // NOI18N
-
-        jLabel6.setText("Belum ada QR terdeteksi.");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(250, 250, 250))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(196, 196, 196))))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(157, 157, 157)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
-                .addGap(0, 249, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jPanel3);
-
-        add(jPanel1, java.awt.BorderLayout.CENTER);
+        add(pnlHeader, java.awt.BorderLayout.PAGE_START);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnSimulasiScanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimulasiScanActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnSimulasiScanActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void cAbsenQRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cAbsenQRActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
-
-    private void btnMulaiScanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMulaiScanActionPerformed
-        // aksi tombol mulai scan
-    }//GEN-LAST:event_btnMulaiScanActionPerformed
+    }//GEN-LAST:event_cAbsenQRActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnMulaiScan;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JButton btnSimulasiScan;
+    private javax.swing.JComboBox<String> cAbsenQR;
+    private javax.swing.JComboBox<String> cPerangkatCam;
+    private javax.swing.ButtonGroup groupTglScanManual;
+    private javax.swing.ButtonGroup groupTglberangkatPulang;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -339,8 +355,14 @@ public class ScanQRPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JLabel lblHeader;
     private javax.swing.JLabel lblHeader1;
+    private javax.swing.JPanel pnlAbsenKosong;
     private javax.swing.JPanel pnlHeader;
+    private javax.swing.JToggleButton tflberangkat;
+    private javax.swing.JToggleButton tglManual;
+    private javax.swing.JToggleButton tglPulang;
+    private javax.swing.JToggleButton tglScanQR;
     // End of variables declaration//GEN-END:variables
 }

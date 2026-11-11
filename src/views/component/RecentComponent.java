@@ -34,13 +34,13 @@ public class RecentComponent extends javax.swing.JPanel {
 
         private final String label;
         private final Color backgroundColor;
-        private final Color borderColor;
+        private final String borderHex;
         private final Color textColor;
 
         Status(String label, String backgroundHex, String borderHex, String textHex) {
             this.label = label;
             this.backgroundColor = Color.decode(backgroundHex);
-            this.borderColor = Color.decode(borderHex);
+            this.borderHex = borderHex;
             this.textColor = Color.decode(textHex);
         }
 
@@ -107,7 +107,7 @@ public class RecentComponent extends javax.swing.JPanel {
     // buat tampilan satu baris dengan data bawaan editor formulir
     public RecentComponent() {
         initComponents();
-        UiStyles.seRoundPanel(jPanel60, new Insets(0, 0, 0, 0), 999, Color.decode("#ECEDEB"), 0f); 
+        UiStyles.seRoundPanel(jPanel60, 0, 0, 0, 0, 999, "#ECEDEB", 0f); 
         jPanel58.setBorder(BorderFactory.createEmptyBorder());
         jPanel58.setLayout(new FlowLayout(FlowLayout.RIGHT, 0, 7));
         setStatus(Status.DITERIMA);
@@ -135,7 +135,7 @@ public class RecentComponent extends javax.swing.JPanel {
         jLabel65.setForeground(status.textColor);
         lblBadge.setBackground(status.backgroundColor);
         lblBadge.setOpaque(true);
-        UiStyles.seRoundPanel(lblBadge, new Insets(0, 8, 0, 8), 8, status.borderColor, 1f);
+        UiStyles.seRoundPanel(lblBadge, 0, 8, 0, 8, 8, status.borderHex, 1f);
 
         // lebar badge menyesuaikan panjang tulisannya
         FontMetrics metrics = jLabel65.getFontMetrics(jLabel65.getFont());

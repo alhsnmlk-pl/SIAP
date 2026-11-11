@@ -1,6 +1,8 @@
 package views.component;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JScrollPane;
 import javax.swing.SwingUtilities;
 
@@ -10,6 +12,79 @@ import javax.swing.SwingUtilities;
 public class WrapLayout extends FlowLayout
 {
 	private Dimension preferredLayoutSize;
+
+	/**
+	 * Wraps components according to their preferred widths. Every row uses the
+	 * same column widths, so an incomplete row remains left-aligned without
+	 * stretching its remaining components.
+	 */
+	@Override
+	public void layoutContainer(Container target)
+	{
+		synchronized (target.getTreeLock())
+		{
+			Insets insets = target.getInsets();
+			int hgap = getHgap();
+			int vgap = getVgap();
+			int availableWidth = Math.max(1, target.getWidth()
+					- insets.left - insets.right - (hgap * 2));
+			int rowPreferredWidth = 0;
+			List<List<Component>> rows = new ArrayList<>();
+			List<Component> row = new ArrayList<>();
+
+			for (Component component : target.getComponents())
+			{
+				if (!component.isVisible())
+					continue;
+
+				Dimension preferred = component.getPreferredSize();
+				int addition = preferred.width + (row.isEmpty() ? 0 : hgap);
+
+				if (!row.isEmpty() && rowPreferredWidth + addition > availableWidth)
+				{
+					rows.add(row);
+					row = new ArrayList<>();
+					rowPreferredWidth = 0;
+					addition = preferred.width;
+				}
+
+				row.add(component);
+				rowPreferredWidth += addition;
+			}
+
+			if (!row.isEmpty())
+				rows.add(row);
+
+			int columns = 0;
+			for (List<Component> currentRow : rows)
+				columns = Math.max(columns, currentRow.size());
+
+			if (columns == 0)
+				return;
+
+			int totalCardWidth = Math.max(columns, availableWidth - hgap * (columns - 1));
+			int baseWidth = totalCardWidth / columns;
+			int remainder = totalCardWidth % columns;
+			int y = insets.top + vgap;
+
+			for (List<Component> currentRow : rows)
+			{
+				int rowHeight = 0;
+				for (Component component : currentRow)
+					rowHeight = Math.max(rowHeight, component.getPreferredSize().height);
+
+				int x = insets.left + hgap;
+				for (int column = 0; column < currentRow.size(); column++)
+				{
+					int width = baseWidth + (column < remainder ? 1 : 0);
+					currentRow.get(column).setBounds(x, y, width, rowHeight);
+					x += width + hgap;
+				}
+
+				y += rowHeight + vgap;
+			}
+		}
+	}
 
 	/**
 	* Constructs a new <code>WrapLayout</code> with a left

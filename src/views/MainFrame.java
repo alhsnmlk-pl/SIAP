@@ -8,7 +8,6 @@ import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 import java.awt.CardLayout;
 import java.awt.Color;
-import java.awt.Insets;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -99,9 +98,9 @@ public class MainFrame extends javax.swing.JFrame {
 
     //tampilan sidebar
     private void styleSidebar() {
-        UiStyles.seRoundPanel(panelSidebar, new Insets(0, 0, 0, 0), 48, Color.decode("#ECEDEB"), 0f);
-        UiStyles.seRoundPanel(panelIsisfooter, new Insets(16, 16, 16, 16), 24, Color.decode("#ECEDEB"), 0f);
-        UiStyles.setButtonv2(btnLogout);
+        UiStyles.seRoundPanel(panelSidebar, 0, 0, 0, 0, 48, "#ECEDEB", 0f);
+        UiStyles.seRoundPanel(panelIsisfooter, 16, 16, 16, 16, 24, "#ECEDEB", 0f);
+        UiStyles.setButton(btnLogout, "#FFFFFF", "#0D3B26", "#E5E5E5", "#CCCCCC", null, 0);
     }
 
     //role sesuai login
@@ -212,11 +211,11 @@ public class MainFrame extends javax.swing.JFrame {
 
     // atur bagian header halaman utama
     private void styleMainHeader() {
-        UiStyles.seRoundPanel(panelMainHeader, new Insets(8, 16, 8, 16), 48, Color.decode("#ECEDEB"), 1f);
-        UiStyles.seRoundPanel(panelContent, new Insets(16, 16, 16, 16), 48, Color.decode("#ECEDEB"), 1f);
+        UiStyles.seRoundPanel(panelMainHeader, 8, 16, 8, 16, 48, "#ECEDEB", 1f);
+        UiStyles.seRoundPanel(panelContent, 16, 16, 16, 16, 48, "#ECEDEB", 1f);
         tField.putClientProperty("JTextField.placeholderText", "Cari menu…");
         tField.putClientProperty("FlatLaf.style", "background:#FFFFFF00; placeholderForeground:#66706B");
-        UiStyles.seRoundPanel(pnlAvatar, new Insets(0, 0, 0, 0), 999, Color.darkGray, 0f);
+        UiStyles.seRoundPanel(pnlAvatar, 0, 0, 0, 0, 999, "#404040", 0f);
     }
 
     private void startClock() {
@@ -240,7 +239,7 @@ public class MainFrame extends javax.swing.JFrame {
         addMenuPage(menuPages, btnSiswa, "siswa", new views.master.SiswaPanel());
         addMenuPage(menuPages, btnKelas, "kelas", new views.master.KelasPanel());
         addMenuPage(menuPages, btnGuru, "guru", new views.master.GuruPanel());
-        addMenuPage(menuPages, btnQRSiswa, "qr-siswa", new views.absensi.QRSiswaPanel());
+        addMenuPage(menuPages, btnQRSiswa, "qr-siswa", new views.master.QRSiswaPanel());
         addMenuPage(menuPages, btnScanQR, "scan-qr", new views.absensi.ScanQRPanel());
         addMenuPage(menuPages, btnHasilScan, "hasil-scan", new views.absensi.HasilScanPanel());
         addMenuPage(menuPages, btnRekapAbsensiItem, "rekap-absensi", new views.absensi.RekapAbsensiPanel());

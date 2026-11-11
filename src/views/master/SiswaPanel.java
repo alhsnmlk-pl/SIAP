@@ -4,6 +4,8 @@
  */
 package views.master;
 
+import views.component.RoundedTablePanel;
+import views.component.UiStyles;
 /**
  *
  * @author Al
@@ -14,8 +16,18 @@ public class SiswaPanel extends javax.swing.JPanel {
      * Creates new form FormDataSiswa
      */
     public SiswaPanel() {
-        // siapin tampilan panel data siswa
         initComponents();
+        RoundedTablePanel.pasang(jPanel3, tblSiswa);
+        RoundedTablePanel.lebar(tblSiswa, 130, 270, 63, 70, 90, 170);
+
+        UiStyles.setButton(btnTambahSiswa, "#144D32", "#FFFFFF", "#0D3C26", "#0A2F1D", null, 0);
+        UiStyles.seRoundPanel(jPanel9, 0, 0, 0, 16, 32, "#ECEDEB", 1f);
+        UiStyles.setTextFieldv2(tCariSiswa, "Cari nama siswa…");
+        UiStyles.setButtonV2(btnEditSiswa);
+        UiStyles.setButtonV3(btnHapusSiswa);
+        UiStyles.seRoundPanel(jPanel1, 0, 0, 0, 0, 32, "#ECEDEB", 1f);
+        UiStyles.seRoundPanel(jPanel7, 8, 16, 8, 16, 32, "#ECEDEB", 1f);
+        UiStyles.setCBox(cSiswa);
     }
 
     /**
@@ -30,23 +42,24 @@ public class SiswaPanel extends javax.swing.JPanel {
         pnlHeader = new javax.swing.JPanel();
         lblHeader = new javax.swing.JLabel();
         lblHeader1 = new javax.swing.JLabel();
-        btnMulaiScan = new javax.swing.JButton();
+        btnTambahSiswa = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jPanel7 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
+        jPanel8 = new javax.swing.JPanel();
+        cSiswa = new javax.swing.JComboBox<>();
+        jPanel9 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        tCariSiswa = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jPanel5 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        btnHapusSiswa = new javax.swing.JButton();
+        btnEditSiswa = new javax.swing.JButton();
+        jPanel11 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblSiswa = new javax.swing.JTable();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -71,17 +84,17 @@ public class SiswaPanel extends javax.swing.JPanel {
         lblHeader1.setMinimumSize(new java.awt.Dimension(627, 28));
         lblHeader1.setPreferredSize(new java.awt.Dimension(627, 28));
 
-        btnMulaiScan.setBackground(new java.awt.Color(20, 77, 50));
-        btnMulaiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        btnMulaiScan.setForeground(new java.awt.Color(255, 255, 255));
-        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconPlus.png"))); // NOI18N
-        btnMulaiScan.setText("Tambah Siswa");
-        btnMulaiScan.setIconTextGap(8);
-        btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
-        btnMulaiScan.setMaximumSize(new java.awt.Dimension(130, 40));
-        btnMulaiScan.setMinimumSize(new java.awt.Dimension(130, 40));
-        btnMulaiScan.setPreferredSize(new java.awt.Dimension(130, 40));
-        btnMulaiScan.addActionListener(this::btnMulaiScanActionPerformed);
+        btnTambahSiswa.setBackground(new java.awt.Color(20, 77, 50));
+        btnTambahSiswa.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        btnTambahSiswa.setForeground(new java.awt.Color(255, 255, 255));
+        btnTambahSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconPlus.png"))); // NOI18N
+        btnTambahSiswa.setText("Tambah Siswa");
+        btnTambahSiswa.setIconTextGap(8);
+        btnTambahSiswa.setMargin(new java.awt.Insets(0, 14, 0, 14));
+        btnTambahSiswa.setMaximumSize(new java.awt.Dimension(130, 40));
+        btnTambahSiswa.setMinimumSize(new java.awt.Dimension(130, 40));
+        btnTambahSiswa.setPreferredSize(new java.awt.Dimension(147, 40));
+        btnTambahSiswa.addActionListener(this::btnTambahSiswaActionPerformed);
 
         javax.swing.GroupLayout pnlHeaderLayout = new javax.swing.GroupLayout(pnlHeader);
         pnlHeader.setLayout(pnlHeaderLayout);
@@ -89,16 +102,16 @@ public class SiswaPanel extends javax.swing.JPanel {
             pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlHeaderLayout.createSequentialGroup()
                 .addGroup(pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblHeader1, javax.swing.GroupLayout.DEFAULT_SIZE, 795, Short.MAX_VALUE)
+                    .addComponent(lblHeader1, javax.swing.GroupLayout.DEFAULT_SIZE, 817, Short.MAX_VALUE)
                     .addComponent(lblHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnMulaiScan, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnTambahSiswa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnlHeaderLayout.setVerticalGroup(
             pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlHeaderLayout.createSequentialGroup()
                 .addGroup(pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnMulaiScan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnTambahSiswa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlHeaderLayout.createSequentialGroup()
                         .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
@@ -108,168 +121,183 @@ public class SiswaPanel extends javax.swing.JPanel {
 
         add(pnlHeader, java.awt.BorderLayout.PAGE_START);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new java.awt.BorderLayout());
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setPreferredSize(new java.awt.Dimension(954, 55));
+        jPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 0, 24));
+        jPanel2.setOpaque(false);
+        jPanel2.setPreferredSize(new java.awt.Dimension(954, 56));
+        jPanel2.setLayout(new java.awt.BorderLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel1.setText("Daftar Siswa(41)");
+        jLabel1.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel1.setText("Daftar Siswa (41)");
+        jPanel2.add(jLabel1, java.awt.BorderLayout.LINE_START);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Semua Kelas", "Semua Kelas", "Semua Kelas", "Semua Kelas" }));
-        jComboBox1.addActionListener(this::jComboBox1ActionPerformed);
+        jPanel8.setOpaque(false);
+        jPanel8.setPreferredSize(new java.awt.Dimension(408, 38));
+        jPanel8.setLayout(new java.awt.BorderLayout(8, 8));
 
-        jPanel7.setLayout(new java.awt.BorderLayout());
+        cSiswa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Semua Siswa", "Semua Kelas", "Semua Kelas", "Semua Kelas" }));
+        cSiswa.setPreferredSize(new java.awt.Dimension(144, 22));
+        cSiswa.addActionListener(this::cSiswaActionPerformed);
+        jPanel8.add(cSiswa, java.awt.BorderLayout.LINE_START);
 
-        jTextField1.setBackground(new java.awt.Color(242, 242, 242));
-        jTextField1.setText("Cari NIS / nama...");
-        jTextField1.setBorder(null);
-        jTextField1.addActionListener(this::jTextField1ActionPerformed);
-        jPanel7.add(jTextField1, java.awt.BorderLayout.CENTER);
+        jPanel9.setBackground(new java.awt.Color(246, 247, 245));
+        jPanel9.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 16));
+        jPanel9.setPreferredSize(new java.awt.Dimension(256, 32));
+        jPanel9.setLayout(new java.awt.BorderLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconSearch.png"))); // NOI18N
-        jPanel7.add(jLabel3, java.awt.BorderLayout.LINE_START);
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/IconSearchbaru.png"))); // NOI18N
+        jLabel3.setPreferredSize(new java.awt.Dimension(36, 16));
+        jPanel9.add(jLabel3, java.awt.BorderLayout.LINE_START);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 573, Short.MAX_VALUE)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(25, 25, 25))
-        );
+        tCariSiswa.setBackground(new java.awt.Color(246, 247, 245));
+        tCariSiswa.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        tCariSiswa.setForeground(new java.awt.Color(102, 112, 107));
+        tCariSiswa.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tCariSiswa.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jPanel9.add(tCariSiswa, java.awt.BorderLayout.CENTER);
+
+        jPanel8.add(jPanel9, java.awt.BorderLayout.CENTER);
+
+        jPanel2.add(jPanel8, java.awt.BorderLayout.LINE_END);
 
         jPanel1.add(jPanel2, java.awt.BorderLayout.PAGE_START);
 
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 24, 24));
+        jPanel3.setOpaque(false);
         jPanel3.setPreferredSize(new java.awt.Dimension(906, 74));
         jPanel3.setLayout(new java.awt.BorderLayout());
 
-        jPanel4.setPreferredSize(new java.awt.Dimension(958, 75));
+        jPanel7.setBackground(new java.awt.Color(248, 250, 252));
+        jPanel7.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 8, 16));
+        jPanel7.setPreferredSize(new java.awt.Dimension(907, 59));
+        jPanel7.setLayout(new java.awt.BorderLayout());
 
-        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
-
+        jLabel2.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 112, 107));
         jLabel2.setText("Pilih baris pada tabel untuk mengaktifkan aksi.");
+        jLabel2.setPreferredSize(new java.awt.Dimension(500, 19));
+        jPanel7.add(jLabel2, java.awt.BorderLayout.LINE_START);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconEdit.png"))); // NOI18N
-        jButton1.setText("Edit");
+        jPanel10.setBorder(javax.swing.BorderFactory.createEmptyBorder(4, 0, 4, 0));
+        jPanel10.setOpaque(false);
+        jPanel10.setPreferredSize(new java.awt.Dimension(196, 39));
 
-        jButton2.setForeground(new java.awt.Color(255, 0, 0));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconTrash.png"))); // NOI18N
-        jButton2.setText("Hapus");
+        btnHapusSiswa.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        btnHapusSiswa.setForeground(new java.awt.Color(231, 0, 11));
+        btnHapusSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/Vectorbaru.png"))); // NOI18N
+        btnHapusSiswa.setText("Hapus");
+        btnHapusSiswa.setIconTextGap(8);
+        btnHapusSiswa.setMargin(new java.awt.Insets(0, 0, 0, 0));
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 483, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addContainerGap())
+        btnEditSiswa.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        btnEditSiswa.setForeground(new java.awt.Color(13, 59, 38));
+        btnEditSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/IconEdit.png"))); // NOI18N
+        btnEditSiswa.setText("Edit");
+        btnEditSiswa.setIconTextGap(8);
+        btnEditSiswa.setMargin(new java.awt.Insets(0, 0, 0, 0));
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addComponent(btnEditSiswa, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE)
+                .addGap(8, 8, 8)
+                .addComponent(btnHapusSiswa, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE))
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton1)
-                        .addComponent(jButton2))
-                    .addComponent(jLabel2))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnHapusSiswa, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                    .addComponent(btnEditSiswa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
 
-        jPanel3.add(jPanel4, java.awt.BorderLayout.PAGE_START);
+        jPanel7.add(jPanel10, java.awt.BorderLayout.LINE_END);
 
-        jPanel5.setLayout(new java.awt.CardLayout());
+        jPanel3.add(jPanel7, java.awt.BorderLayout.PAGE_START);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
+        jPanel11.setOpaque(false);
+        jPanel11.setLayout(new java.awt.BorderLayout());
+
+        jScrollPane1.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 12)); // NOI18N
+
+        tblSiswa.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        tblSiswa.setForeground(new java.awt.Color(22, 32, 27));
+        tblSiswa.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {"202557201002", "Achmad Risyad", "L", "7A", "Nganjuk", "Bpk Risyad"},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "NIM", "Nama Siswa", "L/P", "Kelas", "Alamat", "Nama Wali"
             }
-        ));
-        jScrollPane1.setViewportView(jTable1);
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
 
-        jPanel5.add(jScrollPane1, "card2");
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tblSiswa.setFocusable(false);
+        tblSiswa.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        tblSiswa.setShowGrid(false);
+        jScrollPane1.setViewportView(tblSiswa);
 
-        jPanel3.add(jPanel5, java.awt.BorderLayout.CENTER);
+        jPanel11.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+
+        jPanel3.add(jPanel11, java.awt.BorderLayout.CENTER);
 
         jPanel1.add(jPanel3, java.awt.BorderLayout.CENTER);
 
         add(jPanel1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnMulaiScanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMulaiScanActionPerformed
+    private void btnTambahSiswaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahSiswaActionPerformed
         // aksi tombol mulai scan
-    }//GEN-LAST:event_btnMulaiScanActionPerformed
+    }//GEN-LAST:event_btnTambahSiswaActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void cSiswaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cSiswaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_cSiswaActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnMulaiScan;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton btnEditSiswa;
+    private javax.swing.JButton btnHapusSiswa;
+    private javax.swing.JButton btnTambahSiswa;
+    private javax.swing.JComboBox<String> cSiswa;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblHeader;
     private javax.swing.JLabel lblHeader1;
     private javax.swing.JPanel pnlHeader;
+    private javax.swing.JTextField tCariSiswa;
+    private javax.swing.JTable tblSiswa;
     // End of variables declaration//GEN-END:variables
 }

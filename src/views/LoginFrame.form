@@ -512,7 +512,6 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Plus Jakarta Sans" size="14" style="0"/>
                             </Property>
-                            <Property name="text" type="java.lang.String" value="operator"/>
                             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                               <Insets value="[2, 16, 2, 16]"/>
                             </Property>
@@ -579,7 +578,6 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Plus Jakarta Sans" size="14" style="0"/>
                             </Property>
-                            <Property name="text" type="java.lang.String" value="darululum123"/>
                             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
                               <Insets value="[2, 16, 2, 16]"/>
                             </Property>

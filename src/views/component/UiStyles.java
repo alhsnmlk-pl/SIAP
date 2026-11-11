@@ -4,20 +4,21 @@
  */
 package views.component;
 
+import com.formdev.flatlaf.ui.FlatComboBoxUI;
 import com.formdev.flatlaf.ui.FlatLineBorder;
+import com.formdev.flatlaf.util.UIScale;
+import java.awt.Component;
 import java.awt.Color;
+import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Insets;
-import javax.swing.BorderFactory;
+import java.awt.LayoutManager;
 import javax.swing.JButton;
-import javax.swing.JLabel;
+import javax.swing.JComboBox;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-import javax.swing.table.DefaultTableCellRenderer;
-import javax.swing.table.JTableHeader;
+import javax.swing.JToggleButton;
+
 
 /**
  *
@@ -28,120 +29,150 @@ public final class UiStyles {
     private UiStyles() {
     }
 
-    public static void seRoundPanel(JPanel panel, Insets insets, int lengkung, Color warnaBorder, float ketebalanBorder) {
-        // atur border panel biar sudutnya melengkung
-        panel.setBorder(new FlatLineBorder(new Insets(
-                insets.top, insets.left, insets.bottom, insets.right), warnaBorder, ketebalanBorder, lengkung));
+    public static void seRoundPanel(JPanel panel, 
+                                    int top, int left, int bottom, int right,
+                                    int radius, 
+                                    String borderColor, 
+                                    float borderWidth) {
+        panel.setBorder(new FlatLineBorder(
+                        new Insets(top, left, bottom, right), 
+                        Color.decode(borderColor), 
+                        borderWidth, 
+                        radius));
     }
 
-    public static void setTextField(JTextField tField) {
-        // atur style kolom teks
-        tField.putClientProperty("FlatLaf.style",
-                "arc:999;"
-                + "background:#F6F7F5; foreground:#16201B;"
-                + "caretColor:#66706B;"
-                + "borderWidth:1; borderColor:#ECEDEB;"
-                + "focusedBorderColor:#337253; focusWidth:0; innerFocusWidth:1;"
-        );
+    public static void setTextField(JTextField field, 
+                                    String placeholder, 
+                                    String background, 
+                                    String foreground,
+                                    String caretColor, 
+                                    String borderColor, 
+                                    String focusedBorderColor, 
+                                    float borderWidth,
+                                    float innerFocuswidth) {
+        field.putClientProperty("JTextField.placeholderText", placeholder);
+        field.putClientProperty("FlatLaf.style", "arc:999; "
+                + "background:" + background 
+                + "; foreground:" + foreground
+                + "; caretColor:" + caretColor 
+                + "; borderWidth:" + borderWidth 
+                + "; borderColor:" + borderColor
+                + "; focusedBorderColor:" + focusedBorderColor 
+                + "; focusWidth:0; "
+                + "innerFocusWidth:" + innerFocuswidth +";");
     }
 
-    public static void setButton(JButton btn) {
-        // atur style tombol utama
-        btn.putClientProperty("FlatLaf.style",
-                "arc:100;"
-                + "borderWidth:0; focusWidth:0; innerFocusWidth:0;"
-                + "background:#144D32; foreground:#FFFFFF;"
-                + "hoverBackground:#22764B; pressedBackground:#0D3B26");
-        btn.setFocusPainted(false);
+    public static void setTextFieldv2(JTextField field, String placeholder) {
+        setTextField(field, placeholder, "#F6F7F5", "#66706B", "#66706B",
+                "#ECEDEB", "#ECEDEB", 0f, 0f);
     }
 
-    public static void setButtonv2(JButton btnv2) {
-        // atur style tombol kedua
-        btnv2.putClientProperty("FlatLaf.style",
-                "arc:100;"
-                + "borderWidth:0; focusWidth:0; innerFocusWidth:0;"
-                + "background:#FFFFFF; foreground:#0D3B26;"
-                + "hoverBackground:#E5E5E5; pressedBackground:#CCCCCC");
-        btnv2.setFocusPainted(false);
-    }
+    public static void setButton(JButton button,
+            String background,
+            String foreground,
+            String hoverBackground,
+            String pressedBackground,
+            String borderColor,
+            int borderWidth) {
+        String borderStyle = borderWidth == 0
+                ? "borderWidth:0;" : "borderWidth:" + borderWidth
+                + "; borderColor:" + borderColor
+                + "; hoverBorderColor:" + borderColor
+                + "; pressedBorderColor:" + borderColor + ";";
 
-    public static void setButtonv3(JButton btnv3) {
-        // atur style tombol kedua
-        btnv3.putClientProperty("FlatLaf.style",
-                "arc:100;"
-                + "borderWidth:1; borderColor:#144D32; hoverBorderColor:#144D32; pressedBorderColor:#144D32;"
+        button.putClientProperty("FlatLaf.style", "arc:100;" + borderStyle 
                 + "focusWidth:0; innerFocusWidth:0;"
-                + "background:#FFFFFF; foreground:#0D3B26;"
-                + "hoverBackground:#E5E5E5; pressedBackground:#CCCCCC");
-        btnv3.setFocusPainted(false);
+                + "background:" + background 
+                + "; foreground:" + foreground
+                + "; hoverBackground:" + hoverBackground 
+                + "; pressedBackground:" + pressedBackground + ";");
+        button.setFocusPainted(false);
+    }
+    
+    public static void setButtonV2(JButton btn){
+        setButton(btn, "#FFFFFF", "#0D3B26", "#EEEEEE", "#E6E6E6", "#144D32", 1);
+    } 
+    
+    public static void setButtonV3(JButton btn){
+        setButton(btn, "#FFFFFF", "#E7000B", "#EEEEEE", "#E6E6E6", "#E7000B", 1);
     }
 
-    public static void setTable(JTable table, JScrollPane scrollPane) {
-        // ====== HEADER STYLE ======
-        JTableHeader header = table.getTableHeader();
-        header.setPreferredSize(new Dimension(header.getPreferredSize().width, 32));
-        header.setOpaque(true);
-        header.setReorderingAllowed(false);
-        // Custom renderer: warna tetap, tidak ada efek hover/press
-        header.setDefaultRenderer(new DefaultTableCellRenderer() {
-            @Override
-            public java.awt.Component getTableCellRendererComponent(JTable tbl,
-                    Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-                JLabel lbl = (JLabel) super.getTableCellRendererComponent(
-                        tbl, value, false, false, row, column);
-                lbl.setBackground(Color.decode("#F6F7F5"));
-                lbl.setForeground(Color.decode("#66706B"));
-                lbl.setFont(new java.awt.Font("Plus Jakarta Sans", java.awt.Font.PLAIN, 13));
-                lbl.setHorizontalAlignment(SwingConstants.LEFT);
-                lbl.setOpaque(true);
-                return lbl;
-            }
-        });
+    public static void setTogleBtn(JToggleButton button, 
+            String background,
+            String foreground,
+            String hoverBackground, 
+            String pressedBackground,
+            String selectedBackground, 
+            String selectedForeground) {
+        button.putClientProperty("FlatLaf.style", "arc:100; borderWidth:0; focusWidth:0; innerFocusWidth:0;"
+                + "background:" + background 
+                + "; foreground:" + foreground
+                + "; hoverBackground:" + hoverBackground 
+                + "; pressedBackground:" + pressedBackground
+                + "; selectedBackground:" + selectedBackground 
+                + "; selectedForeground:" + selectedForeground);
+        button.setFocusPainted(false);
+    }
+    
+    public static void setCBox(JComboBox<?> cbox) {
 
-        // ====== ROW STYLE ======
-        table.setRowHeight(42);
-        table.setFont(new java.awt.Font("Plus Jakarta Sans", java.awt.Font.PLAIN, 14));
-        table.setBackground(Color.decode("#FFFFFF"));
-        table.setForeground(Color.decode("#16201B"));
-        table.setSelectionBackground(Color.decode("#D9EEE1"));
-        table.setSelectionForeground(Color.decode("#16201B"));
-        table.setGridColor(Color.decode("#ECEDEB"));
-        table.setShowHorizontalLines(true);
-        table.setShowVerticalLines(false);
-        table.setIntercellSpacing(new Dimension(0, 0));
-        table.setFocusable(false);
-        table.setFillsViewportHeight(true);
+        cbox.putClientProperty("JComponent.minimumHeight", 40);
 
-        // Set non-editable
-        table.setDefaultEditor(Object.class, null);
-
-        // Custom cell renderer: warna select + padding kiri-kanan
-        table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
-            @Override
-            public java.awt.Component getTableCellRendererComponent(JTable tbl,
-                    Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-                JLabel lbl = (JLabel) super.getTableCellRendererComponent(
-                        tbl, value, isSelected, false, row, column);
-                lbl.setOpaque(true);
-                if (isSelected) {
-                    lbl.setBackground(Color.decode("#D9EEE1"));
-                    lbl.setForeground(Color.decode("#16201B"));
-                } else {
-                    lbl.setBackground(Color.decode("#FFFFFF"));
-                    lbl.setForeground(Color.decode("#16201B"));
-                }
-                return lbl;
-            }
-        });
-
-        // ====== SCROLLPANE ROUNDED (arc 32) ======
-        scrollPane.putClientProperty("FlatLaf.style",
-                "arc:32;"
-                + "borderColor:#ECEDEB;"
+        cbox.putClientProperty("FlatLaf.style",
+                "arc:999;"
+                + "focusWidth:0; innerFocusWidth:0;"
+                + "padding:0,16,0,0;"
                 + "background:#FFFFFF;"
-                + "focusWidth:0;"
-                + "innerFocusWidth:0;");
-        scrollPane.getViewport().setBackground(Color.decode("#FFFFFF"));
-        scrollPane.setBackground(Color.decode("#FFFFFF"));
+                + "foreground:#16201B;"
+                + "borderColor:#337253;"
+                + "focusedBorderColor:#337253;"
+                + "buttonStyle:none;"
+                + "arrowType:chevron;"
+                + "buttonArrowColor:#16201B;"
+                + "popupBackground:#FFFFFF;");
+
+        // FlatLaf sizes this slot from font height; widen it around the chevron.
+        cbox.setUI(new FlatComboBoxUI() {
+            @Override
+            protected LayoutManager createLayoutManager() {
+                LayoutManager flatLayout = super.createLayoutManager();
+                return new LayoutManager() {
+                    @Override
+                    public void addLayoutComponent(String name, Component component) {
+                        flatLayout.addLayoutComponent(name, component);
+                    }
+
+                    @Override
+                    public void removeLayoutComponent(Component component) {
+                        flatLayout.removeLayoutComponent(component);
+                    }
+
+                    @Override
+                    public Dimension preferredLayoutSize(Container parent) {
+                        return flatLayout.preferredLayoutSize(parent);
+                    }
+
+                    @Override
+                    public Dimension minimumLayoutSize(Container parent) {
+                        return flatLayout.minimumLayoutSize(parent);
+                    }
+
+                    @Override
+                    public void layoutContainer(Container parent) {
+                        flatLayout.layoutContainer(parent);
+                        if (arrowButton == null) {
+                            return;
+                        }
+
+                        Insets insets = comboBox.getInsets();
+                        int width = UIScale.scale(42); // 16px + 10px chevron + 16px
+                        int x = comboBox.getComponentOrientation().isLeftToRight()
+                                ? comboBox.getWidth() - insets.right - width
+                                : insets.left;
+                        arrowButton.setBounds(x, arrowButton.getY(), width, arrowButton.getHeight());
+                    }
+                };
+            }
+        });
     }
 }

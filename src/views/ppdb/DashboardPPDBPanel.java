@@ -4,8 +4,6 @@
  */
 package views.ppdb;
 
-import java.awt.Color;
-import java.awt.Insets;
 import java.util.List;
 import views.component.RecentComponent;
 import views.component.UiStyles;
@@ -23,9 +21,9 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
         initComponents();
         stylePanel();
         stylebBar();
-        UiStyles.setButton(btnVerifPendaftar);
-        UiStyles.setButtonv3(btnUnduhLapPPDB);
-        UiStyles.setButtonv3(btnLhtsemua);
+        UiStyles.setButton(btnVerifPendaftar, "#144D32", "#FFFFFF", "#0D3C26", "#0D3C26", null, 0);
+        UiStyles.setButtonV2(btnUnduhLapPPDB);
+        UiStyles.setButtonV2(btnLhtsemua);
 
         List<RecentComponent.Item> applicants = List.of(
                 new RecentComponent.Item("RM", "Rifqi Maulana Yusuf",
@@ -39,22 +37,21 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
     private void stylePanel(){
        javax.swing.JPanel[] jPanels = {jPanel3, jPanel4, jPanel5, jPanel6};
        for (javax.swing.JPanel pnl : jPanels) {
-            UiStyles.seRoundPanel(pnl, new Insets(16, 16, 16, 16), 48, Color.decode("#ECEDEB"), 1f);
-        }
-       
+            UiStyles.seRoundPanel(pnl, 16, 16, 16, 16, 48, "#ECEDEB", 1f);
+       }
+
        javax.swing.JPanel[] jPanels2 = {jPanel12, jPanel13, jPanel14, jPanel15, jPanel9, jPanel10};
        for (javax.swing.JPanel pnl : jPanels2) {
-            UiStyles.seRoundPanel(pnl, new Insets(0, 0, 0, 0), 48, Color.decode("#ECEDEB"), 1f);
-        }
-       
+            UiStyles.seRoundPanel(pnl, 0, 0, 0, 0, 48, "#ECEDEB", 1f);
+       }
+
        javax.swing.JPanel[] jPanels3 = {jPanel42, jPanel46, jPanel49, jPanel50};
        for (javax.swing.JPanel pnl : jPanels3) {
-            UiStyles.seRoundPanel(pnl, new Insets(6, 16, 6, 16), 32, Color.decode("#ECEDEB"), 0f);
-        }
-       
-       UiStyles.seRoundPanel(jPanel40, new Insets(0, 8, 0, 8), 32, Color.decode("#ECEDEB"), 1f);
+            UiStyles.seRoundPanel(pnl, 6, 16, 6, 16, 32, "#ECEDEB", 0f);
+       }
+
+       UiStyles.seRoundPanel(jPanel40, 0, 8, 0, 8, 32, "#ECEDEB", 1f);
     }
-    
      private void stylebBar() {
         // atur bentuk bar di dashboard
         javax.swing.JProgressBar[] progressBars = {jProgressBar1, jProgressBar2, jProgressBar3, 

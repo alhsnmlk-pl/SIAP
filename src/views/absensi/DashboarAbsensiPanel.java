@@ -4,8 +4,7 @@
  */
 package views.absensi;
 
-import java.awt.Color;
-import java.awt.Insets;
+
 import java.util.List;
 import views.component.RecentComponent;
 import views.component.UiStyles;
@@ -24,7 +23,8 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         stylebBar();
         refreshBar(50, 43, 199, 200);
         stylePanel();
-        UiStyles.setButton(btnMulaiScan);
+        UiStyles.setButtonV2(jButton1);
+        UiStyles.setButton(btnMulaiScan, "#144D32", "#FFFFFF", "#0D3C26", "#0A2F1D", null, 0);
         List<RecentComponent.Item> scans = List.of(
                 new RecentComponent.Item("AH", "Atho'il Hakim",
                         "Kelas 8B · scan 13:06 WIB", views.component.RecentComponent.Status.PULANG),
@@ -69,20 +69,19 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
     private void stylePanel() {
         javax.swing.JPanel[] jPanels = {jPanel3, jPanel4, jPanel5, jPanel6, jPanel7};
         for (javax.swing.JPanel pnl : jPanels) {
-            UiStyles.seRoundPanel(pnl, new Insets(16, 16, 16, 16), 48, Color.decode("#ECEDEB"), 1f);
+            UiStyles.seRoundPanel(pnl, 16, 16, 16, 16, 48, "#ECEDEB", 1f);
         }
+
         javax.swing.JPanel[] jPanels2 = {jPanel13, jPanel14, jPanel15, jPanel16};
         for (javax.swing.JPanel pnl : jPanels2) {
-            UiStyles.seRoundPanel(pnl, new Insets(0, 0, 0, 0), 48, Color.decode("#ECEDEB"), 1f);
+            UiStyles.seRoundPanel(pnl, 0, 0, 0, 0, 48, "#ECEDEB", 1f);
         }
-        javax.swing.JPanel[] jPanels3 = {jPanel29, jPanel41, jPanel42, jPanel43, jPanel44, jPanel45}; 
+
+        javax.swing.JPanel[] jPanels3 = {jPanel29, jPanel41, jPanel42, jPanel43, jPanel44, jPanel45};
         for (javax.swing.JPanel pnl : jPanels3) {
-            UiStyles.seRoundPanel(pnl, new Insets(8, 16, 8, 16), 32, Color.decode("#ECEDEB"), 0f); 
+            UiStyles.seRoundPanel(pnl, 8, 16, 8, 16, 32, "#ECEDEB", 0f);
         }
-
     }
-
-
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -274,7 +273,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
         btnMulaiScan.setMaximumSize(new java.awt.Dimension(130, 40));
         btnMulaiScan.setMinimumSize(new java.awt.Dimension(130, 40));
-        btnMulaiScan.setPreferredSize(new java.awt.Dimension(130, 40));
+        btnMulaiScan.setPreferredSize(new java.awt.Dimension(147, 40));
         btnMulaiScan.addActionListener(this::btnMulaiScanActionPerformed);
 
         javax.swing.GroupLayout pnlHeaderLayout = new javax.swing.GroupLayout(pnlHeader);
@@ -283,7 +282,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
             pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlHeaderLayout.createSequentialGroup()
                 .addGroup(pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblHeader1, javax.swing.GroupLayout.DEFAULT_SIZE, 828, Short.MAX_VALUE)
+                    .addComponent(lblHeader1, javax.swing.GroupLayout.DEFAULT_SIZE, 811, Short.MAX_VALUE)
                     .addComponent(lblHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 0, 0)
                 .addComponent(btnMulaiScan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))

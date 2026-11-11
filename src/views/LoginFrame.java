@@ -7,8 +7,6 @@ package views;
 import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 import java.awt.Color;
-import java.awt.Insets;
-import javax.swing.JToggleButton;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import models.modelUser;
@@ -30,29 +28,20 @@ public class LoginFrame extends javax.swing.JFrame {
         initComponents();
         jLabel1.setIcon(new FlatSVGIcon("iconMf/siapV1Login.svg"));
 
-        UiStyles.seRoundPanel(PanelKiri, new Insets(40, 40, 40, 40), 48, Color.decode("#ECEDEB"), 0f);
-        UiStyles.seRoundPanel(jPanel5, new Insets(4, 4, 4, 4), 100, Color.decode("#ECEDEB"), 0f);
-        UiStyles.seRoundPanel(PanelKanan, new Insets(0, 0, 0, 0), 48, Color.decode("#ECEDEB"), 0f);
+        UiStyles.seRoundPanel(PanelKiri, 40, 40, 40, 40, 48, "#ECEDEB", 0f);
+        UiStyles.seRoundPanel(jPanel5, 4, 4, 4, 4, 100, "#ECEDEB", 0f);
+        UiStyles.seRoundPanel(PanelKanan, 0, 0, 0, 0, 48, "#ECEDEB", 0f);
 
-        setBtnRole(tglOp);
-        setBtnRole(tglKeps);
-        
-        UiStyles.setTextField(txtUsername);
-        UiStyles.setTextField(txtPassword);
-        
-        UiStyles.setButton(btnLogin);
-    }
-
-    private void setBtnRole(JToggleButton btn) {
-        // atur warna tombol role sesuai statusnya
         tglOp.setSelected(true);
-        btn.putClientProperty("FlatLaf.style",
-                "arc:100;"
-                + "borderWidth:0; focusWidth:0; innerFocusWidth:0;"
-                + "background:#F6F7F5; foreground:#66706B;"
-                + "hoverBackground:#F6F7F5; pressedBackground:#F6F7F5;"
-                + "selectedBackground:#144D32; selectedForeground:#FFFFFF");
+        UiStyles.setTogleBtn(tglOp, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#144D32", "#FFFFFF");
+        UiStyles.setTogleBtn(tglKeps, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#144D32", "#FFFFFF");
+        
+        UiStyles.setTextField(txtUsername, "Username", "#F6F7F5", "#16201B", "#66706B", "#ECEDEB", "#337253", 1f,1f);
+        UiStyles.setTextField(txtPassword, "Password", "#F6F7F5", "#16201B", "#66706B", "#ECEDEB", "#337253", 1f,1f);
+        
+        UiStyles.setButton(btnLogin, "#144D32", "#FFFFFF", "#0D3C26", "#0A2F1D", null, 0);
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -243,7 +232,7 @@ public class LoginFrame extends javax.swing.JFrame {
 
         txtUsername.setBackground(new java.awt.Color(246, 247, 245));
         txtUsername.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        txtUsername.setText("operator");
+        txtUsername.setText("");
         txtUsername.setMargin(new java.awt.Insets(2, 16, 2, 16));
         txtUsername.setPreferredSize(new java.awt.Dimension(90, 48));
         txtUsername.setSelectionColor(new java.awt.Color(51, 114, 83));
@@ -273,7 +262,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 8, 0));
 
         txtPassword.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        txtPassword.setText("darululum123");
+        txtPassword.setText("");
         txtPassword.setMargin(new java.awt.Insets(2, 16, 2, 16));
         txtPassword.setPreferredSize(new java.awt.Dimension(90, 48));
         txtPassword.setSelectionColor(new java.awt.Color(51, 114, 83));
@@ -429,6 +418,8 @@ public class LoginFrame extends javax.swing.JFrame {
             UIManager.put("Component.focusColor", Color.decode("#337253"));
             UIManager.put("Component.focusedBorderColor", Color.decode("#337253"));
             UIManager.put("Component.accentColor", Color.decode("#337253"));
+            UIManager.put("ComboBox.selectionBackground", Color.decode("#D9EEE1"));
+            UIManager.put("ComboBox.selectionForeground", Color.decode("#16201B"));
             UIManager.setLookAndFeel(new FlatLightLaf());
         } catch (UnsupportedLookAndFeelException e) {
         }
