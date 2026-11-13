@@ -441,7 +441,7 @@
                               <Properties>
                                 <Property name="horizontalAlignment" type="int" value="0"/>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/ImgTony/IconCamera.png"/>
+                                  <Image iconType="3" name="/icon/IconCamera.png"/>
                                 </Property>
                               </Properties>
                               <Constraints>
@@ -494,7 +494,7 @@
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
                         </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/ImgTony/IconQr.png"/>
+                          <Image iconType="3" name="/icon/ImgTony_IconQr.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Simulasikan Scan"/>
                         <Property name="iconTextGap" type="int" value="8"/>
@@ -624,7 +624,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/ImgTony/IconResult.png"/>
+                          <Image iconType="3" name="/icon/ImgTony_IconResult.png"/>
                         </Property>
                       </Properties>
                       <Constraints>

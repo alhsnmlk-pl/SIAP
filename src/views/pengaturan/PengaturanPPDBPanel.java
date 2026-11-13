@@ -107,7 +107,7 @@ public class PengaturanPPDBPanel extends javax.swing.JPanel {
         btnMulaiScan.setBackground(new java.awt.Color(20, 77, 50));
         btnMulaiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnMulaiScan.setForeground(new java.awt.Color(255, 255, 255));
-        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconCheckPutih.png"))); // NOI18N
+        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconCheckPutih.png"))); // NOI18N
         btnMulaiScan.setText("Simpan Pengaturan");
         btnMulaiScan.setIconTextGap(8);
         btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
@@ -228,7 +228,7 @@ public class PengaturanPPDBPanel extends javax.swing.JPanel {
 
         jTextField3.setText("https://docs.google.com/spreadsheets/d/1Ppdb-DU-Kepel/edit");
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconDownload.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconAudi_IconDownload.png"))); // NOI18N
         jButton2.setText("Uji Koneksi");
 
         jLabel7.setText("Sinkron 10:24");
@@ -322,7 +322,7 @@ public class PengaturanPPDBPanel extends javax.swing.JPanel {
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 13, Short.MAX_VALUE))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
 
         jPanel6.setName(""); // NOI18N
@@ -417,24 +417,24 @@ public class PengaturanPPDBPanel extends javax.swing.JPanel {
                     .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 13, Short.MAX_VALUE))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setText("Jadwal PPDB");
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconPlusHijau.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconPlusHijau.png"))); // NOI18N
         jButton3.setText("Tambah Tahap");
 
         jLabel12.setText("Jadwal dan kuota ini otomatis tampil di Dashboard PPDB");
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconX.png"))); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconAudi_IconX.png"))); // NOI18N
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconX.png"))); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconAudi_IconX.png"))); // NOI18N
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconX.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconAudi_IconX.png"))); // NOI18N
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconX.png"))); // NOI18N
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconAudi_IconX.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);

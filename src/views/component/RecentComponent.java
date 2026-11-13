@@ -282,9 +282,9 @@ public class RecentComponent extends javax.swing.JPanel {
         jPanel58Layout.setVerticalGroup(
             jPanel58Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel58Layout.createSequentialGroup()
-                .addGap(0, 3, Short.MAX_VALUE)
-                .addComponent(lblBadge, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-                .addGap(0, 5, Short.MAX_VALUE))
+                .addGap(0, 1, Short.MAX_VALUE)
+                .addComponent(lblBadge, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
+                .addGap(0, 2, Short.MAX_VALUE))
         );
 
         add(jPanel58, java.awt.BorderLayout.LINE_END);

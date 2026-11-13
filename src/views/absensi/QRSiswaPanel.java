@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package views.master;
+package views.absensi;
 
 import java.awt.FlowLayout;
 import views.component.cardQR;
@@ -94,10 +94,10 @@ public class QRSiswaPanel extends javax.swing.JPanel {
         btnGnerateQR.setBackground(new java.awt.Color(20, 77, 50));
         btnGnerateQR.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnGnerateQR.setForeground(new java.awt.Color(255, 255, 255));
-        btnGnerateQR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconQr.png"))); // NOI18N
+        btnGnerateQR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ImgTony_IconQr.png"))); // NOI18N
         btnGnerateQR.setText("Generate");
         btnGnerateQR.setIconTextGap(8);
-        btnGnerateQR.setMargin(new java.awt.Insets(0, 16, 0, 16));
+        btnGnerateQR.setMargin(new java.awt.Insets(0, 8, 0, 8));
         btnGnerateQR.setMaximumSize(new java.awt.Dimension(130, 40));
         btnGnerateQR.setMinimumSize(new java.awt.Dimension(130, 40));
         btnGnerateQR.setPreferredSize(new java.awt.Dimension(147, 40));

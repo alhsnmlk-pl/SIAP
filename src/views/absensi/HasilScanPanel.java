@@ -87,7 +87,7 @@ public class HasilScanPanel extends javax.swing.JPanel {
         lblHeader1.setPreferredSize(new java.awt.Dimension(627, 28));
 
         btnMulaiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconDownload.png"))); // NOI18N
+        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconAudi_IconDownload.png"))); // NOI18N
         btnMulaiScan.setText("Ekspor");
         btnMulaiScan.setIconTextGap(8);
         btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
@@ -98,7 +98,7 @@ public class HasilScanPanel extends javax.swing.JPanel {
 
         jButton1.setBackground(new java.awt.Color(0, 102, 51));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconQr.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconAudi_IconQr.png"))); // NOI18N
         jButton1.setText("Simulasi Scan");
         jButton1.setPreferredSize(new java.awt.Dimension(130, 40));
 
@@ -148,7 +148,7 @@ public class HasilScanPanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconCheckPutih.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconCheckPutih.png"))); // NOI18N
         jLabel1.setText("Sudah Berangkat");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
@@ -187,7 +187,7 @@ public class HasilScanPanel extends javax.swing.JPanel {
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconResult.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconAudi_IconResult.png"))); // NOI18N
         jLabel4.setText("Terlambat");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
@@ -225,7 +225,7 @@ public class HasilScanPanel extends javax.swing.JPanel {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconCheck.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconAudi_IconCheck.png"))); // NOI18N
         jLabel7.setText("Sudah Pulang");
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
@@ -263,7 +263,7 @@ public class HasilScanPanel extends javax.swing.JPanel {
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconResultMerah.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconResultMerah.png"))); // NOI18N
         jLabel10.setText("Belum Absen (Alpa)");
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
@@ -336,7 +336,7 @@ public class HasilScanPanel extends javax.swing.JPanel {
 
         jButton2.setBackground(new java.awt.Color(192, 239, 216));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconCheckPutih.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconCheckPutih.png"))); // NOI18N
         jButton2.setText("Catat Berangkat");
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);

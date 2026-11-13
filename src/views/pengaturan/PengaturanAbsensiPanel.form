@@ -136,7 +136,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/views/pengaturan/IconCheck.png"/>
+              <Image iconType="3" name="/icon/imgNajwa_IconCheck.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Simpan Pengaturan"/>
             <Property name="iconTextGap" type="int" value="8"/>
@@ -291,7 +291,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel11">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/views/pengaturan/Text.png"/>
+                          <Image iconType="3" name="/icon/imgNajwa_Text.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Absen Berangkat"/>
                       </Properties>
@@ -339,7 +339,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel12">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/views/pengaturan/Text2.png"/>
+                          <Image iconType="3" name="/icon/imgNajwa_Text2.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Terlambat setelah"/>
                       </Properties>
@@ -390,7 +390,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel13">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/views/pengaturan/Text3.png"/>
+                          <Image iconType="3" name="/icon/imgNajwa_Text3.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Absen Pulang"/>
                       </Properties>

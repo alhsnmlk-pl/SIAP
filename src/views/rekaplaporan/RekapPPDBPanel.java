@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package views.ppdb;
+package views.rekaplaporan;
 
 /**
  *
@@ -122,7 +122,7 @@ public class RekapPPDBPanel extends javax.swing.JPanel {
         lblHeader1.setPreferredSize(new java.awt.Dimension(627, 28));
 
         btnMulaiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgNajwa/IconDownload.png"))); // NOI18N
+        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/imgNajwa_IconDownload.png"))); // NOI18N
         btnMulaiScan.setText("Ekspor Excel");
         btnMulaiScan.setIconTextGap(8);
         btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
@@ -172,7 +172,7 @@ public class RekapPPDBPanel extends javax.swing.JPanel {
         jLabel7.setText("Diperbarui hari ini");
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgNajwa/IconKuota.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconKuota.png"))); // NOI18N
         jLabel8.setText("Kuota");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
@@ -212,7 +212,7 @@ public class RekapPPDBPanel extends javax.swing.JPanel {
         jLabel4.setText("22,5% terisi");
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgNajwa/IconDiterima.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconDiterima.png"))); // NOI18N
         jLabel9.setText("Diterima");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -245,7 +245,7 @@ public class RekapPPDBPanel extends javax.swing.JPanel {
         jPanel2.setPreferredSize(new java.awt.Dimension(227, 118));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgNajwa/IconLaki-laki.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconLaki-laki.png"))); // NOI18N
         jLabel10.setText("Laki-laki");
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -285,7 +285,7 @@ public class RekapPPDBPanel extends javax.swing.JPanel {
         jPanel3.setPreferredSize(new java.awt.Dimension(227, 118));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgNajwa/IconPerempuan.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconPerempuan.png"))); // NOI18N
         jLabel1.setText("Perempuan");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N

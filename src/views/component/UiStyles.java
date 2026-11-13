@@ -102,6 +102,7 @@ public final class UiStyles {
             String foreground,
             String hoverBackground, 
             String pressedBackground,
+            String pressedForeground,
             String selectedBackground, 
             String selectedForeground) {
         button.putClientProperty("FlatLaf.style", "arc:100; borderWidth:0; focusWidth:0; innerFocusWidth:0;"
@@ -109,6 +110,7 @@ public final class UiStyles {
                 + "; foreground:" + foreground
                 + "; hoverBackground:" + hoverBackground 
                 + "; pressedBackground:" + pressedBackground
+                + "; pressedForeground:" + pressedForeground
                 + "; selectedBackground:" + selectedBackground 
                 + "; selectedForeground:" + selectedForeground);
         button.setFocusPainted(false);

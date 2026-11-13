@@ -123,12 +123,12 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/iconAudi/IconPlus.png"/>
+              <Image iconType="3" name="/icon/iconAudi_IconPlus.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Tambah Siswa"/>
             <Property name="iconTextGap" type="int" value="8"/>
             <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-              <Insets value="[0, 14, 0, 14]"/>
+              <Insets value="[0, 8, 0, 8]"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[130, 40]"/>
@@ -269,7 +269,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/imagedhea/IconSearchbaru.png"/>
+                          <Image iconType="3" name="/icon/IconSearchbaru.png"/>
                         </Property>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[36, 16]"/>
@@ -423,7 +423,7 @@
                           <Color blue="b" green="0" red="e7" type="rgb"/>
                         </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/imagedhea/Vectorbaru.png"/>
+                          <Image iconType="3" name="/icon/Vectorbaru.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Hapus"/>
                         <Property name="iconTextGap" type="int" value="8"/>
@@ -441,7 +441,7 @@
                           <Color blue="26" green="3b" red="d" type="rgb"/>
                         </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/imagedhea/IconEdit.png"/>
+                          <Image iconType="3" name="/icon/imagedhea_IconEdit.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Edit"/>
                         <Property name="iconTextGap" type="int" value="8"/>

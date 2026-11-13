@@ -52,9 +52,9 @@ public class MainFrame extends javax.swing.JFrame {
     // mnggganti icon png ke svg agar hd ketika zoom
     private void setSidebarSvgIcons() {
 
-        lblNamaSekolah.setIcon(new FlatSVGIcon("iconMf/siapV2Sidebar.svg"));
-        btnLogout.setIcon(new FlatSVGIcon("iconMf/logout.svg"));
-        lblSearch.setIcon(new FlatSVGIcon("iconMf/search.svg"));
+        lblNamaSekolah.setIcon(new FlatSVGIcon("iconsvg/siapV2Sidebar.svg"));
+        btnLogout.setIcon(new FlatSVGIcon("iconsvg/logout.svg"));
+        lblSearch.setIcon(new FlatSVGIcon("iconsvg/search.svg"));
 
         setSvgMenuIcon(btndashAbs, "dashboardNonaktif.svg", "dashboardAktif.svg");
         setSvgMenuIcon(btnDataMaster, "dataMasterNonaktif.svg", "dataMasterAktif.svg");
@@ -86,8 +86,8 @@ public class MainFrame extends javax.swing.JFrame {
     private void setSvgMenuIcon(JToggleButton button, String iconNonaktif, String iconAktif) {
 
         // siapin icon normal dan icon waktu menu dipilih
-        FlatSVGIcon normal = new FlatSVGIcon("iconMf/" + iconNonaktif);
-        FlatSVGIcon aktif = new FlatSVGIcon("iconMf/" + iconAktif);
+        FlatSVGIcon normal = new FlatSVGIcon("iconsvg/" + iconNonaktif);
+        FlatSVGIcon aktif = new FlatSVGIcon("iconsvg/" + iconAktif);
 
         button.setIcon(normal);
         button.setDisabledIcon(normal);
@@ -239,16 +239,16 @@ public class MainFrame extends javax.swing.JFrame {
         addMenuPage(menuPages, btnSiswa, "siswa", new views.master.SiswaPanel());
         addMenuPage(menuPages, btnKelas, "kelas", new views.master.KelasPanel());
         addMenuPage(menuPages, btnGuru, "guru", new views.master.GuruPanel());
-        addMenuPage(menuPages, btnQRSiswa, "qr-siswa", new views.master.QRSiswaPanel());
+        addMenuPage(menuPages, btnQRSiswa, "qr-siswa", new views.absensi.QRSiswaPanel());
         addMenuPage(menuPages, btnScanQR, "scan-qr", new views.absensi.ScanQRPanel());
         addMenuPage(menuPages, btnHasilScan, "hasil-scan", new views.absensi.HasilScanPanel());
-        addMenuPage(menuPages, btnRekapAbsensiItem, "rekap-absensi", new views.absensi.RekapAbsensiPanel());
-        addMenuPage(menuPages, btnLaporanAbsensi, "laporan-absensi", new views.absensi.LaporanAbsensiPanel());
+        addMenuPage(menuPages, btnRekapAbsensiItem, "rekap-absensi", new views.rekaplaporan.RekapAbsensiPanel());
+        addMenuPage(menuPages, btnLaporanAbsensi, "laporan-absensi", new views.rekaplaporan.LaporanAbsensiPanel());
         addMenuPage(menuPages, btnDashboardPPDB, "dashboard-ppdb", new views.ppdb.DashboardPPDBPanel());
         addMenuPage(menuPages, btnDataPendaftar, "data-pendaftar", new views.ppdb.DataPendaftarPanel());
         addMenuPage(menuPages, btnPenempatanKelas7, "penempatan-kelas", new views.ppdb.PenempatanKelaspanel());
-        addMenuPage(menuPages, btnRekapPPDBItem, "rekap-ppdb", new views.ppdb.RekapPPDBPanel());
-        addMenuPage(menuPages, btnLaporanPPDB, "laporan-ppdb", new views.ppdb.LaporanPPDBPanel());
+        addMenuPage(menuPages, btnRekapPPDBItem, "rekap-ppdb", new views.rekaplaporan.RekapPPDBPanel());
+        addMenuPage(menuPages, btnLaporanPPDB, "laporan-ppdb", new views.rekaplaporan.LaporanPPDBPanel());
         addMenuPage(menuPages, btnJamAbsensi, "pengaturan-absensi", new views.pengaturan.PengaturanAbsensiPanel());
         addMenuPage(menuPages, btnPPDB, "pengaturan-ppdb", new views.pengaturan.PengaturanPPDBPanel());
         addMenuPage(menuPages, btnPengguna, "pengguna", new views.pengaturan.PenggunaPanel());
@@ -357,8 +357,8 @@ public class MainFrame extends javax.swing.JFrame {
 
         // panah ke bawah kalau buka, panah ke kanan kalau tutup
         chevron.setIcon(new FlatSVGIcon(buka
-                ? "iconMf/IconChevronDown.svg"
-                : "iconMf/IconChevronRight.svg"));
+                ? "iconsvg/IconChevronDown.svg"
+                : "iconsvg/IconChevronRight.svg"));
         // tampilkan isi submenu saat buka, sembunyikan saat tutup
         content.setVisible(buka);
 
@@ -506,7 +506,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         lblNamaSekolah.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 13)); // NOI18N
         lblNamaSekolah.setForeground(new java.awt.Color(255, 255, 255));
-        lblNamaSekolah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/siapV2Sidebar.png"))); // NOI18N
+        lblNamaSekolah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/siapV2Sidebar.png"))); // NOI18N
         lblNamaSekolah.setText("MTs Darul Ulum Kepel");
         lblNamaSekolah.setIconTextGap(8);
         panelHeaderSidebar.add(lblNamaSekolah, "card2");
@@ -529,7 +529,7 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel7.setPreferredSize(new java.awt.Dimension(82, 40));
 
         btnLogout.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        btnLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/logout.png"))); // NOI18N
+        btnLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/logout.png"))); // NOI18N
         btnLogout.setText("Keluar");
         btnLogout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnLogout.setMargin(new java.awt.Insets(0, 8, 0, 8));
@@ -609,16 +609,16 @@ public class MainFrame extends javax.swing.JFrame {
         btndashAbs.setBackground(new java.awt.Color(20, 77, 50));
         btndashAbs.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btndashAbs.setForeground(new java.awt.Color(137, 167, 153));
-        btndashAbs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dashboardNonaktif.png"))); // NOI18N
+        btndashAbs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dashboardNonaktif.png"))); // NOI18N
         btndashAbs.setText("Dashboard Absensi");
         btndashAbs.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btndashAbs.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dashboardNonaktif.png"))); // NOI18N
-        btndashAbs.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dashboardAktif.png"))); // NOI18N
+        btndashAbs.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dashboardNonaktif.png"))); // NOI18N
+        btndashAbs.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dashboardAktif.png"))); // NOI18N
         btndashAbs.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btndashAbs.setIconTextGap(8);
         btndashAbs.setMargin(new java.awt.Insets(0, 24, 0, 24));
         btndashAbs.setRolloverEnabled(false);
-        btndashAbs.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dashboardAktif.png"))); // NOI18N
+        btndashAbs.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dashboardAktif.png"))); // NOI18N
         pnlBtndashAbs.add(btndashAbs, "card2");
 
         pnlMenu.add(pnlBtndashAbs);
@@ -632,7 +632,7 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel14.setPreferredSize(new java.awt.Dimension(240, 32));
         jPanel14.setLayout(new java.awt.BorderLayout(8, 0));
 
-        lblChevronDataMaster.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconChevronRight.png"))); // NOI18N
+        lblChevronDataMaster.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconChevronRight.png"))); // NOI18N
         lblChevronDataMaster.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblChevronDataMaster.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -644,16 +644,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnDataMaster.setBackground(new java.awt.Color(20, 77, 50));
         btnDataMaster.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnDataMaster.setForeground(new java.awt.Color(137, 167, 153));
-        btnDataMaster.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dataMasterNonaktif.png"))); // NOI18N
+        btnDataMaster.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dataMasterNonaktif.png"))); // NOI18N
         btnDataMaster.setText("Data Master");
         btnDataMaster.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDataMaster.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dataMasterNonaktif.png"))); // NOI18N
-        btnDataMaster.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dataMasterAktif.png"))); // NOI18N
+        btnDataMaster.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dataMasterNonaktif.png"))); // NOI18N
+        btnDataMaster.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dataMasterAktif.png"))); // NOI18N
         btnDataMaster.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnDataMaster.setIconTextGap(8);
         btnDataMaster.setMargin(new java.awt.Insets(0, 0, 0, 0));
         btnDataMaster.setRolloverEnabled(false);
-        btnDataMaster.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dataMasterAktif.png"))); // NOI18N
+        btnDataMaster.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dataMasterAktif.png"))); // NOI18N
         btnDataMaster.addChangeListener(this::btnDataMasterStateChanged);
         jPanel14.add(btnDataMaster, java.awt.BorderLayout.CENTER);
 
@@ -670,16 +670,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnSiswa.setBackground(new java.awt.Color(20, 77, 50));
         btnSiswa.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnSiswa.setForeground(new java.awt.Color(137, 167, 153));
-        btnSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnSiswa.setText("Siswa");
         btnSiswa.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnSiswa.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnSiswa.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnSiswa.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnSiswa.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnSiswa.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnSiswa.setIconTextGap(8);
         btnSiswa.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnSiswa.setRolloverEnabled(false);
-        btnSiswa.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnSiswa.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         jPanel15.add(btnSiswa, "card3");
 
         pnlIsiDataMaster.add(jPanel15);
@@ -692,16 +692,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnKelas.setBackground(new java.awt.Color(20, 77, 50));
         btnKelas.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnKelas.setForeground(new java.awt.Color(137, 167, 153));
-        btnKelas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnKelas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnKelas.setText("Kelas");
         btnKelas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnKelas.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnKelas.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnKelas.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnKelas.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnKelas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnKelas.setIconTextGap(8);
         btnKelas.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnKelas.setRolloverEnabled(false);
-        btnKelas.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnKelas.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         jPanel17.add(btnKelas, "card3");
 
         pnlIsiDataMaster.add(jPanel17);
@@ -714,16 +714,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnGuru.setBackground(new java.awt.Color(20, 77, 50));
         btnGuru.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnGuru.setForeground(new java.awt.Color(137, 167, 153));
-        btnGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnGuru.setText("Guru / Wali");
         btnGuru.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnGuru.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnGuru.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnGuru.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnGuru.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnGuru.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnGuru.setIconTextGap(8);
         btnGuru.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnGuru.setRolloverEnabled(false);
-        btnGuru.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnGuru.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         jPanel18.add(btnGuru, "card3");
 
         pnlIsiDataMaster.add(jPanel18);
@@ -736,16 +736,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnQRSiswa.setBackground(new java.awt.Color(20, 77, 50));
         btnQRSiswa.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnQRSiswa.setForeground(new java.awt.Color(137, 167, 153));
-        btnQRSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnQRSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnQRSiswa.setText("QR Siswa");
         btnQRSiswa.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnQRSiswa.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnQRSiswa.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnQRSiswa.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnQRSiswa.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnQRSiswa.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnQRSiswa.setIconTextGap(8);
         btnQRSiswa.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnQRSiswa.setRolloverEnabled(false);
-        btnQRSiswa.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnQRSiswa.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         jPanel19.add(btnQRSiswa, "card3");
 
         pnlIsiDataMaster.add(jPanel19);
@@ -763,7 +763,7 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel20.setPreferredSize(new java.awt.Dimension(240, 32));
         jPanel20.setLayout(new java.awt.BorderLayout(8, 0));
 
-        lblChevronAbsensiQR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconChevronRight.png"))); // NOI18N
+        lblChevronAbsensiQR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconChevronRight.png"))); // NOI18N
         lblChevronAbsensiQR.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblChevronAbsensiQR.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -775,16 +775,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnAbsQR.setBackground(new java.awt.Color(20, 77, 50));
         btnAbsQR.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnAbsQR.setForeground(new java.awt.Color(137, 167, 153));
-        btnAbsQR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/absensiQrNonaktif.png"))); // NOI18N
+        btnAbsQR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/absensiQrNonaktif.png"))); // NOI18N
         btnAbsQR.setText("Absensi QR");
         btnAbsQR.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAbsQR.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/absensiQrNonaktif.png"))); // NOI18N
-        btnAbsQR.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/absensiQrAktif.png"))); // NOI18N
+        btnAbsQR.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/absensiQrNonaktif.png"))); // NOI18N
+        btnAbsQR.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/absensiQrAktif.png"))); // NOI18N
         btnAbsQR.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnAbsQR.setIconTextGap(8);
         btnAbsQR.setMargin(new java.awt.Insets(0, 0, 0, 0));
         btnAbsQR.setRolloverEnabled(false);
-        btnAbsQR.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/absensiQrAktif.png"))); // NOI18N
+        btnAbsQR.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/absensiQrAktif.png"))); // NOI18N
         btnAbsQR.addChangeListener(this::btnAbsQRStateChanged);
         jPanel20.add(btnAbsQR, java.awt.BorderLayout.CENTER);
 
@@ -801,16 +801,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnScanQR.setBackground(new java.awt.Color(20, 77, 50));
         btnScanQR.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnScanQR.setForeground(new java.awt.Color(137, 167, 153));
-        btnScanQR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnScanQR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnScanQR.setText("Scan QR");
         btnScanQR.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnScanQR.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnScanQR.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnScanQR.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnScanQR.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnScanQR.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnScanQR.setIconTextGap(8);
         btnScanQR.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnScanQR.setRolloverEnabled(false);
-        btnScanQR.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnScanQR.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         jPanel22.add(btnScanQR, "card3");
 
         pnlIsiAbsensiQR.add(jPanel22);
@@ -823,16 +823,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnHasilScan.setBackground(new java.awt.Color(20, 77, 50));
         btnHasilScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnHasilScan.setForeground(new java.awt.Color(137, 167, 153));
-        btnHasilScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnHasilScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnHasilScan.setText("Hasil Scan");
         btnHasilScan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnHasilScan.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnHasilScan.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnHasilScan.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnHasilScan.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnHasilScan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnHasilScan.setIconTextGap(8);
         btnHasilScan.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnHasilScan.setRolloverEnabled(false);
-        btnHasilScan.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnHasilScan.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         jPanel23.add(btnHasilScan, "card3");
 
         pnlIsiAbsensiQR.add(jPanel23);
@@ -850,7 +850,7 @@ public class MainFrame extends javax.swing.JFrame {
         pnlHeaderRekapAbsensi.setPreferredSize(new java.awt.Dimension(240, 32));
         pnlHeaderRekapAbsensi.setLayout(new java.awt.BorderLayout(8, 0));
 
-        lblChevronRekapAbsensi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconChevronRight.png"))); // NOI18N
+        lblChevronRekapAbsensi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconChevronRight.png"))); // NOI18N
         lblChevronRekapAbsensi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblChevronRekapAbsensi.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -862,16 +862,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnRekapAbsensi.setBackground(new java.awt.Color(20, 77, 50));
         btnRekapAbsensi.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnRekapAbsensi.setForeground(new java.awt.Color(137, 167, 153));
-        btnRekapAbsensi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/rekapLaporanNonaktif.png"))); // NOI18N
+        btnRekapAbsensi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/rekapLaporanNonaktif.png"))); // NOI18N
         btnRekapAbsensi.setText("Rekap & Laporan");
         btnRekapAbsensi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnRekapAbsensi.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/rekapLaporanNonaktif.png"))); // NOI18N
-        btnRekapAbsensi.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/rekapLaporanAktif.png"))); // NOI18N
+        btnRekapAbsensi.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/rekapLaporanNonaktif.png"))); // NOI18N
+        btnRekapAbsensi.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/rekapLaporanAktif.png"))); // NOI18N
         btnRekapAbsensi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnRekapAbsensi.setIconTextGap(8);
         btnRekapAbsensi.setMargin(new java.awt.Insets(0, 0, 0, 0));
         btnRekapAbsensi.setRolloverEnabled(false);
-        btnRekapAbsensi.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/rekapLaporanAktif.png"))); // NOI18N
+        btnRekapAbsensi.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/rekapLaporanAktif.png"))); // NOI18N
         btnRekapAbsensi.addChangeListener(this::btnRekapAbsensiStateChanged);
         pnlHeaderRekapAbsensi.add(btnRekapAbsensi, java.awt.BorderLayout.CENTER);
 
@@ -888,16 +888,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnRekapAbsensiItem.setBackground(new java.awt.Color(20, 77, 50));
         btnRekapAbsensiItem.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnRekapAbsensiItem.setForeground(new java.awt.Color(137, 167, 153));
-        btnRekapAbsensiItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnRekapAbsensiItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnRekapAbsensiItem.setText("Rekap");
         btnRekapAbsensiItem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnRekapAbsensiItem.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnRekapAbsensiItem.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnRekapAbsensiItem.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnRekapAbsensiItem.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnRekapAbsensiItem.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnRekapAbsensiItem.setIconTextGap(8);
         btnRekapAbsensiItem.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnRekapAbsensiItem.setRolloverEnabled(false);
-        btnRekapAbsensiItem.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnRekapAbsensiItem.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         pnlItemRekapAbsensi.add(btnRekapAbsensiItem, "card3");
 
         pnlIsiRekapAbsensi.add(pnlItemRekapAbsensi);
@@ -910,16 +910,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnLaporanAbsensi.setBackground(new java.awt.Color(20, 77, 50));
         btnLaporanAbsensi.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnLaporanAbsensi.setForeground(new java.awt.Color(137, 167, 153));
-        btnLaporanAbsensi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnLaporanAbsensi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnLaporanAbsensi.setText("Laporan");
         btnLaporanAbsensi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnLaporanAbsensi.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnLaporanAbsensi.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnLaporanAbsensi.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnLaporanAbsensi.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnLaporanAbsensi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnLaporanAbsensi.setIconTextGap(8);
         btnLaporanAbsensi.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnLaporanAbsensi.setRolloverEnabled(false);
-        btnLaporanAbsensi.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnLaporanAbsensi.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         pnlItemLaporanAbsensi.add(btnLaporanAbsensi, "card3");
 
         pnlIsiRekapAbsensi.add(pnlItemLaporanAbsensi);
@@ -949,16 +949,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnDashboardPPDB.setBackground(new java.awt.Color(20, 77, 50));
         btnDashboardPPDB.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnDashboardPPDB.setForeground(new java.awt.Color(137, 167, 153));
-        btnDashboardPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dashboardNonaktif.png"))); // NOI18N
+        btnDashboardPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dashboardNonaktif.png"))); // NOI18N
         btnDashboardPPDB.setText("Dashboard PPDB");
         btnDashboardPPDB.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDashboardPPDB.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dashboardNonaktif.png"))); // NOI18N
-        btnDashboardPPDB.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dashboardAktif.png"))); // NOI18N
+        btnDashboardPPDB.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dashboardNonaktif.png"))); // NOI18N
+        btnDashboardPPDB.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dashboardAktif.png"))); // NOI18N
         btnDashboardPPDB.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnDashboardPPDB.setIconTextGap(8);
         btnDashboardPPDB.setMargin(new java.awt.Insets(0, 24, 0, 24));
         btnDashboardPPDB.setRolloverEnabled(false);
-        btnDashboardPPDB.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dashboardAktif.png"))); // NOI18N
+        btnDashboardPPDB.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dashboardAktif.png"))); // NOI18N
         pnlBtnDashboardPPDB.add(btnDashboardPPDB, "card2");
 
         pnlMenu.add(pnlBtnDashboardPPDB);
@@ -971,16 +971,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnDataPendaftar.setBackground(new java.awt.Color(20, 77, 50));
         btnDataPendaftar.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnDataPendaftar.setForeground(new java.awt.Color(137, 167, 153));
-        btnDataPendaftar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dataPendaftarNonaktif.png"))); // NOI18N
+        btnDataPendaftar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dataPendaftarNonaktif.png"))); // NOI18N
         btnDataPendaftar.setText("Data Pendaftar");
         btnDataPendaftar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDataPendaftar.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dataPendaftarNonaktif.png"))); // NOI18N
-        btnDataPendaftar.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dataPendaftarAktif.png"))); // NOI18N
+        btnDataPendaftar.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dataPendaftarNonaktif.png"))); // NOI18N
+        btnDataPendaftar.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dataPendaftarAktif.png"))); // NOI18N
         btnDataPendaftar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnDataPendaftar.setIconTextGap(8);
         btnDataPendaftar.setMargin(new java.awt.Insets(0, 24, 0, 24));
         btnDataPendaftar.setRolloverEnabled(false);
-        btnDataPendaftar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dataPendaftarAktif.png"))); // NOI18N
+        btnDataPendaftar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dataPendaftarAktif.png"))); // NOI18N
         pnlBtnDataPendaftar.add(btnDataPendaftar, "card2");
 
         pnlMenu.add(pnlBtnDataPendaftar);
@@ -993,16 +993,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnPenempatanKelas7.setBackground(new java.awt.Color(20, 77, 50));
         btnPenempatanKelas7.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnPenempatanKelas7.setForeground(new java.awt.Color(137, 167, 153));
-        btnPenempatanKelas7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/penempatanKelasNonaktif.png"))); // NOI18N
+        btnPenempatanKelas7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/penempatanKelasNonaktif.png"))); // NOI18N
         btnPenempatanKelas7.setText("Penempatan Kelas 7");
         btnPenempatanKelas7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnPenempatanKelas7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/penempatanKelasNonaktif.png"))); // NOI18N
-        btnPenempatanKelas7.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/penempatanKelasAktif.png"))); // NOI18N
+        btnPenempatanKelas7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/penempatanKelasNonaktif.png"))); // NOI18N
+        btnPenempatanKelas7.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/penempatanKelasAktif.png"))); // NOI18N
         btnPenempatanKelas7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnPenempatanKelas7.setIconTextGap(8);
         btnPenempatanKelas7.setMargin(new java.awt.Insets(0, 24, 0, 24));
         btnPenempatanKelas7.setRolloverEnabled(false);
-        btnPenempatanKelas7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/penempatanKelasAktif.png"))); // NOI18N
+        btnPenempatanKelas7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/penempatanKelasAktif.png"))); // NOI18N
         pnlBtnPenempatanKelas7.add(btnPenempatanKelas7, "card2");
 
         pnlMenu.add(pnlBtnPenempatanKelas7);
@@ -1016,7 +1016,7 @@ public class MainFrame extends javax.swing.JFrame {
         pnlHeaderRekapPPDB.setPreferredSize(new java.awt.Dimension(240, 32));
         pnlHeaderRekapPPDB.setLayout(new java.awt.BorderLayout(8, 0));
 
-        lblChevronRekapPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconChevronRight.png"))); // NOI18N
+        lblChevronRekapPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconChevronRight.png"))); // NOI18N
         lblChevronRekapPPDB.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblChevronRekapPPDB.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1028,16 +1028,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnRekapPPDB.setBackground(new java.awt.Color(20, 77, 50));
         btnRekapPPDB.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnRekapPPDB.setForeground(new java.awt.Color(137, 167, 153));
-        btnRekapPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/rekapLaporanNonaktif.png"))); // NOI18N
+        btnRekapPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/rekapLaporanNonaktif.png"))); // NOI18N
         btnRekapPPDB.setText("Rekap & Laporan");
         btnRekapPPDB.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnRekapPPDB.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/rekapLaporanNonaktif.png"))); // NOI18N
-        btnRekapPPDB.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/rekapLaporanAktif.png"))); // NOI18N
+        btnRekapPPDB.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/rekapLaporanNonaktif.png"))); // NOI18N
+        btnRekapPPDB.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/rekapLaporanAktif.png"))); // NOI18N
         btnRekapPPDB.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnRekapPPDB.setIconTextGap(8);
         btnRekapPPDB.setMargin(new java.awt.Insets(0, 0, 0, 0));
         btnRekapPPDB.setRolloverEnabled(false);
-        btnRekapPPDB.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/rekapLaporanAktif.png"))); // NOI18N
+        btnRekapPPDB.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/rekapLaporanAktif.png"))); // NOI18N
         btnRekapPPDB.addChangeListener(this::btnRekapPPDBStateChanged);
         pnlHeaderRekapPPDB.add(btnRekapPPDB, java.awt.BorderLayout.CENTER);
 
@@ -1054,16 +1054,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnRekapPPDBItem.setBackground(new java.awt.Color(20, 77, 50));
         btnRekapPPDBItem.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnRekapPPDBItem.setForeground(new java.awt.Color(137, 167, 153));
-        btnRekapPPDBItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnRekapPPDBItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnRekapPPDBItem.setText("Rekap");
         btnRekapPPDBItem.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnRekapPPDBItem.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnRekapPPDBItem.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnRekapPPDBItem.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnRekapPPDBItem.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnRekapPPDBItem.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnRekapPPDBItem.setIconTextGap(8);
         btnRekapPPDBItem.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnRekapPPDBItem.setRolloverEnabled(false);
-        btnRekapPPDBItem.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnRekapPPDBItem.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         pnlItemRekapPPDB.add(btnRekapPPDBItem, "card3");
 
         pnlIsiRekapPPDB.add(pnlItemRekapPPDB);
@@ -1076,16 +1076,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnLaporanPPDB.setBackground(new java.awt.Color(20, 77, 50));
         btnLaporanPPDB.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnLaporanPPDB.setForeground(new java.awt.Color(137, 167, 153));
-        btnLaporanPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnLaporanPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnLaporanPPDB.setText("Laporan");
         btnLaporanPPDB.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnLaporanPPDB.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnLaporanPPDB.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnLaporanPPDB.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnLaporanPPDB.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnLaporanPPDB.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnLaporanPPDB.setIconTextGap(8);
         btnLaporanPPDB.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnLaporanPPDB.setRolloverEnabled(false);
-        btnLaporanPPDB.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnLaporanPPDB.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         pnlItemLaporanPPDB.add(btnLaporanPPDB, "card3");
 
         pnlIsiRekapPPDB.add(pnlItemLaporanPPDB);
@@ -1116,7 +1116,7 @@ public class MainFrame extends javax.swing.JFrame {
         pnlHeaderPengaturan.setPreferredSize(new java.awt.Dimension(240, 32));
         pnlHeaderPengaturan.setLayout(new java.awt.BorderLayout(8, 0));
 
-        lblChevronPengaturan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconChevronRight.png"))); // NOI18N
+        lblChevronPengaturan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconChevronRight.png"))); // NOI18N
         lblChevronPengaturan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblChevronPengaturan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1128,16 +1128,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnPengaturan.setBackground(new java.awt.Color(20, 77, 50));
         btnPengaturan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnPengaturan.setForeground(new java.awt.Color(137, 167, 153));
-        btnPengaturan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/pengaturanNonaktif.png"))); // NOI18N
+        btnPengaturan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/pengaturanNonaktif.png"))); // NOI18N
         btnPengaturan.setText("Pengaturan");
         btnPengaturan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnPengaturan.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/pengaturanNonaktif.png"))); // NOI18N
-        btnPengaturan.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/pengaturanAktif.png"))); // NOI18N
+        btnPengaturan.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/pengaturanNonaktif.png"))); // NOI18N
+        btnPengaturan.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/pengaturanAktif.png"))); // NOI18N
         btnPengaturan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnPengaturan.setIconTextGap(8);
         btnPengaturan.setMargin(new java.awt.Insets(0, 0, 0, 0));
         btnPengaturan.setRolloverEnabled(false);
-        btnPengaturan.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/pengaturanAktif.png"))); // NOI18N
+        btnPengaturan.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/pengaturanAktif.png"))); // NOI18N
         btnPengaturan.addChangeListener(this::btnPengaturanStateChanged);
         pnlHeaderPengaturan.add(btnPengaturan, java.awt.BorderLayout.CENTER);
 
@@ -1154,16 +1154,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnJamAbsensi.setBackground(new java.awt.Color(20, 77, 50));
         btnJamAbsensi.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnJamAbsensi.setForeground(new java.awt.Color(137, 167, 153));
-        btnJamAbsensi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnJamAbsensi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnJamAbsensi.setText("Jam Absensi");
         btnJamAbsensi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnJamAbsensi.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnJamAbsensi.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnJamAbsensi.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnJamAbsensi.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnJamAbsensi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnJamAbsensi.setIconTextGap(8);
         btnJamAbsensi.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnJamAbsensi.setRolloverEnabled(false);
-        btnJamAbsensi.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnJamAbsensi.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         pnlItemJamAbsensi.add(btnJamAbsensi, "card3");
 
         pnlIsiPengaturan.add(pnlItemJamAbsensi);
@@ -1176,16 +1176,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnPPDB.setBackground(new java.awt.Color(20, 77, 50));
         btnPPDB.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnPPDB.setForeground(new java.awt.Color(137, 167, 153));
-        btnPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnPPDB.setText("PPDB");
         btnPPDB.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnPPDB.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnPPDB.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnPPDB.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnPPDB.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnPPDB.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnPPDB.setIconTextGap(8);
         btnPPDB.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnPPDB.setRolloverEnabled(false);
-        btnPPDB.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnPPDB.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         pnlItemPPDB.add(btnPPDB, "card3");
 
         pnlIsiPengaturan.add(pnlItemPPDB);
@@ -1198,16 +1198,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnPengguna.setBackground(new java.awt.Color(20, 77, 50));
         btnPengguna.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnPengguna.setForeground(new java.awt.Color(137, 167, 153));
-        btnPengguna.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
+        btnPengguna.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
         btnPengguna.setText("Pengguna");
         btnPengguna.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnPengguna.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsNonaktif.png"))); // NOI18N
-        btnPengguna.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnPengguna.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsNonaktif.png"))); // NOI18N
+        btnPengguna.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         btnPengguna.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnPengguna.setIconTextGap(8);
         btnPengguna.setMargin(new java.awt.Insets(0, 24, 0, 34));
         btnPengguna.setRolloverEnabled(false);
-        btnPengguna.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsAktif.png"))); // NOI18N
+        btnPengguna.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsAktif.png"))); // NOI18N
         pnlItemPengguna.add(btnPengguna, "card3");
 
         pnlIsiPengaturan.add(pnlItemPengguna);
@@ -1224,16 +1224,16 @@ public class MainFrame extends javax.swing.JFrame {
         btnProfil.setBackground(new java.awt.Color(20, 77, 50));
         btnProfil.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnProfil.setForeground(new java.awt.Color(137, 167, 153));
-        btnProfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/profilNonaktif.png"))); // NOI18N
+        btnProfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/profilNonaktif.png"))); // NOI18N
         btnProfil.setText("Profil");
         btnProfil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnProfil.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/profilNonaktif.png"))); // NOI18N
-        btnProfil.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/profilAktif.png"))); // NOI18N
+        btnProfil.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/profilNonaktif.png"))); // NOI18N
+        btnProfil.setDisabledSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/profilAktif.png"))); // NOI18N
         btnProfil.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnProfil.setIconTextGap(8);
         btnProfil.setMargin(new java.awt.Insets(0, 24, 0, 24));
         btnProfil.setRolloverEnabled(false);
-        btnProfil.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/profilAktif.png"))); // NOI18N
+        btnProfil.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/profilAktif.png"))); // NOI18N
         pnlBtnProfil.add(btnProfil, "card2");
 
         pnlMenu.add(pnlBtnProfil);
@@ -1265,7 +1265,7 @@ public class MainFrame extends javax.swing.JFrame {
         });
         pnlSearchBar.setLayout(new java.awt.BorderLayout());
 
-        lblSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/search.png"))); // NOI18N
+        lblSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
         lblSearch.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 searchMousePressed(evt);
@@ -1458,6 +1458,7 @@ public class MainFrame extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+        System.setProperty("sun.java2d.uiScale", "1.25");
         try {
             UIManager.put("Component.focusColor", Color.decode("#337253"));
             UIManager.put("Component.focusedBorderColor", Color.decode("#337253"));

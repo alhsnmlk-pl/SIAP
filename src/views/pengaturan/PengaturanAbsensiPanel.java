@@ -116,7 +116,7 @@ public class PengaturanAbsensiPanel extends javax.swing.JPanel {
         btnMulaiScan.setBackground(new java.awt.Color(20, 77, 50));
         btnMulaiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnMulaiScan.setForeground(new java.awt.Color(255, 255, 255));
-        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/views/pengaturan/IconCheck.png"))); // NOI18N
+        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/imgNajwa_IconCheck.png"))); // NOI18N
         btnMulaiScan.setText("Simpan Pengaturan");
         btnMulaiScan.setIconTextGap(8);
         btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
@@ -189,7 +189,7 @@ public class PengaturanAbsensiPanel extends javax.swing.JPanel {
 
         jPanel20.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/views/pengaturan/Text.png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/imgNajwa_Text.png"))); // NOI18N
         jLabel11.setText("Absen Berangkat");
 
         jLabel14.setText("06 : 00 - 08.00");
@@ -219,7 +219,7 @@ public class PengaturanAbsensiPanel extends javax.swing.JPanel {
 
         jPanel21.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/views/pengaturan/Text2.png"))); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/imgNajwa_Text2.png"))); // NOI18N
         jLabel12.setText("Terlambat setelah");
 
         jLabel15.setText("07.00");
@@ -250,7 +250,7 @@ public class PengaturanAbsensiPanel extends javax.swing.JPanel {
         jPanel22.setBackground(new java.awt.Color(255, 255, 255));
         jPanel22.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/views/pengaturan/Text3.png"))); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/imgNajwa_Text3.png"))); // NOI18N
         jLabel13.setText("Absen Pulang");
 
         jLabel16.setBackground(new java.awt.Color(255, 255, 255));

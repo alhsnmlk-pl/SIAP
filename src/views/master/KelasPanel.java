@@ -74,10 +74,10 @@ public class KelasPanel extends javax.swing.JPanel {
         btnTambahKelas.setBackground(new java.awt.Color(20, 77, 50));
         btnTambahKelas.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnTambahKelas.setForeground(new java.awt.Color(255, 255, 255));
-        btnTambahKelas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/Vector.png"))); // NOI18N
+        btnTambahKelas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Vector.png"))); // NOI18N
         btnTambahKelas.setText("Tambah Kelas");
         btnTambahKelas.setIconTextGap(8);
-        btnTambahKelas.setMargin(new java.awt.Insets(0, 16, 0, 16));
+        btnTambahKelas.setMargin(new java.awt.Insets(0, 8, 0, 8));
         btnTambahKelas.setMaximumSize(new java.awt.Dimension(130, 40));
         btnTambahKelas.setMinimumSize(new java.awt.Dimension(130, 40));
         btnTambahKelas.setPreferredSize(new java.awt.Dimension(147, 40));

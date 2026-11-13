@@ -208,7 +208,7 @@ public class AbsensiManualPanel extends javax.swing.JPanel {
         jPanel12.setLayout(new java.awt.CardLayout());
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconCamera.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconCamera.png"))); // NOI18N
         jPanel12.add(jLabel7, "card2");
 
         jPanel10.add(jPanel12, "card2");
@@ -226,7 +226,7 @@ public class AbsensiManualPanel extends javax.swing.JPanel {
         btnSimulasiScan.setBackground(new java.awt.Color(20, 77, 50));
         btnSimulasiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnSimulasiScan.setForeground(new java.awt.Color(255, 255, 255));
-        btnSimulasiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconQr.png"))); // NOI18N
+        btnSimulasiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ImgTony_IconQr.png"))); // NOI18N
         btnSimulasiScan.setText("Simulasikan Scan");
         btnSimulasiScan.setIconTextGap(8);
         btnSimulasiScan.addActionListener(this::btnSimulasiScanActionPerformed);
@@ -268,7 +268,7 @@ public class AbsensiManualPanel extends javax.swing.JPanel {
         jPanel17.setLayout(new java.awt.BorderLayout());
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconResult.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ImgTony_IconResult.png"))); // NOI18N
         jPanel17.add(jLabel5, java.awt.BorderLayout.PAGE_START);
 
         jLabel6.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N

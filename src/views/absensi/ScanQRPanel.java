@@ -19,17 +19,26 @@ public class ScanQRPanel extends javax.swing.JPanel {
         initComponents();
         tglScanQR.setSelected(true);
         UiStyles.seRoundPanel(jPanel13, 4, 4, 4, 4, 100, "#ECEDEB", 1f);
-        UiStyles.setTogleBtn(tglScanQR, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#144D32", "#FFFFFF");
-        UiStyles.setTogleBtn(tglManual, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#144D32", "#FFFFFF");
+        UiStyles.setTogleBtn(tglScanQR, "#F6F7F5", "#66706B", "#F6F7F5", "#144D32","#FFFFFF", "#144D32", "#FFFFFF");
+        UiStyles.setTogleBtn(tglManual, "#F6F7F5", "#66706B", "#F6F7F5", "#144D32","#FFFFFF", "#144D32", "#FFFFFF");
         tflberangkat.setSelected(true);
         UiStyles.seRoundPanel(jPanel14, 4, 4, 4, 4, 100, "#ECEDEB", 1f);
-        UiStyles.setTogleBtn(tflberangkat, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#FFFFFF", "#144D32");
-        UiStyles.setTogleBtn(tglPulang, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#FFFFFF", "#144D32");
+        UiStyles.setTogleBtn(tflberangkat, "#F6F7F5", "#66706B", "#F6F7F5", "#FFFFFF","#144D32", "#FFFFFF", "#144D32");
+        UiStyles.setTogleBtn(tglPulang, "#F6F7F5", "#66706B", "#F6F7F5", "#FFFFFF","#144D32", "#FFFFFF", "#144D32");
         UiStyles.seRoundPanel(jPanel2, 0, 0, 0, 0, 32, "#ECEDEB", 1f);
         UiStyles.seRoundPanel(jPanel3, 0, 0, 0, 0, 32, "#ECEDEB", 1f);
         UiStyles.setButton(btnSimulasiScan, "#144D32", "#FFFFFF", "#0D3C26", "#0A2F1D", null, 0);
+        UiStyles.seRoundPanel(jPanel12, 4, 4, 4, 4, 32, "#ECEDEB", 1f);
         UiStyles.setCBox(cPerangkatCam);
         UiStyles.setCBox(cAbsenQR);
+        
+         UiStyles.seRoundPanel(jPanel15,16, 16, 16, 16, 32, "#ECEDEB", 1f);
+         UiStyles.seRoundPanel(jPanel24,8, 16, 8, 16, 32, "#ECEDEB", 1f);
+         UiStyles.seRoundPanel(jPanel30,0, 0, 0, 0, 32, "#ECEDEB", 1f);
+         UiStyles.seRoundPanel(jPanel26,0, 0, 0, 0, 32, "#ECEDEB", 0f);
+         UiStyles.setCBox(cStatusHadir);
+         UiStyles.setButton(btnKonfirSimpan, "#144D32", "#FFFFFF", "#0D3C26", "#0D3C26", null, 0);
+         UiStyles.setButtonV2(btnbatal);
     }
 
     /**
@@ -44,6 +53,16 @@ public class ScanQRPanel extends javax.swing.JPanel {
 
         groupTglScanManual = new javax.swing.ButtonGroup();
         groupTglberangkatPulang = new javax.swing.ButtonGroup();
+        pnlHeader = new javax.swing.JPanel();
+        lblHeader = new javax.swing.JLabel();
+        lblHeader1 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
+        tflberangkat = new javax.swing.JToggleButton();
+        tglPulang = new javax.swing.JToggleButton();
+        jPanel13 = new javax.swing.JPanel();
+        tglScanQR = new javax.swing.JToggleButton();
+        tglManual = new javax.swing.JToggleButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -63,163 +82,42 @@ public class ScanQRPanel extends javax.swing.JPanel {
         jPanel16 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
-        pnlAbsenKosong = new javax.swing.JPanel();
+        pnlKonfirmasi = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel18 = new javax.swing.JPanel();
+        jPanel19 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jPanel20 = new javax.swing.JPanel();
+        jPanel21 = new javax.swing.JPanel();
+        jPanel23 = new javax.swing.JPanel();
+        jPanel24 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jPanel26 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jPanel25 = new javax.swing.JPanel();
+        jPanel27 = new javax.swing.JPanel();
+        cStatusHadir = new javax.swing.JComboBox<>();
+        jLabel14 = new javax.swing.JLabel();
+        jPanel29 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jPanel30 = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jPanel22 = new javax.swing.JPanel();
+        jPanel28 = new javax.swing.JPanel();
+        btnKonfirSimpan = new javax.swing.JButton();
+        btnbatal = new javax.swing.JButton();
+        jPanel31 = new javax.swing.JPanel();
+        pnlKonfirmasiKosong = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        pnlHeader = new javax.swing.JPanel();
-        lblHeader = new javax.swing.JLabel();
-        lblHeader1 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
-        jPanel14 = new javax.swing.JPanel();
-        tflberangkat = new javax.swing.JToggleButton();
-        tglPulang = new javax.swing.JToggleButton();
-        jPanel13 = new javax.swing.JPanel();
-        tglScanQR = new javax.swing.JToggleButton();
-        tglManual = new javax.swing.JToggleButton();
 
         setOpaque(false);
         setLayout(new java.awt.BorderLayout());
-
-        jPanel1.setLayout(new java.awt.GridLayout(1, 2, 16, 16));
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setLayout(new java.awt.BorderLayout());
-
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 0, 24));
-        jPanel4.setOpaque(false);
-        jPanel4.setPreferredSize(new java.awt.Dimension(554, 40));
-        jPanel4.setLayout(new java.awt.CardLayout());
-
-        jLabel1.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel1.setText("Kamera");
-        jPanel4.add(jLabel1, "card2");
-
-        jPanel2.add(jPanel4, java.awt.BorderLayout.PAGE_START);
-
-        jPanel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 24, 24));
-        jPanel5.setOpaque(false);
-        jPanel5.setLayout(new java.awt.BorderLayout());
-
-        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel6.setOpaque(false);
-        jPanel6.setPreferredSize(new java.awt.Dimension(506, 72));
-        jPanel6.setLayout(new java.awt.BorderLayout());
-
-        jLabel2.setFont(new java.awt.Font("Plus Jakarta Sans Medium", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 112, 107));
-        jLabel2.setText("Perangkat Kamera");
-        jLabel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 8, 0));
-        jLabel2.setPreferredSize(new java.awt.Dimension(96, 32));
-        jPanel6.add(jLabel2, java.awt.BorderLayout.PAGE_START);
-
-        cPerangkatCam.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        cPerangkatCam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kamera Depan (Integrated Webcam)", "Item 2", "Item 3", "Item 4" }));
-        jPanel6.add(cPerangkatCam, java.awt.BorderLayout.CENTER);
-
-        jPanel5.add(jPanel6, java.awt.BorderLayout.PAGE_START);
-
-        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
-        jPanel8.setOpaque(false);
-        jPanel8.setLayout(new java.awt.CardLayout());
-
-        jPanel10.setBackground(new java.awt.Color(20, 77, 50));
-        jPanel10.setOpaque(false);
-        jPanel10.setLayout(new java.awt.CardLayout());
-
-        jPanel12.setBackground(new java.awt.Color(20, 77, 50));
-        jPanel12.setLayout(new java.awt.CardLayout());
-
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconCamera.png"))); // NOI18N
-        jPanel12.add(jLabel7, "card2");
-
-        jPanel10.add(jPanel12, "card2");
-
-        jPanel8.add(jPanel10, "card2");
-
-        jPanel5.add(jPanel8, java.awt.BorderLayout.CENTER);
-
-        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel7.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
-        jPanel7.setOpaque(false);
-        jPanel7.setPreferredSize(new java.awt.Dimension(506, 56));
-        jPanel7.setLayout(new java.awt.BorderLayout(8, 8));
-
-        btnSimulasiScan.setBackground(new java.awt.Color(20, 77, 50));
-        btnSimulasiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        btnSimulasiScan.setForeground(new java.awt.Color(255, 255, 255));
-        btnSimulasiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconQr.png"))); // NOI18N
-        btnSimulasiScan.setText("Simulasikan Scan");
-        btnSimulasiScan.setIconTextGap(8);
-        btnSimulasiScan.addActionListener(this::btnSimulasiScanActionPerformed);
-        jPanel7.add(btnSimulasiScan, java.awt.BorderLayout.CENTER);
-
-        cAbsenQR.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        cAbsenQR.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hadir", "Item 2", "Item 3", "Item 4" }));
-        cAbsenQR.setPreferredSize(new java.awt.Dimension(144, 22));
-        cAbsenQR.addActionListener(this::cAbsenQRActionPerformed);
-        jPanel7.add(cAbsenQR, java.awt.BorderLayout.LINE_END);
-
-        jPanel5.add(jPanel7, java.awt.BorderLayout.PAGE_END);
-
-        jPanel2.add(jPanel5, java.awt.BorderLayout.CENTER);
-
-        jPanel1.add(jPanel2);
-
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setLayout(new java.awt.BorderLayout());
-
-        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel16.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 0, 24));
-        jPanel16.setOpaque(false);
-        jPanel16.setPreferredSize(new java.awt.Dimension(554, 40));
-        jPanel16.setLayout(new java.awt.CardLayout());
-
-        jLabel3.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel3.setText("Identitas & Konfirmasi");
-        jPanel16.add(jLabel3, "card2");
-
-        jPanel3.add(jPanel16, java.awt.BorderLayout.PAGE_START);
-
-        jPanel11.setOpaque(false);
-        jPanel11.setLayout(new java.awt.CardLayout());
-
-        pnlAbsenKosong.setOpaque(false);
-        pnlAbsenKosong.setLayout(new java.awt.GridBagLayout());
-
-        jPanel17.setOpaque(false);
-        jPanel17.setPreferredSize(new java.awt.Dimension(200, 78));
-        jPanel17.setLayout(new java.awt.BorderLayout());
-
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/IconResult.png"))); // NOI18N
-        jPanel17.add(jLabel5, java.awt.BorderLayout.PAGE_START);
-
-        jLabel6.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(102, 112, 107));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Belum ada QR terdeteksi.");
-        jLabel6.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 0, 0, 0));
-        jPanel17.add(jLabel6, java.awt.BorderLayout.CENTER);
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        pnlAbsenKosong.add(jPanel17, gridBagConstraints);
-
-        jPanel11.add(pnlAbsenKosong, "card2");
-
-        jPanel3.add(jPanel11, java.awt.BorderLayout.CENTER);
-
-        jPanel1.add(jPanel3);
-
-        add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pnlHeader.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 16, 0));
         pnlHeader.setMinimumSize(new java.awt.Dimension(958, 69));
@@ -301,7 +199,7 @@ public class ScanQRPanel extends javax.swing.JPanel {
                 .addGroup(pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(lblHeader1, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 323, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         pnlHeaderLayout.setVerticalGroup(
@@ -317,6 +215,323 @@ public class ScanQRPanel extends javax.swing.JPanel {
         );
 
         add(pnlHeader, java.awt.BorderLayout.PAGE_START);
+
+        jPanel1.setLayout(new java.awt.GridLayout(1, 2, 16, 16));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new java.awt.BorderLayout());
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 0, 24));
+        jPanel4.setOpaque(false);
+        jPanel4.setPreferredSize(new java.awt.Dimension(554, 40));
+        jPanel4.setLayout(new java.awt.CardLayout());
+
+        jLabel1.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel1.setText("Kamera");
+        jPanel4.add(jLabel1, "card2");
+
+        jPanel2.add(jPanel4, java.awt.BorderLayout.PAGE_START);
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 24, 24));
+        jPanel5.setOpaque(false);
+        jPanel5.setLayout(new java.awt.BorderLayout());
+
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.setOpaque(false);
+        jPanel6.setPreferredSize(new java.awt.Dimension(506, 72));
+        jPanel6.setLayout(new java.awt.BorderLayout());
+
+        jLabel2.setFont(new java.awt.Font("Plus Jakarta Sans Medium", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel2.setText("Perangkat Kamera");
+        jLabel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 8, 0));
+        jLabel2.setPreferredSize(new java.awt.Dimension(96, 32));
+        jPanel6.add(jLabel2, java.awt.BorderLayout.PAGE_START);
+
+        cPerangkatCam.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        cPerangkatCam.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kamera Depan (Integrated Webcam)", "Item 2", "Item 3", "Item 4" }));
+        jPanel6.add(cPerangkatCam, java.awt.BorderLayout.CENTER);
+
+        jPanel5.add(jPanel6, java.awt.BorderLayout.PAGE_START);
+
+        jPanel8.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel8.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
+        jPanel8.setOpaque(false);
+        jPanel8.setLayout(new java.awt.CardLayout());
+
+        jPanel10.setBackground(new java.awt.Color(20, 77, 50));
+        jPanel10.setOpaque(false);
+        jPanel10.setLayout(new java.awt.CardLayout());
+
+        jPanel12.setBackground(new java.awt.Color(20, 77, 50));
+        jPanel12.setLayout(new java.awt.CardLayout());
+
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconCamera.png"))); // NOI18N
+        jPanel12.add(jLabel7, "card2");
+
+        jPanel10.add(jPanel12, "card2");
+
+        jPanel8.add(jPanel10, "card2");
+
+        jPanel5.add(jPanel8, java.awt.BorderLayout.CENTER);
+
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel7.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
+        jPanel7.setOpaque(false);
+        jPanel7.setPreferredSize(new java.awt.Dimension(506, 56));
+        jPanel7.setLayout(new java.awt.BorderLayout(8, 8));
+
+        btnSimulasiScan.setBackground(new java.awt.Color(20, 77, 50));
+        btnSimulasiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        btnSimulasiScan.setForeground(new java.awt.Color(255, 255, 255));
+        btnSimulasiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ImgTony_IconQr.png"))); // NOI18N
+        btnSimulasiScan.setText("Simulasikan Scan");
+        btnSimulasiScan.setIconTextGap(8);
+        btnSimulasiScan.addActionListener(this::btnSimulasiScanActionPerformed);
+        jPanel7.add(btnSimulasiScan, java.awt.BorderLayout.CENTER);
+
+        cAbsenQR.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        cAbsenQR.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hadir", "Item 2", "Item 3", "Item 4" }));
+        cAbsenQR.setPreferredSize(new java.awt.Dimension(144, 22));
+        cAbsenQR.addActionListener(this::cAbsenQRActionPerformed);
+        jPanel7.add(cAbsenQR, java.awt.BorderLayout.LINE_END);
+
+        jPanel5.add(jPanel7, java.awt.BorderLayout.PAGE_END);
+
+        jPanel2.add(jPanel5, java.awt.BorderLayout.CENTER);
+
+        jPanel1.add(jPanel2);
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setLayout(new java.awt.BorderLayout());
+
+        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel16.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 0, 24));
+        jPanel16.setOpaque(false);
+        jPanel16.setPreferredSize(new java.awt.Dimension(554, 40));
+        jPanel16.setLayout(new java.awt.CardLayout());
+
+        jLabel3.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel3.setText("Identitas & Konfirmasi");
+        jPanel16.add(jLabel3, "card2");
+
+        jPanel3.add(jPanel16, java.awt.BorderLayout.PAGE_START);
+
+        jPanel11.setOpaque(false);
+        jPanel11.setLayout(new java.awt.CardLayout());
+
+        pnlKonfirmasi.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 24, 24));
+        pnlKonfirmasi.setOpaque(false);
+        pnlKonfirmasi.setLayout(new java.awt.BorderLayout());
+
+        jPanel15.setBackground(new java.awt.Color(238, 247, 241));
+        jPanel15.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 16, 16, 16));
+        jPanel15.setMinimumSize(new java.awt.Dimension(100, 115));
+        jPanel15.setPreferredSize(new java.awt.Dimension(506, 126));
+        jPanel15.setLayout(new java.awt.BorderLayout(16, 0));
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/QrGlyph.png"))); // NOI18N
+        jLabel4.setPreferredSize(new java.awt.Dimension(100, 100));
+        jPanel15.add(jLabel4, java.awt.BorderLayout.LINE_START);
+
+        jPanel18.setOpaque(false);
+        jPanel18.setLayout(new java.awt.BorderLayout());
+
+        jPanel19.setOpaque(false);
+        jPanel19.setLayout(new java.awt.GridLayout(2, 0));
+
+        jLabel9.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 18)); // NOI18N
+        jLabel9.setText("Audi Luqman");
+        jPanel19.add(jLabel9);
+
+        jLabel10.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel10.setText("NIS 202557201002 · Kelas 7A");
+        jPanel19.add(jLabel10);
+
+        jPanel18.add(jPanel19, java.awt.BorderLayout.CENTER);
+
+        jLabel8.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel8.setText("Wali: Bpk -");
+        jLabel8.setBorder(javax.swing.BorderFactory.createEmptyBorder(4, 0, 0, 0));
+        jLabel8.setPreferredSize(new java.awt.Dimension(37, 34));
+        jPanel18.add(jLabel8, java.awt.BorderLayout.PAGE_END);
+
+        jPanel15.add(jPanel18, java.awt.BorderLayout.CENTER);
+
+        pnlKonfirmasi.add(jPanel15, java.awt.BorderLayout.PAGE_START);
+
+        jPanel20.setOpaque(false);
+        jPanel20.setLayout(new java.awt.BorderLayout());
+
+        jPanel21.setMinimumSize(new java.awt.Dimension(100, 137));
+        jPanel21.setOpaque(false);
+        jPanel21.setPreferredSize(new java.awt.Dimension(506, 148));
+        jPanel21.setLayout(new java.awt.BorderLayout());
+
+        jPanel23.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
+        jPanel23.setOpaque(false);
+        jPanel23.setPreferredSize(new java.awt.Dimension(506, 59));
+        jPanel23.setLayout(new java.awt.CardLayout());
+
+        jPanel24.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel24.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 8, 16));
+        jPanel24.setLayout(new java.awt.BorderLayout(8, 0));
+
+        jLabel11.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 13)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel11.setText("Jenis Absensi");
+        jPanel24.add(jLabel11, java.awt.BorderLayout.LINE_START);
+
+        jPanel26.setBackground(new java.awt.Color(254, 243, 198));
+        jPanel26.setPreferredSize(new java.awt.Dimension(158, 27));
+        jPanel26.setLayout(new java.awt.CardLayout());
+
+        jLabel13.setBackground(new java.awt.Color(254, 243, 198));
+        jLabel13.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(187, 77, 0));
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("Terlambat (lewat 07:00)");
+        jLabel13.setPreferredSize(new java.awt.Dimension(134, 16));
+        jPanel26.add(jLabel13, "card2");
+
+        jPanel24.add(jPanel26, java.awt.BorderLayout.LINE_END);
+
+        jLabel12.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 13)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(22, 32, 27));
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("Absensi Berangkat");
+        jPanel24.add(jLabel12, java.awt.BorderLayout.CENTER);
+
+        jPanel23.add(jPanel24, "card2");
+
+        jPanel21.add(jPanel23, java.awt.BorderLayout.PAGE_START);
+
+        jPanel25.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 0, 0, 0));
+        jPanel25.setOpaque(false);
+        jPanel25.setLayout(new java.awt.GridLayout(1, 2, 16, 16));
+
+        jPanel27.setOpaque(false);
+        jPanel27.setLayout(new java.awt.BorderLayout());
+
+        cStatusHadir.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        cStatusHadir.setForeground(new java.awt.Color(22, 32, 27));
+        cStatusHadir.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel27.add(cStatusHadir, java.awt.BorderLayout.CENTER);
+
+        jLabel14.setFont(new java.awt.Font("Plus Jakarta Sans Medium", 0, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel14.setText("Status Kehadiran");
+        jLabel14.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 8, 0));
+        jLabel14.setPreferredSize(new java.awt.Dimension(43, 32));
+        jPanel27.add(jLabel14, java.awt.BorderLayout.PAGE_START);
+
+        jPanel25.add(jPanel27);
+
+        jPanel29.setOpaque(false);
+        jPanel29.setLayout(new java.awt.BorderLayout());
+
+        jLabel15.setFont(new java.awt.Font("Plus Jakarta Sans Medium", 0, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel15.setText("Waktu");
+        jLabel15.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 8, 0));
+        jLabel15.setPreferredSize(new java.awt.Dimension(43, 32));
+        jPanel29.add(jLabel15, java.awt.BorderLayout.PAGE_START);
+
+        jPanel30.setBackground(new java.awt.Color(248, 250, 252));
+        jPanel30.setLayout(new java.awt.CardLayout());
+
+        jLabel16.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel16.setText("10:53 WIB");
+        jLabel16.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 16, 1, 1));
+        jPanel30.add(jLabel16, "card2");
+
+        jPanel29.add(jPanel30, java.awt.BorderLayout.CENTER);
+
+        jPanel25.add(jPanel29);
+
+        jPanel21.add(jPanel25, java.awt.BorderLayout.CENTER);
+
+        jPanel20.add(jPanel21, java.awt.BorderLayout.PAGE_START);
+
+        jPanel22.setOpaque(false);
+        jPanel22.setLayout(new java.awt.BorderLayout());
+
+        jPanel28.setOpaque(false);
+        jPanel28.setPreferredSize(new java.awt.Dimension(506, 40));
+        jPanel28.setLayout(new java.awt.GridLayout(1, 2, 8, 8));
+
+        btnKonfirSimpan.setBackground(new java.awt.Color(20, 77, 50));
+        btnKonfirSimpan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        btnKonfirSimpan.setForeground(new java.awt.Color(255, 255, 255));
+        btnKonfirSimpan.setText("Konfirmasi & Simpan");
+        jPanel28.add(btnKonfirSimpan);
+
+        btnbatal.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        btnbatal.setText("Batal");
+        jPanel28.add(btnbatal);
+
+        jPanel22.add(jPanel28, java.awt.BorderLayout.PAGE_END);
+
+        jPanel31.setOpaque(false);
+
+        javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
+        jPanel31.setLayout(jPanel31Layout);
+        jPanel31Layout.setHorizontalGroup(
+            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 423, Short.MAX_VALUE)
+        );
+        jPanel31Layout.setVerticalGroup(
+            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 119, Short.MAX_VALUE)
+        );
+
+        jPanel22.add(jPanel31, java.awt.BorderLayout.CENTER);
+
+        jPanel20.add(jPanel22, java.awt.BorderLayout.CENTER);
+
+        pnlKonfirmasi.add(jPanel20, java.awt.BorderLayout.CENTER);
+
+        jPanel11.add(pnlKonfirmasi, "card3");
+
+        pnlKonfirmasiKosong.setOpaque(false);
+        pnlKonfirmasiKosong.setLayout(new java.awt.GridBagLayout());
+
+        jPanel17.setOpaque(false);
+        jPanel17.setPreferredSize(new java.awt.Dimension(200, 78));
+        jPanel17.setLayout(new java.awt.BorderLayout());
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/ImgTony_IconResult.png"))); // NOI18N
+        jPanel17.add(jLabel5, java.awt.BorderLayout.PAGE_START);
+
+        jLabel6.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Belum ada QR terdeteksi.");
+        jLabel6.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 0, 0, 0));
+        jPanel17.add(jLabel6, java.awt.BorderLayout.CENTER);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        pnlKonfirmasiKosong.add(jPanel17, gridBagConstraints);
+
+        jPanel11.add(pnlKonfirmasiKosong, "card2");
+
+        jPanel3.add(jPanel11, java.awt.BorderLayout.CENTER);
+
+        jPanel1.add(jPanel3);
+
+        add(jPanel1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSimulasiScanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimulasiScanActionPerformed
@@ -329,27 +544,55 @@ public class ScanQRPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnKonfirSimpan;
     private javax.swing.JButton btnSimulasiScan;
+    private javax.swing.JButton btnbatal;
     private javax.swing.JComboBox<String> cAbsenQR;
     private javax.swing.JComboBox<String> cPerangkatCam;
+    private javax.swing.JComboBox<String> cStatusHadir;
     private javax.swing.ButtonGroup groupTglScanManual;
     private javax.swing.ButtonGroup groupTglberangkatPulang;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
+    private javax.swing.JPanel jPanel23;
+    private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
+    private javax.swing.JPanel jPanel27;
+    private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel30;
+    private javax.swing.JPanel jPanel31;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
@@ -358,8 +601,9 @@ public class ScanQRPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JLabel lblHeader;
     private javax.swing.JLabel lblHeader1;
-    private javax.swing.JPanel pnlAbsenKosong;
     private javax.swing.JPanel pnlHeader;
+    private javax.swing.JPanel pnlKonfirmasi;
+    private javax.swing.JPanel pnlKonfirmasiKosong;
     private javax.swing.JToggleButton tflberangkat;
     private javax.swing.JToggleButton tglManual;
     private javax.swing.JToggleButton tglPulang;

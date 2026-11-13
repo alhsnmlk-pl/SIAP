@@ -73,7 +73,7 @@ public class DataPendaftarPanel extends javax.swing.JPanel {
         lblHeader1.setPreferredSize(new java.awt.Dimension(627, 28));
 
         btnMulaiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/downloadIcon.png"))); // NOI18N
+        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/downloadIcon.png"))); // NOI18N
         btnMulaiScan.setText("Sinkron Google Forms");
         btnMulaiScan.setIconTextGap(8);
         btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
@@ -117,7 +117,7 @@ public class DataPendaftarPanel extends javax.swing.JPanel {
         jTextField1.setText("cari nama Pendaftar");
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/search.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/search.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -179,13 +179,13 @@ public class DataPendaftarPanel extends javax.swing.JPanel {
 
         jButton1.setBackground(new java.awt.Color(20, 77, 50));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/protectionIcon.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/protectionIcon.png"))); // NOI18N
         jButton1.setText("Detail & Verifikasi");
         jButton1.setIconTextGap(10);
 
         jButton2.setBackground(new java.awt.Color(20, 77, 50));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/editpencilIcon.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/editpencilIcon.png"))); // NOI18N
         jButton2.setText("Edit Data");
         jButton2.setIconTextGap(10);
         jButton2.addActionListener(this::jButton2ActionPerformed);

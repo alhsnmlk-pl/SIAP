@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package views.ppdb;
+package views.rekaplaporan;
 
 /**
  *
@@ -219,7 +219,7 @@ public class LaporanPPDBPanel extends javax.swing.JPanel {
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setText("Pritinjau Laporan ");
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IconThoil/IconPrint.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconPrint.png"))); // NOI18N
         jButton2.setText("Cetak PDF");
         jButton2.addActionListener(this::jButton2ActionPerformed);
 

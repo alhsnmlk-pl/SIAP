@@ -26,15 +26,15 @@ public class LoginFrame extends javax.swing.JFrame {
     public LoginFrame() {
         // siapin tampilan login dan atur style komponennya
         initComponents();
-        jLabel1.setIcon(new FlatSVGIcon("iconMf/siapV1Login.svg"));
+        jLabel1.setIcon(new FlatSVGIcon("iconsvg/siapV1Login.svg"));
 
         UiStyles.seRoundPanel(PanelKiri, 40, 40, 40, 40, 48, "#ECEDEB", 0f);
         UiStyles.seRoundPanel(jPanel5, 4, 4, 4, 4, 100, "#ECEDEB", 0f);
         UiStyles.seRoundPanel(PanelKanan, 0, 0, 0, 0, 48, "#ECEDEB", 0f);
 
         tglOp.setSelected(true);
-        UiStyles.setTogleBtn(tglOp, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#144D32", "#FFFFFF");
-        UiStyles.setTogleBtn(tglKeps, "#F6F7F5", "#66706B", "#F6F7F5", "#F6F7F5", "#144D32", "#FFFFFF");
+        UiStyles.setTogleBtn(tglOp, "#F6F7F5", "#66706B", "#F6F7F5", "#144D32","#FFFFFF", "#144D32", "#FFFFFF");
+        UiStyles.setTogleBtn(tglKeps, "#F6F7F5", "#66706B", "#F6F7F5", "#144D32","#FFFFFF", "#144D32", "#FFFFFF");
         
         UiStyles.setTextField(txtUsername, "Username", "#F6F7F5", "#16201B", "#66706B", "#ECEDEB", "#337253", 1f,1f);
         UiStyles.setTextField(txtPassword, "Password", "#F6F7F5", "#16201B", "#66706B", "#ECEDEB", "#337253", 1f,1f);
@@ -100,7 +100,7 @@ public class LoginFrame extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/siapV1Login.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/siapV1Login.png"))); // NOI18N
         jLabel1.setText("MTs Darul Ulum Kepel");
         jLabel1.setIconTextGap(16);
 
@@ -414,6 +414,8 @@ public class LoginFrame extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+        System.setProperty("sun.java2d.uiScale", "1.25");
+
         try {
             UIManager.put("Component.focusColor", Color.decode("#337253"));
             UIManager.put("Component.focusedBorderColor", Color.decode("#337253"));

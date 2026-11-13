@@ -99,7 +99,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/iconMf/siapV2Sidebar.png"/>
+                      <Image iconType="3" name="/icon/siapV2Sidebar.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="MTs Darul Ulum Kepel"/>
                     <Property name="iconTextGap" type="int" value="8"/>
@@ -200,7 +200,7 @@
                               <Font name="Plus Jakarta Sans" size="14" style="0"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/iconMf/logout.png"/>
+                              <Image iconType="3" name="/icon/logout.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Keluar"/>
                             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -382,17 +382,17 @@
                                   <Color blue="99" green="a7" red="89" type="rgb"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dashboardNonaktif.png"/>
+                                  <Image iconType="3" name="/icon/dashboardNonaktif.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Dashboard Absensi"/>
                                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                   <Color id="Hand Cursor"/>
                                 </Property>
                                 <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dashboardNonaktif.png"/>
+                                  <Image iconType="3" name="/icon/dashboardNonaktif.png"/>
                                 </Property>
                                 <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dashboardAktif.png"/>
+                                  <Image iconType="3" name="/icon/dashboardAktif.png"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="2"/>
                                 <Property name="iconTextGap" type="int" value="8"/>
@@ -401,7 +401,7 @@
                                 </Property>
                                 <Property name="rolloverEnabled" type="boolean" value="false"/>
                                 <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dashboardAktif.png"/>
+                                  <Image iconType="3" name="/icon/dashboardAktif.png"/>
                                 </Property>
                               </Properties>
                               <Constraints>
@@ -444,7 +444,7 @@
                                 <Component class="javax.swing.JLabel" name="lblChevronDataMaster">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/IconChevronRight.png"/>
+                                      <Image iconType="3" name="/icon/IconChevronRight.png"/>
                                     </Property>
                                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                       <Color id="Hand Cursor"/>
@@ -471,17 +471,17 @@
                                       <Color blue="99" green="a7" red="89" type="rgb"/>
                                     </Property>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/dataMasterNonaktif.png"/>
+                                      <Image iconType="3" name="/icon/dataMasterNonaktif.png"/>
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Data Master"/>
                                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                       <Color id="Hand Cursor"/>
                                     </Property>
                                     <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/dataMasterNonaktif.png"/>
+                                      <Image iconType="3" name="/icon/dataMasterNonaktif.png"/>
                                     </Property>
                                     <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/dataMasterAktif.png"/>
+                                      <Image iconType="3" name="/icon/dataMasterAktif.png"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="2"/>
                                     <Property name="iconTextGap" type="int" value="8"/>
@@ -490,7 +490,7 @@
                                     </Property>
                                     <Property name="rolloverEnabled" type="boolean" value="false"/>
                                     <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/dataMasterAktif.png"/>
+                                      <Image iconType="3" name="/icon/dataMasterAktif.png"/>
                                     </Property>
                                   </Properties>
                                   <Events>
@@ -538,17 +538,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Siswa"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -557,7 +557,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -593,17 +593,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Kelas"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -612,7 +612,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -648,17 +648,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Guru / Wali"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -667,7 +667,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -703,17 +703,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="QR Siswa"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -722,7 +722,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -769,7 +769,7 @@
                                 <Component class="javax.swing.JLabel" name="lblChevronAbsensiQR">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/IconChevronRight.png"/>
+                                      <Image iconType="3" name="/icon/IconChevronRight.png"/>
                                     </Property>
                                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                       <Color id="Hand Cursor"/>
@@ -796,17 +796,17 @@
                                       <Color blue="99" green="a7" red="89" type="rgb"/>
                                     </Property>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/absensiQrNonaktif.png"/>
+                                      <Image iconType="3" name="/icon/absensiQrNonaktif.png"/>
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Absensi QR"/>
                                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                       <Color id="Hand Cursor"/>
                                     </Property>
                                     <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/absensiQrNonaktif.png"/>
+                                      <Image iconType="3" name="/icon/absensiQrNonaktif.png"/>
                                     </Property>
                                     <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/absensiQrAktif.png"/>
+                                      <Image iconType="3" name="/icon/absensiQrAktif.png"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="2"/>
                                     <Property name="iconTextGap" type="int" value="8"/>
@@ -815,7 +815,7 @@
                                     </Property>
                                     <Property name="rolloverEnabled" type="boolean" value="false"/>
                                     <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/absensiQrAktif.png"/>
+                                      <Image iconType="3" name="/icon/absensiQrAktif.png"/>
                                     </Property>
                                   </Properties>
                                   <Events>
@@ -863,17 +863,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Scan QR"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -882,7 +882,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -918,17 +918,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Hasil Scan"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -937,7 +937,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -984,7 +984,7 @@
                                 <Component class="javax.swing.JLabel" name="lblChevronRekapAbsensi">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/IconChevronRight.png"/>
+                                      <Image iconType="3" name="/icon/IconChevronRight.png"/>
                                     </Property>
                                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                       <Color id="Hand Cursor"/>
@@ -1011,17 +1011,17 @@
                                       <Color blue="99" green="a7" red="89" type="rgb"/>
                                     </Property>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/rekapLaporanNonaktif.png"/>
+                                      <Image iconType="3" name="/icon/rekapLaporanNonaktif.png"/>
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Rekap &amp; Laporan"/>
                                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                       <Color id="Hand Cursor"/>
                                     </Property>
                                     <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/rekapLaporanNonaktif.png"/>
+                                      <Image iconType="3" name="/icon/rekapLaporanNonaktif.png"/>
                                     </Property>
                                     <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/rekapLaporanAktif.png"/>
+                                      <Image iconType="3" name="/icon/rekapLaporanAktif.png"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="2"/>
                                     <Property name="iconTextGap" type="int" value="8"/>
@@ -1030,7 +1030,7 @@
                                     </Property>
                                     <Property name="rolloverEnabled" type="boolean" value="false"/>
                                     <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/rekapLaporanAktif.png"/>
+                                      <Image iconType="3" name="/icon/rekapLaporanAktif.png"/>
                                     </Property>
                                   </Properties>
                                   <Events>
@@ -1078,17 +1078,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Rekap"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -1097,7 +1097,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -1133,17 +1133,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Laporan"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -1152,7 +1152,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -1228,17 +1228,17 @@
                                   <Color blue="99" green="a7" red="89" type="rgb"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dashboardNonaktif.png"/>
+                                  <Image iconType="3" name="/icon/dashboardNonaktif.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Dashboard PPDB"/>
                                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                   <Color id="Hand Cursor"/>
                                 </Property>
                                 <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dashboardNonaktif.png"/>
+                                  <Image iconType="3" name="/icon/dashboardNonaktif.png"/>
                                 </Property>
                                 <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dashboardAktif.png"/>
+                                  <Image iconType="3" name="/icon/dashboardAktif.png"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="2"/>
                                 <Property name="iconTextGap" type="int" value="8"/>
@@ -1247,7 +1247,7 @@
                                 </Property>
                                 <Property name="rolloverEnabled" type="boolean" value="false"/>
                                 <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dashboardAktif.png"/>
+                                  <Image iconType="3" name="/icon/dashboardAktif.png"/>
                                 </Property>
                               </Properties>
                               <Constraints>
@@ -1283,17 +1283,17 @@
                                   <Color blue="99" green="a7" red="89" type="rgb"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dataPendaftarNonaktif.png"/>
+                                  <Image iconType="3" name="/icon/dataPendaftarNonaktif.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Data Pendaftar"/>
                                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                   <Color id="Hand Cursor"/>
                                 </Property>
                                 <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dataPendaftarNonaktif.png"/>
+                                  <Image iconType="3" name="/icon/dataPendaftarNonaktif.png"/>
                                 </Property>
                                 <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dataPendaftarAktif.png"/>
+                                  <Image iconType="3" name="/icon/dataPendaftarAktif.png"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="2"/>
                                 <Property name="iconTextGap" type="int" value="8"/>
@@ -1302,7 +1302,7 @@
                                 </Property>
                                 <Property name="rolloverEnabled" type="boolean" value="false"/>
                                 <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/dataPendaftarAktif.png"/>
+                                  <Image iconType="3" name="/icon/dataPendaftarAktif.png"/>
                                 </Property>
                               </Properties>
                               <Constraints>
@@ -1338,17 +1338,17 @@
                                   <Color blue="99" green="a7" red="89" type="rgb"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/penempatanKelasNonaktif.png"/>
+                                  <Image iconType="3" name="/icon/penempatanKelasNonaktif.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Penempatan Kelas 7"/>
                                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                   <Color id="Hand Cursor"/>
                                 </Property>
                                 <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/penempatanKelasNonaktif.png"/>
+                                  <Image iconType="3" name="/icon/penempatanKelasNonaktif.png"/>
                                 </Property>
                                 <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/penempatanKelasAktif.png"/>
+                                  <Image iconType="3" name="/icon/penempatanKelasAktif.png"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="2"/>
                                 <Property name="iconTextGap" type="int" value="8"/>
@@ -1357,7 +1357,7 @@
                                 </Property>
                                 <Property name="rolloverEnabled" type="boolean" value="false"/>
                                 <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/penempatanKelasAktif.png"/>
+                                  <Image iconType="3" name="/icon/penempatanKelasAktif.png"/>
                                 </Property>
                               </Properties>
                               <Constraints>
@@ -1400,7 +1400,7 @@
                                 <Component class="javax.swing.JLabel" name="lblChevronRekapPPDB">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/IconChevronRight.png"/>
+                                      <Image iconType="3" name="/icon/IconChevronRight.png"/>
                                     </Property>
                                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                       <Color id="Hand Cursor"/>
@@ -1427,17 +1427,17 @@
                                       <Color blue="99" green="a7" red="89" type="rgb"/>
                                     </Property>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/rekapLaporanNonaktif.png"/>
+                                      <Image iconType="3" name="/icon/rekapLaporanNonaktif.png"/>
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Rekap &amp; Laporan"/>
                                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                       <Color id="Hand Cursor"/>
                                     </Property>
                                     <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/rekapLaporanNonaktif.png"/>
+                                      <Image iconType="3" name="/icon/rekapLaporanNonaktif.png"/>
                                     </Property>
                                     <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/rekapLaporanAktif.png"/>
+                                      <Image iconType="3" name="/icon/rekapLaporanAktif.png"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="2"/>
                                     <Property name="iconTextGap" type="int" value="8"/>
@@ -1446,7 +1446,7 @@
                                     </Property>
                                     <Property name="rolloverEnabled" type="boolean" value="false"/>
                                     <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/rekapLaporanAktif.png"/>
+                                      <Image iconType="3" name="/icon/rekapLaporanAktif.png"/>
                                     </Property>
                                   </Properties>
                                   <Events>
@@ -1494,17 +1494,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Rekap"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -1513,7 +1513,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -1549,17 +1549,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Laporan"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -1568,7 +1568,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -1651,7 +1651,7 @@
                                 <Component class="javax.swing.JLabel" name="lblChevronPengaturan">
                                   <Properties>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/IconChevronRight.png"/>
+                                      <Image iconType="3" name="/icon/IconChevronRight.png"/>
                                     </Property>
                                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                       <Color id="Hand Cursor"/>
@@ -1678,17 +1678,17 @@
                                       <Color blue="99" green="a7" red="89" type="rgb"/>
                                     </Property>
                                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/pengaturanNonaktif.png"/>
+                                      <Image iconType="3" name="/icon/pengaturanNonaktif.png"/>
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Pengaturan"/>
                                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                       <Color id="Hand Cursor"/>
                                     </Property>
                                     <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/pengaturanNonaktif.png"/>
+                                      <Image iconType="3" name="/icon/pengaturanNonaktif.png"/>
                                     </Property>
                                     <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/pengaturanAktif.png"/>
+                                      <Image iconType="3" name="/icon/pengaturanAktif.png"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="2"/>
                                     <Property name="iconTextGap" type="int" value="8"/>
@@ -1697,7 +1697,7 @@
                                     </Property>
                                     <Property name="rolloverEnabled" type="boolean" value="false"/>
                                     <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                      <Image iconType="3" name="/iconMf/pengaturanAktif.png"/>
+                                      <Image iconType="3" name="/icon/pengaturanAktif.png"/>
                                     </Property>
                                   </Properties>
                                   <Events>
@@ -1745,17 +1745,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Jam Absensi"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -1764,7 +1764,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -1800,17 +1800,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="PPDB"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -1819,7 +1819,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -1855,17 +1855,17 @@
                                           <Color blue="99" green="a7" red="89" type="rgb"/>
                                         </Property>
                                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="text" type="java.lang.String" value="Pengguna"/>
                                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                           <Color id="Hand Cursor"/>
                                         </Property>
                                         <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsNonaktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsNonaktif.png"/>
                                         </Property>
                                         <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                         <Property name="horizontalAlignment" type="int" value="2"/>
                                         <Property name="iconTextGap" type="int" value="8"/>
@@ -1874,7 +1874,7 @@
                                         </Property>
                                         <Property name="rolloverEnabled" type="boolean" value="false"/>
                                         <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                          <Image iconType="3" name="/iconMf/dotsAktif.png"/>
+                                          <Image iconType="3" name="/icon/dotsAktif.png"/>
                                         </Property>
                                       </Properties>
                                       <Constraints>
@@ -1914,17 +1914,17 @@
                                   <Color blue="99" green="a7" red="89" type="rgb"/>
                                 </Property>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/profilNonaktif.png"/>
+                                  <Image iconType="3" name="/icon/profilNonaktif.png"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="Profil"/>
                                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                                   <Color id="Hand Cursor"/>
                                 </Property>
                                 <Property name="disabledIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/profilNonaktif.png"/>
+                                  <Image iconType="3" name="/icon/profilNonaktif.png"/>
                                 </Property>
                                 <Property name="disabledSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/profilAktif.png"/>
+                                  <Image iconType="3" name="/icon/profilAktif.png"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="2"/>
                                 <Property name="iconTextGap" type="int" value="8"/>
@@ -1933,7 +1933,7 @@
                                 </Property>
                                 <Property name="rolloverEnabled" type="boolean" value="false"/>
                                 <Property name="selectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/iconMf/profilAktif.png"/>
+                                  <Image iconType="3" name="/icon/profilAktif.png"/>
                                 </Property>
                               </Properties>
                               <Constraints>
@@ -2020,7 +2020,7 @@
                     <Component class="javax.swing.JLabel" name="lblSearch">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/iconMf/search.png"/>
+                          <Image iconType="3" name="/icon/search.png"/>
                         </Property>
                       </Properties>
                       <Events>

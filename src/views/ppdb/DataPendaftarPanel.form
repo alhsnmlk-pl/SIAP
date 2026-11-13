@@ -122,7 +122,7 @@
               <Font name="Plus Jakarta Sans" size="14" style="0"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/iconMf/downloadIcon.png"/>
+              <Image iconType="3" name="/icon/downloadIcon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Sinkron Google Forms"/>
             <Property name="iconTextGap" type="int" value="8"/>
@@ -243,7 +243,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/iconMf/search.png"/>
+                          <Image iconType="3" name="/icon/search.png"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -341,7 +341,7 @@
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
                         </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/iconMf/protectionIcon.png"/>
+                          <Image iconType="3" name="/icon/protectionIcon.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Detail &amp; Verifikasi"/>
                         <Property name="iconTextGap" type="int" value="10"/>
@@ -356,7 +356,7 @@
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
                         </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/iconMf/editpencilIcon.png"/>
+                          <Image iconType="3" name="/icon/editpencilIcon.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Edit Data"/>
                         <Property name="iconTextGap" type="int" value="10"/>

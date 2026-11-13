@@ -101,7 +101,7 @@ public class PenggunaPanel extends javax.swing.JPanel {
         btnMulaiScan.setBackground(new java.awt.Color(20, 77, 50));
         btnMulaiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnMulaiScan.setForeground(new java.awt.Color(255, 255, 255));
-        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgNajwa/IconPlus.png"))); // NOI18N
+        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/imgNajwa_IconPlus.png"))); // NOI18N
         btnMulaiScan.setText("Tambah pengguna");
         btnMulaiScan.setIconTextGap(8);
         btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
@@ -140,7 +140,7 @@ public class PenggunaPanel extends javax.swing.JPanel {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setPreferredSize(new java.awt.Dimension(954, 55));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgNajwa/IconCari.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconCari.png"))); // NOI18N
 
         jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(102, 112, 107));
@@ -215,20 +215,20 @@ public class PenggunaPanel extends javax.swing.JPanel {
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(13, 59, 38));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgNajwa/IconEdit.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/imgNajwa_IconEdit.png"))); // NOI18N
         jButton1.setText("Edit");
         jButton1.setPreferredSize(new java.awt.Dimension(85, 39));
         jButton1.addActionListener(this::jButton1ActionPerformed);
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(13, 59, 38));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgNajwa/IconKey.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconKey.png"))); // NOI18N
         jButton2.setText("Reset Sandi");
         jButton2.setPreferredSize(new java.awt.Dimension(138, 39));
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(231, 0, 11));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgNajwa/IconTrash.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/imgNajwa_IconTrash.png"))); // NOI18N
         jButton3.setText("Hapus");
         jButton3.setPreferredSize(new java.awt.Dimension(102, 39));
 

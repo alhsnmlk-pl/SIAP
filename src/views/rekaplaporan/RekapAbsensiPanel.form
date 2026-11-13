@@ -151,7 +151,7 @@
                       <Font name="Plus Jakarta Sans" size="14" style="0"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/imgNajwa/IconDownload.png"/>
+                      <Image iconType="3" name="/icon/imgNajwa_IconDownload.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Ekspor Excel"/>
                     <Property name="iconTextGap" type="int" value="8"/>
@@ -303,7 +303,7 @@
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/imgNajwa/IconDiterimaPutih.png"/>
+                              <Image iconType="3" name="/icon/IconDiterimaPutih.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Absen Berangkat"/>
                           </Properties>
@@ -374,7 +374,7 @@
                               <Font name="Segoe UI" size="18" style="0"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/imgNajwa/iconJam.png"/>
+                              <Image iconType="3" name="/icon/iconJam.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Telambat"/>
                           </Properties>
@@ -426,7 +426,7 @@
                               <Font name="Segoe UI" size="18" style="0"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/imgNajwa/IconDiterima.png"/>
+                              <Image iconType="3" name="/icon/IconDiterima.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Absen Pulang"/>
                           </Properties>
@@ -497,7 +497,7 @@
                               <Font name="Segoe UI" size="18" style="0"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/imgNajwa/IconTidak.png"/>
+                              <Image iconType="3" name="/icon/IconTidak.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Tidak Absen Pulang"/>
                           </Properties>

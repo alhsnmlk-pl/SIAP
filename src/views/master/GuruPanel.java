@@ -4,7 +4,7 @@
  */
 package views.master;
 
-import views.component.RoundedTablePanel;
+import views.component.StyleTabel;
 import views.component.UiStyles;
 /**
  *
@@ -17,8 +17,7 @@ public class GuruPanel extends javax.swing.JPanel {
      */
     public GuruPanel() {
         initComponents();
-        RoundedTablePanel.pasang(jPanel3, tblGuru);
-        RoundedTablePanel.lebar(tblGuru, 150, 270, 63, 145, 90, 140);
+        StyleTabel.pasang(jPanel3,tblGuru, 160, 270, 63, 150, 100, 150);
 
         UiStyles.setButton(btnTambahGuru, "#144D32", "#FFFFFF", "#0D3C26", "#0A2F1D", null, 0);
         UiStyles.seRoundPanel(jPanel6, 0, 0, 0, 16, 32, "#ECEDEB", 1f);
@@ -89,10 +88,10 @@ public class GuruPanel extends javax.swing.JPanel {
         btnTambahGuru.setBackground(new java.awt.Color(20, 77, 50));
         btnTambahGuru.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnTambahGuru.setForeground(new java.awt.Color(255, 255, 255));
-        btnTambahGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/Vector.png"))); // NOI18N
+        btnTambahGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Vector.png"))); // NOI18N
         btnTambahGuru.setText("Tambah Guru");
         btnTambahGuru.setIconTextGap(8);
-        btnTambahGuru.setMargin(new java.awt.Insets(0, 16, 0, 16));
+        btnTambahGuru.setMargin(new java.awt.Insets(0, 8, 0, 8));
         btnTambahGuru.setMaximumSize(new java.awt.Dimension(130, 40));
         btnTambahGuru.setMinimumSize(new java.awt.Dimension(130, 40));
         btnTambahGuru.setPreferredSize(new java.awt.Dimension(147, 40));
@@ -147,7 +146,7 @@ public class GuruPanel extends javax.swing.JPanel {
         jPanel6.setLayout(new java.awt.BorderLayout());
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/IconSearchbaru.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconSearchbaru.png"))); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(36, 16));
         jPanel6.add(jLabel3, java.awt.BorderLayout.LINE_START);
 
@@ -197,14 +196,14 @@ public class GuruPanel extends javax.swing.JPanel {
 
         btnHapusGuru.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnHapusGuru.setForeground(new java.awt.Color(231, 0, 11));
-        btnHapusGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/Vectorbaru.png"))); // NOI18N
+        btnHapusGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Vectorbaru.png"))); // NOI18N
         btnHapusGuru.setText("Hapus");
         btnHapusGuru.setIconTextGap(8);
         btnHapusGuru.setMargin(new java.awt.Insets(0, 0, 0, 0));
 
         btnEditGuru.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnEditGuru.setForeground(new java.awt.Color(13, 59, 38));
-        btnEditGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/IconEdit.png"))); // NOI18N
+        btnEditGuru.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/imagedhea_IconEdit.png"))); // NOI18N
         btnEditGuru.setText("Edit");
         btnEditGuru.setIconTextGap(8);
         btnEditGuru.setMargin(new java.awt.Insets(0, 0, 0, 0));

@@ -4,7 +4,7 @@
  */
 package views.master;
 
-import views.component.RoundedTablePanel;
+import views.component.StyleTabel;
 import views.component.UiStyles;
 /**
  *
@@ -17,8 +17,7 @@ public class SiswaPanel extends javax.swing.JPanel {
      */
     public SiswaPanel() {
         initComponents();
-        RoundedTablePanel.pasang(jPanel3, tblSiswa);
-        RoundedTablePanel.lebar(tblSiswa, 130, 270, 63, 70, 90, 170);
+        StyleTabel.pasang(jPanel11,tblSiswa, 130, 270, 63, 70, 90, 170);
 
         UiStyles.setButton(btnTambahSiswa, "#144D32", "#FFFFFF", "#0D3C26", "#0A2F1D", null, 0);
         UiStyles.seRoundPanel(jPanel9, 0, 0, 0, 16, 32, "#ECEDEB", 1f);
@@ -87,10 +86,10 @@ public class SiswaPanel extends javax.swing.JPanel {
         btnTambahSiswa.setBackground(new java.awt.Color(20, 77, 50));
         btnTambahSiswa.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnTambahSiswa.setForeground(new java.awt.Color(255, 255, 255));
-        btnTambahSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconAudi/IconPlus.png"))); // NOI18N
+        btnTambahSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/iconAudi_IconPlus.png"))); // NOI18N
         btnTambahSiswa.setText("Tambah Siswa");
         btnTambahSiswa.setIconTextGap(8);
-        btnTambahSiswa.setMargin(new java.awt.Insets(0, 14, 0, 14));
+        btnTambahSiswa.setMargin(new java.awt.Insets(0, 8, 0, 8));
         btnTambahSiswa.setMaximumSize(new java.awt.Dimension(130, 40));
         btnTambahSiswa.setMinimumSize(new java.awt.Dimension(130, 40));
         btnTambahSiswa.setPreferredSize(new java.awt.Dimension(147, 40));
@@ -150,7 +149,7 @@ public class SiswaPanel extends javax.swing.JPanel {
         jPanel9.setLayout(new java.awt.BorderLayout());
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/IconSearchbaru.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconSearchbaru.png"))); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(36, 16));
         jPanel9.add(jLabel3, java.awt.BorderLayout.LINE_START);
 
@@ -190,14 +189,14 @@ public class SiswaPanel extends javax.swing.JPanel {
 
         btnHapusSiswa.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnHapusSiswa.setForeground(new java.awt.Color(231, 0, 11));
-        btnHapusSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/Vectorbaru.png"))); // NOI18N
+        btnHapusSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Vectorbaru.png"))); // NOI18N
         btnHapusSiswa.setText("Hapus");
         btnHapusSiswa.setIconTextGap(8);
         btnHapusSiswa.setMargin(new java.awt.Insets(0, 0, 0, 0));
 
         btnEditSiswa.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnEditSiswa.setForeground(new java.awt.Color(13, 59, 38));
-        btnEditSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/IconEdit.png"))); // NOI18N
+        btnEditSiswa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/imagedhea_IconEdit.png"))); // NOI18N
         btnEditSiswa.setText("Edit");
         btnEditSiswa.setIconTextGap(8);
         btnEditSiswa.setMargin(new java.awt.Insets(0, 0, 0, 0));

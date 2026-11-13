@@ -40,7 +40,7 @@ public class cardQR extends javax.swing.JPanel {
         setMinimumSize(new java.awt.Dimension(292, 158));
         setPreferredSize(new java.awt.Dimension(292, 158));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImgTony/QrGlyph.png"))); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/QrGlyph.png"))); // NOI18N
 
         jPanel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 0, 6, 0));
         jPanel5.setOpaque(false);

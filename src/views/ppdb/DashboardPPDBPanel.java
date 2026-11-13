@@ -241,7 +241,7 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         btnUnduhLapPPDB.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnUnduhLapPPDB.setForeground(new java.awt.Color(20, 77, 50));
-        btnUnduhLapPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconDownload.png"))); // NOI18N
+        btnUnduhLapPPDB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconDownload.png"))); // NOI18N
         btnUnduhLapPPDB.setText("Laporan PPDB");
         btnUnduhLapPPDB.setIconTextGap(8);
         btnUnduhLapPPDB.setMargin(new java.awt.Insets(0, 16, 0, 16));
@@ -253,7 +253,7 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
         btnVerifPendaftar.setBackground(new java.awt.Color(20, 77, 50));
         btnVerifPendaftar.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnVerifPendaftar.setForeground(new java.awt.Color(255, 255, 255));
-        btnVerifPendaftar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dataPendaftarAktif.png"))); // NOI18N
+        btnVerifPendaftar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dataPendaftarAktif.png"))); // NOI18N
         btnVerifPendaftar.setText("Verifikasi Pendaftar");
         btnVerifPendaftar.setIconTextGap(8);
         btnVerifPendaftar.setMargin(new java.awt.Insets(0, 16, 0, 16));
@@ -306,7 +306,7 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconVerify.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconVerify.png"))); // NOI18N
         jLabel1.setText("Total Pendaftar");
         jLabel1.setIconTextGap(8);
         jLabel1.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -333,7 +333,7 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconResult.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconResult.png"))); // NOI18N
         jLabel4.setText("Menunggu");
         jLabel4.setIconTextGap(8);
         jLabel4.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -360,7 +360,7 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         jLabel7.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconCheck.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconCheck.png"))); // NOI18N
         jLabel7.setText("Diterima");
         jLabel7.setIconTextGap(8);
         jLabel7.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -387,7 +387,7 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         jLabel10.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconX.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconX.png"))); // NOI18N
         jLabel10.setText("Ditolak");
         jLabel10.setIconTextGap(8);
         jLabel10.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -495,14 +495,14 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         jLabel13.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsGreen.png"))); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsGreen.png"))); // NOI18N
         jLabel13.setText("Diterima 100");
         jLabel13.setIconTextGap(8);
 
         jLabel14.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(102, 112, 107));
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/dotsGrey.png"))); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dotsGrey.png"))); // NOI18N
         jLabel14.setText("sisa 100");
         jLabel14.setToolTipText("");
         jLabel14.setIconTextGap(8);
@@ -541,11 +541,14 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         jPanel43.setBackground(new java.awt.Color(255, 255, 255));
         jPanel43.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 16, 24));
+        jPanel43.setOpaque(false);
         jPanel43.setLayout(new java.awt.CardLayout());
 
         jScrollPane2.setBorder(null);
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         jPanel48.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel48.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 16));
 
         jPanel44.setOpaque(false);
         jPanel44.setLayout(new java.awt.BorderLayout());
@@ -553,11 +556,13 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
         jLabel33.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(102, 112, 107));
         jLabel33.setText("SDN Kepel II");
+        jLabel33.setToolTipText("");
         jLabel33.setPreferredSize(new java.awt.Dimension(112, 16));
         jPanel44.add(jLabel33, java.awt.BorderLayout.LINE_START);
 
         jLabel34.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel34.setText("999");
+        jLabel34.setToolTipText("");
         jPanel44.add(jLabel34, java.awt.BorderLayout.LINE_END);
 
         jPanel51.setOpaque(false);
@@ -590,9 +595,9 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
         jPanel48.setLayout(jPanel48Layout);
         jPanel48Layout.setHorizontalGroup(
             jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel44, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jPanel48Layout.setVerticalGroup(
             jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -871,7 +876,7 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
         btnLhtsemua.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnLhtsemua.setForeground(new java.awt.Color(13, 59, 38));
         btnLhtsemua.setText("Lihat Semua");
-        btnLhtsemua.setMargin(new java.awt.Insets(0, 16, 0, 16));
+        btnLhtsemua.setMargin(new java.awt.Insets(0, 0, 0, 0));
         btnLhtsemua.setPreferredSize(new java.awt.Dimension(114, 23));
         jPanel37.add(btnLhtsemua, java.awt.BorderLayout.LINE_END);
 
@@ -922,6 +927,7 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         jPanel45.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 16, 24));
         jPanel45.setOpaque(false);
+        jPanel45.setLayout(new javax.swing.BoxLayout(jPanel45, javax.swing.BoxLayout.Y_AXIS));
 
         jPanel53.setBackground(new java.awt.Color(255, 255, 255));
         jPanel53.setLayout(new java.awt.GridLayout(4, 0));
@@ -1034,16 +1040,7 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         jPanel53.add(jPanel59);
 
-        javax.swing.GroupLayout jPanel45Layout = new javax.swing.GroupLayout(jPanel45);
-        jPanel45.setLayout(jPanel45Layout);
-        jPanel45Layout.setHorizontalGroup(
-            jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel53, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
-        );
-        jPanel45Layout.setVerticalGroup(
-            jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        jPanel45.add(jPanel53);
 
         jPanel14.add(jPanel45, java.awt.BorderLayout.CENTER);
 
@@ -1060,13 +1057,12 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         jLabel27.setFont(new java.awt.Font("Plus Jakarta Sans", 1, 14)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel27.setText("Asal Sekolah");
+        jLabel27.setText("Jadwal PPDB");
         jLabel27.setPreferredSize(new java.awt.Dimension(91, 40));
         jPanel38.add(jLabel27, java.awt.BorderLayout.LINE_START);
 
         jPanel40.setBackground(new java.awt.Color(20, 77, 50));
-        jPanel40.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
-        jPanel40.setPreferredSize(new java.awt.Dimension(130, 24));
+        jPanel40.setPreferredSize(new java.awt.Dimension(150, 24));
         jPanel40.setLayout(new java.awt.CardLayout());
 
         jLabel15.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 12)); // NOI18N
@@ -1079,8 +1075,9 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
 
         jPanel15.add(jPanel38, java.awt.BorderLayout.PAGE_START);
 
-        jPanel41.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 16, 24));
+        jPanel41.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 24, 20, 24));
         jPanel41.setOpaque(false);
+        jPanel41.setLayout(new java.awt.GridLayout(2, 2, 8, 8));
 
         jPanel42.setBackground(new java.awt.Color(246, 247, 245));
         jPanel42.setBorder(javax.swing.BorderFactory.createEmptyBorder(6, 16, 6, 16));
@@ -1096,6 +1093,8 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
         jLabel30.setText("Pendaftaran online");
         jPanel42.add(jLabel30);
 
+        jPanel41.add(jPanel42);
+
         jPanel46.setBackground(new java.awt.Color(246, 247, 245));
         jPanel46.setBorder(javax.swing.BorderFactory.createEmptyBorder(6, 16, 6, 16));
         jPanel46.setLayout(new java.awt.GridLayout(2, 0));
@@ -1109,6 +1108,8 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
         jLabel32.setForeground(new java.awt.Color(22, 32, 27));
         jLabel32.setText("Verifikasi Berkas");
         jPanel46.add(jLabel32);
+
+        jPanel41.add(jPanel46);
 
         jPanel49.setBackground(new java.awt.Color(246, 247, 245));
         jPanel49.setBorder(javax.swing.BorderFactory.createEmptyBorder(6, 16, 6, 16));
@@ -1124,6 +1125,8 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
         jLabel38.setText("Pengumuman");
         jPanel49.add(jLabel38);
 
+        jPanel41.add(jPanel49);
+
         jPanel50.setBackground(new java.awt.Color(246, 247, 245));
         jPanel50.setBorder(javax.swing.BorderFactory.createEmptyBorder(6, 16, 6, 16));
         jPanel50.setLayout(new java.awt.GridLayout(2, 0));
@@ -1138,30 +1141,7 @@ public class DashboardPPDBPanel extends javax.swing.JPanel {
         jLabel40.setText("Daftar Ulang");
         jPanel50.add(jLabel40);
 
-        javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
-        jPanel41.setLayout(jPanel41Layout);
-        jPanel41Layout.setHorizontalGroup(
-            jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel41Layout.createSequentialGroup()
-                .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel42, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
-                    .addComponent(jPanel49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(8, 8, 8)
-                .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel46, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)))
-        );
-        jPanel41Layout.setVerticalGroup(
-            jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel41Layout.createSequentialGroup()
-                .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(8, 8, 8)
-                .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
+        jPanel41.add(jPanel50);
 
         jPanel15.add(jPanel41, java.awt.BorderLayout.CENTER);
 

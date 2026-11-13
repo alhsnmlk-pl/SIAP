@@ -5,9 +5,9 @@
 package views.absensi;
 
 
+import java.awt.FlowLayout;
 import java.util.List;
-import views.component.RecentComponent;
-import views.component.UiStyles;
+import views.component.*;
 
 /**
  *
@@ -32,6 +32,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
                         "Kelas 7B · scan 13:05 WIB", views.component.RecentComponent.Status.HADIR)
         );
         views.component.RecentComponent.populate(jPanel40, scans);
+        jPanel34.setLayout(new WrapLayout(FlowLayout.LEFT, 8, 8));
     }
 
     private void stylebBar() {
@@ -169,30 +170,26 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel38 = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
-        jPanel46 = new javax.swing.JPanel();
-        jLabel47 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
-        jPanel47 = new javax.swing.JPanel();
-        jPanel48 = new javax.swing.JPanel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
-        jPanel49 = new javax.swing.JPanel();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
-        jPanel50 = new javax.swing.JPanel();
-        jPanel51 = new javax.swing.JPanel();
-        jLabel53 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        jPanel52 = new javax.swing.JPanel();
-        jLabel55 = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
-        jPanel53 = new javax.swing.JPanel();
-        jPanel54 = new javax.swing.JPanel();
-        jLabel57 = new javax.swing.JLabel();
-        jLabel58 = new javax.swing.JLabel();
-        jPanel55 = new javax.swing.JPanel();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jPanel57 = new javax.swing.JPanel();
+        jPanel58 = new javax.swing.JPanel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jPanel59 = new javax.swing.JPanel();
+        jPanel60 = new javax.swing.JPanel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jPanel61 = new javax.swing.JPanel();
+        jPanel62 = new javax.swing.JPanel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
         jPanel35 = new javax.swing.JPanel();
         pnlBarisBawah = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
@@ -200,8 +197,8 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jLabel61 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jPanel39 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
         jPanel40 = new javax.swing.JPanel();
+        jPanel56 = new javax.swing.JPanel();
         RecentComponent = new views.component.RecentComponent();
         jPanel16 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
@@ -267,7 +264,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         btnMulaiScan.setBackground(new java.awt.Color(20, 77, 50));
         btnMulaiScan.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         btnMulaiScan.setForeground(new java.awt.Color(255, 255, 255));
-        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconScan.png"))); // NOI18N
+        btnMulaiScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconScan.png"))); // NOI18N
         btnMulaiScan.setText("Mulai Scan");
         btnMulaiScan.setIconTextGap(8);
         btnMulaiScan.setMargin(new java.awt.Insets(0, 16, 0, 16));
@@ -282,7 +279,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
             pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlHeaderLayout.createSequentialGroup()
                 .addGroup(pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblHeader1, javax.swing.GroupLayout.DEFAULT_SIZE, 811, Short.MAX_VALUE)
+                    .addComponent(lblHeader1, javax.swing.GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
                     .addComponent(lblHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 0, 0)
                 .addComponent(btnMulaiScan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -307,7 +304,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 16, 0));
         jPanel2.setMinimumSize(new java.awt.Dimension(958, 135));
         jPanel2.setOpaque(false);
-        jPanel2.setPreferredSize(new java.awt.Dimension(958, 135));
+        jPanel2.setPreferredSize(new java.awt.Dimension(958, 155));
         jPanel2.setLayout(new java.awt.GridLayout(1, 5, 16, 16));
 
         jPanel3.setBackground(new java.awt.Color(20, 77, 50));
@@ -316,7 +313,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconStudents.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconStudents.png"))); // NOI18N
         jLabel1.setText("Siswa");
         jLabel1.setIconTextGap(8);
         jLabel1.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -343,7 +340,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconCheck.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconCheck.png"))); // NOI18N
         jLabel4.setText("Hadir");
         jLabel4.setIconTextGap(8);
         jLabel4.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -370,7 +367,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel7.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconClock.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconClock.png"))); // NOI18N
         jLabel7.setText("Terlambat");
         jLabel7.setIconTextGap(8);
         jLabel7.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -397,7 +394,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel10.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconCheckBlue.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconCheckBlue.png"))); // NOI18N
         jLabel10.setText("Sudah Pulang");
         jLabel10.setIconTextGap(8);
         jLabel10.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -424,7 +421,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel13.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(22, 32, 27));
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconMf/IconX.png"))); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconX.png"))); // NOI18N
         jLabel13.setText("Tidak Hadir");
         jLabel13.setIconTextGap(8);
         jLabel13.setMinimumSize(new java.awt.Dimension(37, 24));
@@ -451,6 +448,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel8.setLayout(new java.awt.BorderLayout(16, 16));
 
         pnlBarisAtas.setOpaque(false);
+        pnlBarisAtas.setPreferredSize(new java.awt.Dimension(957, 250));
         pnlBarisAtas.setLayout(new java.awt.GridBagLayout());
 
         jPanel13.setBackground(new java.awt.Color(255, 255, 255));
@@ -496,15 +494,15 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel21Layout.setHorizontalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel21Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 17, Short.MAX_VALUE)
                 .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel21Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
-                .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+                .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
         );
 
@@ -535,13 +533,13 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel22Layout.setHorizontalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel22Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 17, Short.MAX_VALUE)
                 .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jProgressBar2, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+            .addComponent(jProgressBar2, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
         );
 
         jPanel12.add(jPanel22, java.awt.BorderLayout.CENTER);
@@ -571,13 +569,13 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel23Layout.setHorizontalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel23Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 17, Short.MAX_VALUE)
                 .addComponent(jProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
         jPanel23Layout.setVerticalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jProgressBar3, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+            .addComponent(jProgressBar3, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
         );
 
         jPanel17.add(jPanel23, java.awt.BorderLayout.CENTER);
@@ -607,13 +605,13 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel24Layout.setHorizontalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel24Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 17, Short.MAX_VALUE)
                 .addComponent(jProgressBar4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jProgressBar4, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+            .addComponent(jProgressBar4, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
         );
 
         jPanel18.add(jPanel24, java.awt.BorderLayout.CENTER);
@@ -643,13 +641,13 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel25Layout.setHorizontalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel25Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 17, Short.MAX_VALUE)
                 .addComponent(jProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
         jPanel25Layout.setVerticalGroup(
             jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jProgressBar5, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+            .addComponent(jProgressBar5, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
         );
 
         jPanel19.add(jPanel25, java.awt.BorderLayout.CENTER);
@@ -679,13 +677,13 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jPanel26Layout.setHorizontalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel26Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 17, Short.MAX_VALUE)
                 .addComponent(jProgressBar6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
         jPanel26Layout.setVerticalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jProgressBar6, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+            .addComponent(jProgressBar6, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
         );
 
         jPanel20.add(jPanel26, java.awt.BorderLayout.CENTER);
@@ -769,7 +767,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 5.0;
         gridBagConstraints.weighty = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 2, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 4, 0, 0);
         jPanel31.add(izinBar, gridBagConstraints);
 
         sakitBar.setBackground(new java.awt.Color(255, 255, 255));
@@ -783,7 +781,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 3.0;
         gridBagConstraints.weighty = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 2, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 4, 0, 0);
         jPanel31.add(sakitBar, gridBagConstraints);
 
         alphaBar.setBackground(new java.awt.Color(255, 255, 255));
@@ -797,18 +795,18 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 2.0;
         gridBagConstraints.weighty = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(0, 2, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(0, 4, 0, 0);
         jPanel31.add(alphaBar, gridBagConstraints);
 
         javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
         jPanel33.setLayout(jPanel33Layout);
         jPanel33Layout.setHorizontalGroup(
             jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 260, Short.MAX_VALUE)
+            .addGap(0, 330, Short.MAX_VALUE)
             .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel33Layout.createSequentialGroup()
                     .addGap(0, 0, 0)
-                    .addComponent(jPanel31, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                    .addComponent(jPanel31, javax.swing.GroupLayout.DEFAULT_SIZE, 330, Short.MAX_VALUE)
                     .addGap(0, 0, 0)))
         );
         jPanel33Layout.setVerticalGroup(
@@ -838,7 +836,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jLabel45.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
         jLabel45.setText("•");
-        jLabel45.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel45.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 4, 0));
         jPanel38.add(jLabel45, java.awt.BorderLayout.LINE_START);
 
         jLabel46.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
@@ -849,152 +847,129 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jPanel32.add(jPanel38, java.awt.BorderLayout.LINE_START);
 
-        jPanel46.setOpaque(false);
-        jPanel46.setPreferredSize(new java.awt.Dimension(70, 26));
-        jPanel46.setLayout(new java.awt.BorderLayout());
+        jLabel48.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
+        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel48.setText("999");
+        jLabel48.setPreferredSize(new java.awt.Dimension(28, 19));
+        jPanel32.add(jLabel48, java.awt.BorderLayout.CENTER);
 
         jLabel47.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         jLabel47.setForeground(new java.awt.Color(102, 112, 107));
-        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel47.setText("100%");
         jLabel47.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jLabel47.setPreferredSize(new java.awt.Dimension(48, 19));
-        jPanel46.add(jLabel47, java.awt.BorderLayout.LINE_END);
-
-        jLabel48.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
-        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel48.setText("47");
-        jPanel46.add(jLabel48, java.awt.BorderLayout.CENTER);
-
-        jPanel32.add(jPanel46, java.awt.BorderLayout.LINE_END);
+        jLabel47.setPreferredSize(new java.awt.Dimension(55, 19));
+        jPanel32.add(jLabel47, java.awt.BorderLayout.LINE_END);
 
         pnlPresKehadiran.add(jPanel32);
 
-        jPanel47.setOpaque(false);
-        jPanel47.setLayout(new java.awt.BorderLayout());
+        jPanel57.setOpaque(false);
+        jPanel57.setLayout(new java.awt.BorderLayout());
 
-        jPanel48.setOpaque(false);
-        jPanel48.setPreferredSize(new java.awt.Dimension(55, 26));
-        jPanel48.setLayout(new java.awt.BorderLayout(4, 0));
+        jPanel58.setOpaque(false);
+        jPanel58.setPreferredSize(new java.awt.Dimension(55, 26));
+        jPanel58.setLayout(new java.awt.BorderLayout(4, 0));
 
-        jLabel49.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(34, 118, 75));
-        jLabel49.setText("•");
-        jLabel49.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel48.add(jLabel49, java.awt.BorderLayout.LINE_START);
+        jLabel62.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
+        jLabel62.setText("•");
+        jLabel62.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 4, 0));
+        jPanel58.add(jLabel62, java.awt.BorderLayout.LINE_START);
 
-        jLabel50.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(102, 112, 107));
-        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel50.setText("Sakit");
-        jPanel48.add(jLabel50, java.awt.BorderLayout.CENTER);
+        jLabel63.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel63.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel63.setText("Hadir");
+        jPanel58.add(jLabel63, java.awt.BorderLayout.CENTER);
 
-        jPanel47.add(jPanel48, java.awt.BorderLayout.LINE_START);
+        jPanel57.add(jPanel58, java.awt.BorderLayout.LINE_START);
 
-        jPanel49.setOpaque(false);
-        jPanel49.setPreferredSize(new java.awt.Dimension(70, 26));
-        jPanel49.setLayout(new java.awt.BorderLayout());
+        jLabel64.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
+        jLabel64.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel64.setText("999");
+        jLabel64.setPreferredSize(new java.awt.Dimension(28, 19));
+        jPanel57.add(jLabel64, java.awt.BorderLayout.CENTER);
 
-        jLabel51.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(102, 112, 107));
-        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel51.setText("100%");
-        jLabel51.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jLabel51.setPreferredSize(new java.awt.Dimension(48, 19));
-        jPanel49.add(jLabel51, java.awt.BorderLayout.LINE_END);
+        jLabel65.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel65.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel65.setText("100%");
+        jLabel65.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel65.setPreferredSize(new java.awt.Dimension(55, 19));
+        jPanel57.add(jLabel65, java.awt.BorderLayout.LINE_END);
 
-        jLabel52.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
-        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel52.setText("156");
-        jPanel49.add(jLabel52, java.awt.BorderLayout.CENTER);
+        pnlPresKehadiran.add(jPanel57);
 
-        jPanel47.add(jPanel49, java.awt.BorderLayout.LINE_END);
+        jPanel59.setOpaque(false);
+        jPanel59.setLayout(new java.awt.BorderLayout());
 
-        pnlPresKehadiran.add(jPanel47);
+        jPanel60.setOpaque(false);
+        jPanel60.setPreferredSize(new java.awt.Dimension(55, 26));
+        jPanel60.setLayout(new java.awt.BorderLayout(4, 0));
 
-        jPanel50.setOpaque(false);
-        jPanel50.setLayout(new java.awt.BorderLayout());
+        jLabel66.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
+        jLabel66.setText("•");
+        jLabel66.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 4, 0));
+        jPanel60.add(jLabel66, java.awt.BorderLayout.LINE_START);
 
-        jPanel51.setOpaque(false);
-        jPanel51.setPreferredSize(new java.awt.Dimension(55, 26));
-        jPanel51.setLayout(new java.awt.BorderLayout(4, 0));
+        jLabel67.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel67.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel67.setText("Hadir");
+        jPanel60.add(jLabel67, java.awt.BorderLayout.CENTER);
 
-        jLabel53.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
-        jLabel53.setForeground(new java.awt.Color(58, 155, 104));
-        jLabel53.setText("•");
-        jLabel53.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel51.add(jLabel53, java.awt.BorderLayout.LINE_START);
+        jPanel59.add(jPanel60, java.awt.BorderLayout.LINE_START);
 
-        jLabel54.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        jLabel54.setForeground(new java.awt.Color(102, 112, 107));
-        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel54.setText("Izin");
-        jPanel51.add(jLabel54, java.awt.BorderLayout.CENTER);
+        jLabel68.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
+        jLabel68.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel68.setText("999");
+        jLabel68.setPreferredSize(new java.awt.Dimension(28, 19));
+        jPanel59.add(jLabel68, java.awt.BorderLayout.CENTER);
 
-        jPanel50.add(jPanel51, java.awt.BorderLayout.LINE_START);
+        jLabel69.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel69.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel69.setText("100%");
+        jLabel69.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel69.setPreferredSize(new java.awt.Dimension(55, 19));
+        jPanel59.add(jLabel69, java.awt.BorderLayout.LINE_END);
 
-        jPanel52.setOpaque(false);
-        jPanel52.setPreferredSize(new java.awt.Dimension(70, 26));
-        jPanel52.setLayout(new java.awt.BorderLayout());
+        pnlPresKehadiran.add(jPanel59);
 
-        jLabel55.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        jLabel55.setForeground(new java.awt.Color(102, 112, 107));
-        jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel55.setText("100%");
-        jLabel55.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jLabel55.setPreferredSize(new java.awt.Dimension(48, 19));
-        jPanel52.add(jLabel55, java.awt.BorderLayout.LINE_END);
+        jPanel61.setOpaque(false);
+        jPanel61.setLayout(new java.awt.BorderLayout());
 
-        jLabel56.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
-        jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel56.setText("156");
-        jPanel52.add(jLabel56, java.awt.BorderLayout.CENTER);
+        jPanel62.setOpaque(false);
+        jPanel62.setPreferredSize(new java.awt.Dimension(55, 26));
+        jPanel62.setLayout(new java.awt.BorderLayout(4, 0));
 
-        jPanel50.add(jPanel52, java.awt.BorderLayout.LINE_END);
+        jLabel70.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
+        jLabel70.setText("•");
+        jLabel70.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 4, 0));
+        jPanel62.add(jLabel70, java.awt.BorderLayout.LINE_START);
 
-        pnlPresKehadiran.add(jPanel50);
+        jLabel71.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel71.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel71.setText("Hadir");
+        jPanel62.add(jLabel71, java.awt.BorderLayout.CENTER);
 
-        jPanel53.setOpaque(false);
-        jPanel53.setLayout(new java.awt.BorderLayout());
+        jPanel61.add(jPanel62, java.awt.BorderLayout.LINE_START);
 
-        jPanel54.setOpaque(false);
-        jPanel54.setPreferredSize(new java.awt.Dimension(55, 26));
-        jPanel54.setLayout(new java.awt.BorderLayout(4, 0));
+        jLabel72.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
+        jLabel72.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel72.setText("999");
+        jLabel72.setPreferredSize(new java.awt.Dimension(28, 19));
+        jPanel61.add(jLabel72, java.awt.BorderLayout.CENTER);
 
-        jLabel57.setFont(new java.awt.Font("Plus Jakarta Sans ExtraBold", 1, 18)); // NOI18N
-        jLabel57.setForeground(new java.awt.Color(159, 211, 180));
-        jLabel57.setText("•");
-        jLabel57.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel54.add(jLabel57, java.awt.BorderLayout.LINE_START);
+        jLabel73.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(102, 112, 107));
+        jLabel73.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel73.setText("100%");
+        jLabel73.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel73.setPreferredSize(new java.awt.Dimension(55, 19));
+        jPanel61.add(jLabel73, java.awt.BorderLayout.LINE_END);
 
-        jLabel58.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        jLabel58.setForeground(new java.awt.Color(102, 112, 107));
-        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel58.setText("Alpha");
-        jPanel54.add(jLabel58, java.awt.BorderLayout.CENTER);
-
-        jPanel53.add(jPanel54, java.awt.BorderLayout.LINE_START);
-
-        jPanel55.setOpaque(false);
-        jPanel55.setPreferredSize(new java.awt.Dimension(70, 26));
-        jPanel55.setLayout(new java.awt.BorderLayout());
-
-        jLabel59.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
-        jLabel59.setForeground(new java.awt.Color(102, 112, 107));
-        jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel59.setText("100%");
-        jLabel59.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jLabel59.setPreferredSize(new java.awt.Dimension(48, 19));
-        jPanel55.add(jLabel59, java.awt.BorderLayout.LINE_END);
-
-        jLabel60.setFont(new java.awt.Font("Plus Jakarta Sans SemiBold", 0, 14)); // NOI18N
-        jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel60.setText("156");
-        jPanel55.add(jLabel60, java.awt.BorderLayout.CENTER);
-
-        jPanel53.add(jPanel55, java.awt.BorderLayout.LINE_END);
-
-        pnlPresKehadiran.add(jPanel53);
+        pnlPresKehadiran.add(jPanel61);
 
         jPanel27.add(pnlPresKehadiran, java.awt.BorderLayout.CENTER);
 
@@ -1037,7 +1012,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jButton1.setFont(new java.awt.Font("Plus Jakarta Sans", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(13, 59, 38));
         jButton1.setText("Lihat Semua");
-        jButton1.setMargin(new java.awt.Insets(0, 16, 0, 16));
+        jButton1.setMargin(new java.awt.Insets(0, 8, 0, 8));
         jButton1.setPreferredSize(new java.awt.Dimension(114, 23));
         jPanel37.add(jButton1, java.awt.BorderLayout.LINE_END);
 
@@ -1045,29 +1020,19 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
 
         jPanel39.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 24, 16, 24));
         jPanel39.setOpaque(false);
-        jPanel39.setLayout(new java.awt.CardLayout());
-
-        jScrollPane1.setBorder(null);
-        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jPanel39.setLayout(new java.awt.BorderLayout());
 
         jPanel40.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel40.setLayout(new java.awt.BorderLayout());
 
-        javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
-        jPanel40.setLayout(jPanel40Layout);
-        jPanel40Layout.setHorizontalGroup(
-            jPanel40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(RecentComponent, javax.swing.GroupLayout.DEFAULT_SIZE, 342, Short.MAX_VALUE)
-        );
-        jPanel40Layout.setVerticalGroup(
-            jPanel40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel40Layout.createSequentialGroup()
-                .addComponent(RecentComponent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 49, Short.MAX_VALUE))
-        );
+        jPanel56.setOpaque(false);
+        jPanel56.setPreferredSize(new java.awt.Dimension(342, 128));
+        jPanel56.setLayout(new java.awt.GridLayout(2, 8));
+        jPanel56.add(RecentComponent);
 
-        jScrollPane1.setViewportView(jPanel40);
+        jPanel40.add(jPanel56, java.awt.BorderLayout.PAGE_START);
 
-        jPanel39.add(jScrollPane1, "card2");
+        jPanel39.add(jPanel40, java.awt.BorderLayout.CENTER);
 
         jPanel15.add(jPanel39, java.awt.BorderLayout.CENTER);
 
@@ -1092,7 +1057,7 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
         jLabel26.setPreferredSize(new java.awt.Dimension(91, 40));
         jPanel16.add(jLabel26, java.awt.BorderLayout.PAGE_START);
 
-        jPanel34.setBorder(javax.swing.BorderFactory.createEmptyBorder(16, 24, 16, 24));
+        jPanel34.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 16, 16));
         jPanel34.setOpaque(false);
 
         jPanel29.setBackground(new java.awt.Color(246, 247, 245));
@@ -1223,11 +1188,11 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
                 .addGap(1, 1, 1)
                 .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel34Layout.createSequentialGroup()
-                        .addComponent(jPanel29, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                        .addComponent(jPanel29, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE)
                         .addGap(8, 8, 8)
-                        .addComponent(jPanel41, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                        .addComponent(jPanel41, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE)
                         .addGap(8, 8, 8)
-                        .addComponent(jPanel42, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE))
+                        .addComponent(jPanel42, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE))
                     .addGroup(jPanel34Layout.createSequentialGroup()
                         .addComponent(jPanel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(8, 8, 8)
@@ -1327,22 +1292,22 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -1385,18 +1350,15 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel43;
     private javax.swing.JPanel jPanel44;
     private javax.swing.JPanel jPanel45;
-    private javax.swing.JPanel jPanel46;
-    private javax.swing.JPanel jPanel47;
-    private javax.swing.JPanel jPanel48;
-    private javax.swing.JPanel jPanel49;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel50;
-    private javax.swing.JPanel jPanel51;
-    private javax.swing.JPanel jPanel52;
-    private javax.swing.JPanel jPanel53;
-    private javax.swing.JPanel jPanel54;
-    private javax.swing.JPanel jPanel55;
+    private javax.swing.JPanel jPanel56;
+    private javax.swing.JPanel jPanel57;
+    private javax.swing.JPanel jPanel58;
+    private javax.swing.JPanel jPanel59;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel60;
+    private javax.swing.JPanel jPanel61;
+    private javax.swing.JPanel jPanel62;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
@@ -1406,7 +1368,6 @@ public class DashboarAbsensiPanel extends javax.swing.JPanel {
     private javax.swing.JProgressBar jProgressBar4;
     private javax.swing.JProgressBar jProgressBar5;
     private javax.swing.JProgressBar jProgressBar6;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblHeader;
     private javax.swing.JLabel lblHeader1;
     private javax.swing.JPanel pnlBarisAtas;

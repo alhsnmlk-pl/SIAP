@@ -175,7 +175,7 @@ public class PenempatanKelaspanel extends javax.swing.JPanel {
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
         jPanel10.setPreferredSize(new java.awt.Dimension(954, 56));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/IconSearchbaru.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/IconSearchbaru.png"))); // NOI18N
 
         jTextField1.setBackground(new java.awt.Color(236, 237, 235));
         jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -253,7 +253,7 @@ public class PenempatanKelaspanel extends javax.swing.JPanel {
         jButton2.setBackground(new java.awt.Color(20, 77, 50));
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagedhea/Vectorbaru1.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Vectorbaru1.png"))); // NOI18N
         jButton2.setText("Tempatkan ke Kelas 7A");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
